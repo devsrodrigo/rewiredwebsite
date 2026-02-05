@@ -3,11 +3,11 @@
 /* Rewired Color Palette */
 :root {
   /* Primary gradient colors */
-  --primary-start: #6366F1;
-  --primary-end: #8B5CF6;
+  --primary-start: #344c23;
+  --primary-end: #344c23;
   
   /* Accent colors */
-  --accent-green: #10B981;
+  --accent-green: #344c23;
   --accent-red: #EF4444;
   
   /* Light mode */
@@ -21,7 +21,7 @@
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
+  --shadow-glow: 0 0 40px rgba(52, 76, 35, 0.15);
 }
 
 .dark {
@@ -30,7 +30,7 @@
   --foreground: #F8FAFC;
   --foreground-muted: #94A3B8;
   --border: #334155;
-  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.25);
+  --shadow-glow: 0 0 40px rgba(52, 76, 35, 0.25);
 }
 
 @theme inline {
