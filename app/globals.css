@@ -3,34 +3,34 @@
 /* Rewired Color Palette */
 :root {
   /* Primary gradient colors */
-  --primary-start: #344c23;
-  --primary-end: #344c23;
+  --primary-start: #009E60;
+  --primary-end: #009E60;
   
   /* Accent colors */
-  --accent-green: #344c23;
+  --accent-green: #009E60;
   --accent-red: #EF4444;
   
   /* Light mode */
-  --background: #F8FAFC;
-  --background-secondary: #FFFFFF;
-  --foreground: #0F172A;
-  --foreground-muted: #64748B;
-  --border: #E2E8F0;
+  --background: #FFFFFF;
+  --background-secondary: #F9F9F9;
+  --foreground: #000000;
+  --foreground-muted: #666666;
+  --border: #E5E5E5;
   
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-glow: 0 0 40px rgba(52, 76, 35, 0.15);
+  --shadow-glow: 0 0 40px rgba(0, 158, 96, 0.2);
 }
 
 .dark {
-  --background: #0F172A;
-  --background-secondary: #1E293B;
-  --foreground: #F8FAFC;
-  --foreground-muted: #94A3B8;
-  --border: #334155;
-  --shadow-glow: 0 0 40px rgba(52, 76, 35, 0.25);
+  --background: #000000;
+  --background-secondary: #1A1A1A;
+  --foreground: #FFFFFF;
+  --foreground-muted: #999999;
+  --border: #333333;
+  --shadow-glow: 0 0 40px rgba(0, 158, 96, 0.3);
 }
 
 @theme inline {
