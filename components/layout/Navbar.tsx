@@ -45,7 +45,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-2 group">
               <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform">
                 <Image
-                  src="/logo-icon.svg"
+                  src="/logo-icon.png"
                   alt="Rewired Logo"
                   width={40}
                   height={40}

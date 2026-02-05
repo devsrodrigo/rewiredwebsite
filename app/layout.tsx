@@ -73,10 +73,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://getrewired.org"),
   icons: {
     icon: [
-      { url: "/logo-icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/logo-icon.png", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
     ],
-    apple: "/logo-icon.svg",
+    apple: "/logo-icon.png",
   },
 };
 
