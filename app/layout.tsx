@@ -71,6 +71,13 @@ export const metadata: Metadata = {
     },
   },
   metadataBase: new URL("https://getrewired.org"),
+  icons: {
+    icon: [
+      { url: "/logo-icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/logo-icon.svg",
+  },
 };
 
 export default function RootLayout({

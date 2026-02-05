@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/features", label: "Features" },
@@ -42,8 +43,14 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center group-hover:scale-105 transition-transform">
-                <Zap className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <Image
+                  src="/logo-icon.svg"
+                  alt="Rewired Logo"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
+                />
               </div>
               <span className="text-xl font-bold text-foreground">Rewired</span>
             </Link>
