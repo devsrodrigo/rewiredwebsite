@@ -174,7 +174,7 @@ export default function SupportPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
             <a
-              href="mailto:support@getrewired.org"
+              href="mailto:info@getrewired.org"
               className="p-6 rounded-2xl bg-background-secondary border border-border hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
@@ -187,12 +187,12 @@ export default function SupportPage() {
                 Send us an email and we&apos;ll respond within 24 hours.
               </p>
               <span className="text-primary font-medium">
-                support@getrewired.org
+                info@getrewired.org
               </span>
             </a>
 
             <a
-              href="https://twitter.com/getrewired"
+              href="https://instagram.com/getrewiredapp"
               target="_blank"
               rel="noopener noreferrer"
               className="p-6 rounded-2xl bg-background-secondary border border-border hover:border-primary/50 transition-all duration-300 group"
@@ -204,9 +204,9 @@ export default function SupportPage() {
                 Social Media
               </h3>
               <p className="text-foreground-muted mb-4">
-                DM us on Twitter for quick questions.
+                DM us on Instagram for quick questions.
               </p>
-              <span className="text-primary font-medium">@getrewired</span>
+              <span className="text-primary font-medium">@getrewiredapp</span>
             </a>
           </div>
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Twitter, Instagram, Github, Heart } from "lucide-react";
+import { Instagram, Video, Heart } from "lucide-react";
 import Image from "next/image";
 
 const footerLinks = {
@@ -22,9 +22,8 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { href: "https://twitter.com/getrewired", icon: Twitter, label: "Twitter" },
-  { href: "https://instagram.com/getrewired", icon: Instagram, label: "Instagram" },
-  { href: "https://github.com/getrewired", icon: Github, label: "GitHub" },
+  { href: "https://instagram.com/getrewiredapp", icon: Instagram, label: "Instagram" },
+  { href: "https://tiktok.com/@getrewired", icon: Video, label: "TikTok" },
 ];
 
 export function Footer() {
