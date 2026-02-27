@@ -48,8 +48,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1]"
           >
-            Break Free From{" "}
-            <span className="gradient-text">Social Media Addiction</span>
+            You Already Know{" "}
+            <span className="gradient-text">Something Is Wrong</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -59,8 +59,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground-muted mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            Rewire your dopamine system. Replace mindless scrolling with meaningful habits.{" "}
-            <span className="text-foreground font-medium">Built for Gen Z who&apos;s ready to change.</span>
+            Not in a vague &ldquo;I should probably scroll less&rdquo; way. In the way where your hand moves to your phone before a single thought forms.{" "}
+            <span className="text-foreground font-medium">Rewired removes the decision entirely.</span>
           </motion.p>
 
           {/* CTA Buttons */}

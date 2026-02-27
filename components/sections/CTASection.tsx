@@ -22,12 +22,12 @@ export function CTASection() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Ready to{" "}
-            <span className="gradient-text">Rewire</span>?
+            One Decision.{" "}
+            <span className="gradient-text">Made Once. Enforced.</span>
           </h2>
           <p className="text-lg md:text-xl text-foreground-muted mb-10 max-w-2xl mx-auto">
-            Join thousands of young people breaking free from social media addiction. 
-            Be first to get access when we launch.
+            The ambitious version of you doesn&apos;t need more information. Doesn&apos;t need more motivation.{" "}
+            <span className="text-foreground font-medium">You weren&apos;t built for the feed. You were built for the hard thing.</span>
           </p>
         </motion.div>
 
@@ -69,9 +69,9 @@ export function CTASection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8"
         >
-          <Link href="/features">
+          <Link href="/how-it-works">
             <Button variant="ghost" className="group">
-              Explore All Features
+              See How It Works
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

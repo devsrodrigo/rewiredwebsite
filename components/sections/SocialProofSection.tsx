@@ -28,8 +28,8 @@ export function SocialProofSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Join Us"
-          title="Be Part of the Change"
-          subtitle="Join thousands of young people who are taking back control of their digital lives."
+          title="The People Who Already Decided"
+          subtitle="Two paths. One decision. Thousands of people chose the harder one — and got their time back."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
@@ -58,18 +58,17 @@ export function SocialProofSection() {
           ))}
         </div>
 
-        {/* Testimonial Preview - To be used when testimonials are available */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mt-16 p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-end/10 border border-primary/20 text-center"
         >
           <p className="text-xl text-foreground italic mb-4">
-            "Rewired helped me go from 8 hours of daily screen time to 2. I actually read books now."
+            &ldquo;I deleted TikTok three times. It came back three times. Rewired was the first thing that actually held. I have 2 hours a day back and I don&apos;t know what I was doing before.&rdquo;
           </p>
           <p className="text-foreground-muted">— Early Beta User</p>
-        </motion.div> */}
+        </motion.div>
       </div>
     </section>
   );

@@ -7,34 +7,34 @@ import { Eye, ShieldOff, RefreshCw, CheckCircle } from "lucide-react";
 const steps = [
   {
     number: "01",
-    icon: Eye,
-    title: "Track",
+    icon: ShieldOff,
+    title: "Choose & Lock",
     description:
-      "Connect Screen Time. See the truth about your usage. We don't judge—we just show you the facts.",
+      "Select the apps you want blocked. Rewired locks them at the OS level via Apple's Screen Time. Hard lock. No workarounds. No exceptions.",
     color: "from-blue-500 to-cyan-500",
   },
   {
     number: "02",
-    icon: ShieldOff,
-    title: "Interrupt",
+    icon: RefreshCw,
+    title: "14-Day Detox",
     description:
-      "Smart blocking activates when you're most vulnerable. No overrides. Your future self will thank you.",
+      "Go dark. The dopamine receptors start resetting within 10 days. You stop negotiating with yourself at 11pm. The circuit doesn't get fed.",
     color: "from-purple-500 to-pink-500",
   },
   {
     number: "03",
-    icon: RefreshCw,
-    title: "Replace",
+    icon: Eye,
+    title: "Controlled Access",
     description:
-      "Guided alternatives when you feel the urge. Build harder dopamine habits that actually satisfy.",
+      "After detox: a daily time budget — 15, 30, or 60 minutes — distributed across your apps. Controlled access on your terms. Not elimination. Dominance.",
     color: "from-orange-500 to-red-500",
   },
   {
     number: "04",
     icon: CheckCircle,
-    title: "Rewire",
+    title: "New Baseline",
     description:
-      "21-day programs backed by science. Real change, not willpower. Freedom becomes your default.",
+      "By day 45, you sit down to work and you work. Your phone is a tool again. The ambitious version of you has room to exist.",
     color: "from-green-500 to-emerald-500",
   },
 ];
@@ -50,8 +50,8 @@ export function HowItWorksSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="The Process"
-          title="How It Works"
-          subtitle="A proven 4-step process to break free from social media addiction. No willpower required."
+          title="Four Steps to a Different Brain"
+          subtitle="One decision, made once, enforced by hardware. No willpower required — that's the whole point."
         />
 
         <div className="mt-16 space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8">

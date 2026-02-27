@@ -15,39 +15,39 @@ import {
 const features = [
   {
     icon: Shield,
-    title: "Screen Time Integration",
+    title: "OS-Level Hard Block",
     description:
-      "Leverages Apple's official Screen Time API for objective tracking and true blocking. No workarounds possible.",
+      "Apple Screen Time integration. Your apps are locked at the hardware level. No loopholes, no overrides, no 'just this once.' The phone says no.",
   },
   {
     icon: Brain,
-    title: "CBT-Inspired Interventions",
+    title: "AI Coach Echo",
     description:
-      "Evidence-based cognitive behavioral techniques adapted specifically for digital addiction and phone dependency.",
+      "Available when cravings hit — which is at night, not during office hours. Echo is trained for the moments willpower doesn't show up.",
   },
   {
     icon: Sparkles,
-    title: "Habit Replacement Library",
+    title: "Your 90-Day Roadmap",
     description:
-      "A curated collection of healthier alternatives—from quick activities to long-term habit builders.",
+      "Built from your profile, your usage patterns, your actual symptoms. Not a generic plan. A protocol designed around you.",
   },
   {
     icon: BarChart3,
-    title: "Analytics & Insights",
+    title: "Daily Time Budget",
     description:
-      "Understand your patterns with detailed analytics. See your triggers, track your progress, celebrate wins.",
+      "After your detox: 15, 30, or 60 minutes per day. Distributed across your apps. Controlled access — not elimination. You choose when.",
   },
   {
     icon: Zap,
-    title: "No Willpower Required",
+    title: "No Exception Windows",
     description:
-      "Designed to work even when motivation fails. External systems that protect you from your weakest moments.",
+      "There is no 'just this once.' No bypass. No override. The neural pathway doesn't get fed, so the neural pathway gets weaker.",
   },
   {
     icon: Lock,
     title: "Privacy First",
     description:
-      "All data stays on your device. No cloud sync, no tracking, no ads. Your journey is yours alone.",
+      "Everything stays on your device. No cloud sync, no tracking, no ads. Your detox is nobody's business but yours.",
   },
 ];
 
@@ -61,8 +61,8 @@ export function FeaturesSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Features"
-          title="Everything You Need to Break Free"
-          subtitle="A comprehensive toolkit designed specifically for overcoming social media addiction."
+          title="Built to Work When You're Weak"
+          subtitle="Willpower is a resource. Hardware isn't. Rewired removes the decisions you can't win."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">

@@ -7,21 +7,21 @@ import { AlertTriangle, Clock, TrendingDown } from "lucide-react";
 
 const stats = [
   {
-    value: 96,
-    suffix: "",
-    label: "times per day the average person checks their phone",
+    value: 23,
+    suffix: " min",
+    label: "of focus lost every time a notification pulls you away",
     icon: Clock,
   },
   {
-    value: 9,
-    suffix: "+",
-    label: "hours per day Gen Z spends on screens",
+    value: 96,
+    suffix: "×",
+    label: "a day the average person unlocks their phone",
     icon: TrendingDown,
   },
   {
     value: 70,
     suffix: "%",
-    label: "of young adults feel addicted to their phones",
+    label: "of young adults know they're addicted — and can't stop",
     icon: AlertTriangle,
   },
 ];
@@ -35,8 +35,8 @@ export function ProblemSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="The Problem"
-          title="You're Not Alone"
-          subtitle="Social media is designed to be addictive—literally. It's engineered by the smartest minds to capture your attention and never let go."
+          title="You're Not Losing to Willpower"
+          subtitle="You're losing to a multi-billion dollar system engineered to extract your attention. Here's what it's actually costing you."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
@@ -70,11 +70,11 @@ export function ProblemSection() {
           className="mt-16 max-w-2xl mx-auto text-center"
         >
           <p className="text-lg text-foreground-muted leading-relaxed">
-            It&apos;s 2 AM and you&apos;re still scrolling. You told yourself &quot;just 5 more minutes&quot; an hour ago.{" "}
+            The book you never started. The skill you keep saying you&apos;ll learn. The version of yourself you know is possible but keeps getting pushed to{" "}
+            <em>someday</em>.{" "}
             <span className="text-foreground font-medium">
-              You&apos;re not weak. Your brain is wired to be addicted.
-            </span>{" "}
-            We&apos;ll help you rewire it.
+              You&apos;re not going to reach that person if your reward system is calibrated for a feed.
+            </span>
           </p>
         </motion.div>
       </div>
