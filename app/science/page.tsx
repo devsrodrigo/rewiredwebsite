@@ -16,11 +16,11 @@ const scienceSections = [
     content: [
       {
         subtitle: "The Dopamine Connection",
-        text: "Every like, comment, and notification triggers a dopamine release in your brain's reward center. This is the same neurotransmitter involved in all addictions—from gambling to drugs. Social media has effectively turned your phone into a slot machine in your pocket.",
+        text: "Every like, comment, and notification triggers a dopamine release in your brain's reward center. This is the same neurotransmitter involved in all addictions, from gambling to substances. Social media has turned your phone into a slot machine in your pocket.",
       },
       {
         subtitle: "Variable Reward Schedules",
-        text: "Tech companies use 'variable reward schedules'—the same psychological principle that makes slot machines addictive. You never know when you'll get that satisfying notification, so you keep checking. This unpredictability is precisely what makes the behavior so hard to stop.",
+        text: "Tech companies use 'variable reward schedules,' the same psychological principle that makes slot machines addictive. You never know when the next satisfying notification will come, so you keep checking. This unpredictability makes the behavior extremely hard to stop.",
       },
       {
         subtitle: "Infinite Scroll & Auto-Play",
@@ -34,7 +34,7 @@ const scienceSections = [
     content: [
       {
         subtitle: "Ego Depletion",
-        text: "Willpower is a finite resource that depletes throughout the day. By evening—when most social media binging happens—your self-control reserves are at their lowest. Relying on willpower alone is setting yourself up for failure.",
+        text: "Willpower is a finite resource that gets used up throughout the day. By evening, when most social media binging happens, your self-control is at its lowest. Relying on willpower alone is setting yourself up to fail.",
       },
       {
         subtitle: "Decision Fatigue",
@@ -52,15 +52,15 @@ const scienceSections = [
     content: [
       {
         subtitle: "Neuroplasticity",
-        text: "Your brain is not fixed—it's constantly changing based on your behaviors. The neural pathways you use most become stronger, while unused pathways weaken. This is neuroplasticity, and it's the scientific basis for habit change.",
+        text: "Your brain is not fixed. It constantly changes based on your behaviors. The neural pathways you use most become stronger, while unused pathways weaken. This is neuroplasticity, and it's the scientific basis for habit change.",
       },
       {
         subtitle: "Breaking the Habit Loop",
         text: "Every habit has three parts: cue, routine, reward. Social media has hijacked this loop. By identifying your cues and replacing the routine with healthier alternatives, you can redirect the pathway to a better reward.",
       },
       {
-        subtitle: "The 21-Day Reality",
-        text: "The '21 days to form a habit' idea is a myth—research suggests it takes 66 days on average. However, the first 21 days are critical for building momentum. Our program is designed to get you past the hardest part.",
+        subtitle: "The 14-Day Reset",
+        text: "Long-term habit formation takes about 66 days on average, but the first 14 days are where the biggest shift happens. Dopamine receptors start recalibrating within 10 days. Rewired's 14-day detox targets this critical window.",
       },
     ],
   },
@@ -115,7 +115,7 @@ export default function SciencePage() {
           <SectionHeading
             badge="The Science"
             title="The Neuroscience of Digital Addiction"
-            subtitle="Understanding why you can't stop scrolling is the first step to breaking free. Here's what's happening in your brain—and how we fix it."
+            subtitle="Understanding why you can't stop scrolling is the first step. Here's what's happening in your brain, and how Rewired fixes it."
           />
         </div>
       </section>
@@ -179,7 +179,7 @@ export default function SciencePage() {
                 </blockquote>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                   <cite className="text-foreground-muted text-sm not-italic">
-                    — {item.source}
+                    {item.source}
                   </cite>
                   <span className="text-primary text-sm font-medium">
                     {item.relevance}
@@ -200,7 +200,7 @@ export default function SciencePage() {
                   Rewired is built on peer-reviewed research and evidence-based practices. 
                   We continuously update our methods based on the latest findings in 
                   behavioral psychology, neuroscience, and digital wellness research. 
-                  This isn&apos;t self-help pseudoscience—it&apos;s real science, applied thoughtfully.
+                  This isn&apos;t self-help pseudoscience. It&apos;s real science, applied thoughtfully.
                 </p>
               </div>
             </div>

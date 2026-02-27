@@ -21,7 +21,7 @@ const stats = [
   {
     value: 70,
     suffix: "%",
-    label: "of young adults know they're addicted — and can't stop",
+    label: "of young adults know they're addicted but can't stop",
     icon: AlertTriangle,
   },
 ];
@@ -35,8 +35,8 @@ export function ProblemSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="The Problem"
-          title="You're Not Losing to Willpower"
-          subtitle="You're losing to a multi-billion dollar system engineered to extract your attention. Here's what it's actually costing you."
+          title="Your Phone Is Designed to Waste Your Time"
+          subtitle="Social media apps spend billions to keep you scrolling. Here's what that costs you every day."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
@@ -70,10 +70,9 @@ export function ProblemSection() {
           className="mt-16 max-w-2xl mx-auto text-center"
         >
           <p className="text-lg text-foreground-muted leading-relaxed">
-            The book you never started. The skill you keep saying you&apos;ll learn. The version of yourself you know is possible but keeps getting pushed to{" "}
-            <em>someday</em>.{" "}
+            You already know the things you want to do instead. Read, exercise, build something, sleep better.{" "}
             <span className="text-foreground font-medium">
-              You&apos;re not going to reach that person if your reward system is calibrated for a feed.
+              The problem isn&apos;t motivation. It&apos;s that your phone is faster than your willpower.
             </span>
           </p>
         </motion.div>

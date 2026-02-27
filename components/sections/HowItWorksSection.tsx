@@ -10,7 +10,7 @@ const steps = [
     icon: ShieldOff,
     title: "Choose & Lock",
     description:
-      "Select the apps you want blocked. Rewired locks them at the OS level via Apple's Screen Time. Hard lock. No workarounds. No exceptions.",
+      "Pick the apps you want blocked. Rewired locks them at the OS level through Apple's Screen Time. No workarounds. No exceptions.",
     color: "from-blue-500 to-cyan-500",
   },
   {
@@ -18,7 +18,7 @@ const steps = [
     icon: RefreshCw,
     title: "14-Day Detox",
     description:
-      "Go dark. The dopamine receptors start resetting within 10 days. You stop negotiating with yourself at 11pm. The circuit doesn't get fed.",
+      "Complete blocking for 14 days. Your dopamine receptors start resetting within the first week. The urge to check gets weaker every day.",
     color: "from-purple-500 to-pink-500",
   },
   {
@@ -26,7 +26,7 @@ const steps = [
     icon: Eye,
     title: "Controlled Access",
     description:
-      "After detox: a daily time budget — 15, 30, or 60 minutes — distributed across your apps. Controlled access on your terms. Not elimination. Dominance.",
+      "After detox, you set a daily time budget: 15, 30, or 60 minutes. Distributed across your apps. Controlled use on your terms.",
     color: "from-orange-500 to-red-500",
   },
   {
@@ -34,7 +34,7 @@ const steps = [
     icon: CheckCircle,
     title: "New Baseline",
     description:
-      "By day 45, you sit down to work and you work. Your phone is a tool again. The ambitious version of you has room to exist.",
+      "By day 30, your phone is a tool again. You use it when you choose to, not because you can't stop.",
     color: "from-green-500 to-emerald-500",
   },
 ];
@@ -50,8 +50,8 @@ export function HowItWorksSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="The Process"
-          title="Four Steps to a Different Brain"
-          subtitle="One decision, made once, enforced by hardware. No willpower required — that's the whole point."
+          title="How It Works"
+          subtitle="One setup. 14 days of complete blocking. Then controlled access on your terms."
         />
 
         <div className="mt-16 space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8">

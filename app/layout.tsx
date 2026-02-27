@@ -16,11 +16,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rewired - Break Free From Social Media Addiction",
+    default: "Rewired - Lock Your Apps. Reset Your Brain.",
     template: "%s | Rewired",
   },
   description:
-    "Rewire your dopamine system. Replace mindless scrolling with meaningful habits. Built for Gen Z who's ready to change. Using CBT-inspired techniques and Apple's Screen Time API.",
+    "14-day social media detox with OS-level app blocking. No bypass, no workarounds. Then controlled daily access on your terms. Built for Gen Z.",
   keywords: [
     "social media addiction",
     "digital detox",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://getrewired.org",
     siteName: "Rewired",
-    title: "Rewired - Break Free From Social Media Addiction",
+    title: "Rewired - Lock Your Apps. Reset Your Brain.",
     description:
-      "Rewire your dopamine system. Replace mindless scrolling with meaningful habits. Built for Gen Z who's ready to change.",
+      "14-day social media detox with OS-level app blocking. No bypass, no workarounds. Then controlled daily access on your terms.",
     images: [
       {
         url: "/og-image.png",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rewired - Break Free From Social Media Addiction",
+    title: "Rewired - Lock Your Apps. Reset Your Brain.",
     description:
-      "Rewire your dopamine system. Replace mindless scrolling with meaningful habits.",
+      "14-day social media detox with OS-level app blocking. No bypass, no workarounds.",
     images: ["/og-image.png"],
     creator: "@getrewired",
   },

@@ -28,8 +28,8 @@ export function SocialProofSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Join Us"
-          title="The People Who Already Decided"
-          subtitle="Two paths. One decision. Thousands of people chose the harder one — and got their time back."
+          title="Join 10,000+ on the Waitlist"
+          subtitle="Real people who got tired of deleting apps and reinstalling them the same night."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
@@ -67,7 +67,7 @@ export function SocialProofSection() {
           <p className="text-xl text-foreground italic mb-4">
             &ldquo;I deleted TikTok three times. It came back three times. Rewired was the first thing that actually held. I have 2 hours a day back and I don&apos;t know what I was doing before.&rdquo;
           </p>
-          <p className="text-foreground-muted">— Early Beta User</p>
+          <p className="text-foreground-muted">Early Beta User</p>
         </motion.div>
       </div>
     </section>

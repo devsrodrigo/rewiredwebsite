@@ -40,7 +40,7 @@ const faqCategories = [
       {
         question: "How does the blocking work?",
         answer:
-          "Rewired uses Apple's Screen Time API to create genuine app limits. When an app is blocked, you cannot access it—there's no 'one more minute' button to bypass. This is by design.",
+          "Rewired uses Apple's Screen Time API to create genuine app limits. When an app is blocked, you cannot access it. There's no 'one more minute' button to bypass. This is by design.",
       },
       {
         question: "Can I override blocks in an emergency?",
@@ -50,12 +50,12 @@ const faqCategories = [
       {
         question: "What are replacement habits?",
         answer:
-          "When you try to open a blocked app, Rewired suggests alternative activities based on your preferences—exercise, reading, journaling, calling a friend, etc. These help you build healthier dopamine sources.",
+          "When you try to open a blocked app, Rewired suggests alternative activities based on your preferences: exercise, reading, journaling, calling a friend, etc. These help you build healthier dopamine sources.",
       },
       {
-        question: "How do the 21-day programs work?",
+        question: "How do the 14-day programs work?",
         answer:
-          "Our programs are structured daily plans that gradually reduce social media use while building replacement habits. Each day includes specific goals, interventions, and reflection prompts.",
+          "Our 14-day detox completely blocks your selected apps for the full period. After the detox, you transition to controlled daily access with time budgets you set yourself.",
       },
     ],
   },

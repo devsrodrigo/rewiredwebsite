@@ -16,7 +16,7 @@ export default function NotFound() {
           Page Not Found
         </h1>
         <p className="text-foreground-muted mb-8">
-          Looks like you scrolled too far. Don&apos;t worry—we&apos;ve all been there.
+          Looks like you scrolled too far. Don&apos;t worry, we&apos;ve all been there.
           Let&apos;s get you back on track.
         </p>
 

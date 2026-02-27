@@ -6,7 +6,7 @@ import { Heart, Target, Users, Shield, Eye, Lightbulb, Zap } from "lucide-react"
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about the story behind Rewired—built by people who've been there. Our mission is to help Gen Z take back control from social media addiction.",
+    "Learn about the story behind Rewired. Built by people who have been through social media addiction themselves. Our mission is to help Gen Z take back control.",
 };
 
 const values = [
@@ -53,7 +53,7 @@ const timeline = [
     year: "2024",
     title: "The Breaking Point",
     description:
-      "After years of struggling with social media addiction themselves, our founders decided enough was enough. Existing solutions felt like band-aids—timer apps that were easy to bypass, motivational apps that didn't understand the psychology.",
+      "After years of struggling with social media addiction themselves, our founders decided enough was enough. Existing solutions felt like band-aids: timer apps that were easy to bypass, motivational apps that didn't understand the psychology.",
   },
   {
     year: "2025",
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 <p className="leading-relaxed">
                   We tried everything. Screen time limits that we immediately bypassed. 
                   Grayscale mode that lasted a day. Deleting apps only to reinstall them 
-                  hours later. We read books about digital minimalism and felt inspired—until 
+                  hours later. We read books about digital minimalism and felt inspired, until 
                   we picked up our phones again.
                 </p>
                 

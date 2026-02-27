@@ -17,37 +17,37 @@ const features = [
     icon: Shield,
     title: "OS-Level Hard Block",
     description:
-      "Apple Screen Time integration. Your apps are locked at the hardware level. No loopholes, no overrides, no 'just this once.' The phone says no.",
+      "Apple Screen Time integration. Your apps are locked at the hardware level. No loopholes, no overrides, no 'just this once.'",
   },
   {
     icon: Brain,
     title: "AI Coach Echo",
     description:
-      "Available when cravings hit — which is at night, not during office hours. Echo is trained for the moments willpower doesn't show up.",
+      "Available when cravings hit, including late at night when willpower is gone. Echo helps you get through the tough moments.",
   },
   {
     icon: Sparkles,
-    title: "Your 90-Day Roadmap",
+    title: "14-Day Complete Detox",
     description:
-      "Built from your profile, your usage patterns, your actual symptoms. Not a generic plan. A protocol designed around you.",
+      "Full blocking for 14 days straight. No access to your selected apps. Your dopamine system starts resetting within the first week.",
   },
   {
     icon: BarChart3,
     title: "Daily Time Budget",
     description:
-      "After your detox: 15, 30, or 60 minutes per day. Distributed across your apps. Controlled access — not elimination. You choose when.",
+      "After your detox: 15, 30, or 60 minutes per day. Distributed across your apps. Controlled access, not elimination.",
   },
   {
     icon: Zap,
     title: "No Exception Windows",
     description:
-      "There is no 'just this once.' No bypass. No override. The neural pathway doesn't get fed, so the neural pathway gets weaker.",
+      "No 'just this once.' No bypass. No override. The habit only breaks when you stop feeding it.",
   },
   {
     icon: Lock,
     title: "Privacy First",
     description:
-      "Everything stays on your device. No cloud sync, no tracking, no ads. Your detox is nobody's business but yours.",
+      "Everything stays on your device. No cloud sync, no tracking, no ads. Your data never leaves your phone.",
   },
 ];
 
@@ -61,8 +61,8 @@ export function FeaturesSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Features"
-          title="Built to Work When You're Weak"
-          subtitle="Willpower is a resource. Hardware isn't. Rewired removes the decisions you can't win."
+          title="Built for When Willpower Fails"
+          subtitle="Willpower runs out. Hardware doesn't. Rewired takes the decision away."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">

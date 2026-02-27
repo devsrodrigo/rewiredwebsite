@@ -46,7 +46,7 @@ export function Footer() {
               <span className="text-xl font-bold text-foreground">Rewired</span>
             </Link>
             <p className="text-foreground-muted text-sm leading-relaxed mb-6">
-              Break free from social media addiction. Rewire your dopamine system and reclaim your time.
+              Break free from social media addiction. 14-day detox with real app blocking. Then controlled daily access.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (

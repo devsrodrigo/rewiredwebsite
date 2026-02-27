@@ -49,12 +49,12 @@ export default function DownloadPage() {
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Be First to <span className="gradient-text">Break Free</span>
+            Be First to <span className="gradient-text">Lock Your Apps</span>
           </h1>
 
           <p className="text-xl text-foreground-muted mb-12 max-w-2xl mx-auto">
             Join 10,000+ people on the waitlist for Rewired. Get early access, 
-            premium features free for 3 months, and be part of the movement.
+            premium features free for 3 months, and be part of the first wave.
           </p>
 
           {/* Waitlist Form */}
@@ -120,7 +120,7 @@ export default function DownloadPage() {
             Know Someone Who Needs This?
           </h2>
           <p className="text-foreground-muted mb-8">
-            Share Rewired with a friend who&apos;s struggling with social media addiction.
+            Share Rewired with someone who could use a 14-day reset.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

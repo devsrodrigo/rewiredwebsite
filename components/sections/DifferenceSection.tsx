@@ -9,21 +9,21 @@ const differences = [
     icon: Shield,
     title: "Hard Lock. No Bypass.",
     description:
-      "OS-level blocking through Apple's Screen Time. Not a website filter. Not an honor system. No exception window. No 'just this once.' The phone says no.",
+      "OS-level blocking through Apple's Screen Time. Not a website filter. Not an honor system. No exception window. No 'just this once.' Your phone says no.",
     gradient: "from-blue-500 to-blue-600",
   },
   {
     icon: Brain,
-    title: "14-Day Dopamine Reset",
+    title: "14-Day Complete Detox",
     description:
-      "Cut the cheap source. Your receptors reset within 10–14 days. By day 21 you're not white-knuckling it — the craving architecture is different.",
+      "Your selected apps go dark for 14 days. Your dopamine receptors start resetting within 10 days. By day 14, the constant pull is noticeably weaker.",
     gradient: "from-purple-500 to-purple-600",
   },
   {
     icon: Sparkles,
     title: "Echo, Your AI Coach",
     description:
-      "Available when cravings hit — which is at 11pm, not during a therapy appointment. Trained to meet you exactly where you are.",
+      "Available when cravings hit, including at 11pm when willpower is lowest. Trained to help you through the hardest moments.",
     gradient: "from-green-500 to-green-600",
   },
 ];
@@ -35,7 +35,7 @@ export function DifferenceSection() {
         <SectionHeading
           badge="Why Rewired"
           title="This Isn't a Wellness App"
-          subtitle="No journaling prompts. No mindfulness moments. No gentle reminders to 'be present.' Rewired uses the same science that addicted you — and runs it in reverse."
+          subtitle="No journaling prompts. No mindfulness reminders. No 'be present' notifications. Rewired blocks your apps at the hardware level and lets your brain recover."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">

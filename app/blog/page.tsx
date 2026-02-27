@@ -16,7 +16,7 @@ const blogPosts = [
     slug: "why-you-cant-stop-scrolling",
     title: "Why You Can't Stop Scrolling (And How to Fix It)",
     excerpt:
-      "The psychology behind infinite scroll and variable rewards—and practical strategies to break the cycle.",
+      "The psychology behind infinite scroll and variable rewards, and practical strategies to break the cycle.",
     category: "Science",
     readTime: "8 min read",
     date: "2026-02-01",
@@ -70,6 +70,56 @@ const blogPosts = [
     category: "Science",
     readTime: "6 min read",
     date: "2026-01-10",
+    featured: false,
+  },
+  {
+    slug: "why-you-cant-put-your-phone-down",
+    title: "Why You Can't Put Your Phone Down (It's Not a Willpower Problem)",
+    excerpt:
+      "What you're experiencing isn't a character flaw. It's the result of one of the most sophisticated behavioral engineering systems ever built.",
+    category: "Science",
+    readTime: "5 min read",
+    date: "2026-02-25",
+    featured: false,
+  },
+  {
+    slug: "hard-dopamine-vs-easy-dopamine",
+    title: "Hard Dopamine vs. Easy Dopamine: Why Your Brain Feels Dead After a 3-Hour Scroll",
+    excerpt:
+      "The difference between two fundamentally different types of dopamine, and understanding it might be the most important thing you learn this year.",
+    category: "Science",
+    readTime: "6 min read",
+    date: "2026-02-22",
+    featured: false,
+  },
+  {
+    slug: "what-happens-when-you-stop-scrolling",
+    title: "What Actually Happens to Your Brain When You Stop Scrolling (A Day-by-Day Breakdown)",
+    excerpt:
+      "A realistic, science-based breakdown of what your brain goes through when you start reducing compulsive phone use.",
+    category: "Science",
+    readTime: "8 min read",
+    date: "2026-02-19",
+    featured: false,
+  },
+  {
+    slug: "5-types-of-phone-addiction",
+    title: "The 5 Types of Phone Addiction: Which One Are You?",
+    excerpt:
+      "Phone addiction isn't one thing. Research shows it's at least five distinct patterns, each driven by a different psychological need.",
+    category: "Science",
+    readTime: "7 min read",
+    date: "2026-02-16",
+    featured: false,
+  },
+  {
+    slug: "the-willpower-myth",
+    title: "The Willpower Myth: Why Discipline Gets Easier the More You Use It",
+    excerpt:
+      "Everyone thinks willpower is a tank that runs dry. But the part this model is missing changes everything about how you should approach self-control.",
+    category: "Science",
+    readTime: "5 min read",
+    date: "2026-02-13",
     featured: false,
   },
 ];

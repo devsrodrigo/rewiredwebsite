@@ -6,73 +6,73 @@ import { Eye, ShieldOff, RefreshCw, CheckCircle, ArrowRight } from "lucide-react
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "Learn how Rewired helps you break free from social media addiction in 4 simple phases: Track, Interrupt, Replace, and Rewire.",
+    "Learn how Rewired helps you break social media addiction: 14 days of complete app blocking, then controlled daily access on your terms.",
 };
 
 const phases = [
   {
     phase: "Phase 1",
-    title: "Awareness",
-    duration: "Days 1-3",
+    title: "Setup",
+    duration: "Day 1",
     icon: Eye,
-    description: "See the truth about your usage and understand your triggers.",
+    description: "Connect Screen Time, pick the apps you want blocked, and see your real usage.",
     color: "from-blue-500 to-cyan-500",
     steps: [
       "Connect your Screen Time to Rewired",
-      "See your real usage (prepare to be surprised)",
-      "Identify your triggers and vulnerable moments",
-      "Set your intention and goals",
+      "See your real usage numbers",
+      "Select the apps you want blocked",
+      "Set your goals and start the detox",
     ],
     insight:
-      "Most people underestimate their screen time by 50%. Seeing the real numbers is the wake-up call you need.",
+      "Most people underestimate their daily screen time by 50%. The real number is usually a wake-up call.",
   },
   {
     phase: "Phase 2",
-    title: "Interruption",
-    duration: "Days 4-10",
+    title: "14-Day Detox",
+    duration: "Days 1-14",
     icon: ShieldOff,
-    description: "Break the automatic habit loop with smart interventions.",
+    description: "Complete blocking. No access to your selected apps for 14 full days.",
     color: "from-purple-500 to-pink-500",
     steps: [
-      "Smart blocking activates during vulnerable times",
-      "CBT-based interventions when you try to scroll",
-      "Build awareness of urges without acting on them",
-      "Start practicing replacement habits",
+      "Selected apps are fully blocked at the OS level",
+      "AI Coach Echo helps you through cravings",
+      "Dopamine receptors begin recalibrating",
+      "Urges peak around day 3-5, then get weaker",
     ],
     insight:
-      "The urge to check your phone peaks at about 10 minutes. If you can ride it out, it fades.",
+      "The urge to check your phone peaks at about 10 minutes. If you ride it out, it fades. By day 10, most people notice a real difference.",
   },
   {
     phase: "Phase 3",
-    title: "Replacement",
-    duration: "Days 11-17",
+    title: "Controlled Access",
+    duration: "Day 15+",
     icon: RefreshCw,
-    description: "Build new neural pathways with healthier dopamine sources.",
+    description: "Set a daily time budget and use your apps on your terms.",
     color: "from-orange-500 to-red-500",
     steps: [
-      "Healthier habits start to feel more natural",
-      "Dopamine system begins recalibrating",
-      "Less automatic reaching for your phone",
-      "Real-world engagement increases",
+      "Choose a daily limit: 15, 30, or 60 minutes",
+      "Budget is distributed across your apps",
+      "Automatic blocking when your time is up",
+      "Track your usage patterns over time",
     ],
     insight:
-      "Your brain is literally rewiring itself. The neural pathways for scrolling are weakening while new ones grow stronger.",
+      "The goal is controlled use, not zero use. You decide how much time to spend and when.",
   },
   {
     phase: "Phase 4",
-    title: "Rewired",
-    duration: "Days 18-21+",
+    title: "New Normal",
+    duration: "Day 30+",
     icon: CheckCircle,
-    description: "Establish lasting change and maintain your new relationship with technology.",
+    description: "Your phone is a tool again. You pick it up when you choose to, not out of habit.",
     color: "from-green-500 to-emerald-500",
     steps: [
-      "New neural pathways are established",
-      "Phone becomes a tool, not a crutch",
-      "Sustainable relationship with technology",
-      "Freedom to choose, not compulsion to scroll",
+      "New habits are established",
+      "Phone use is intentional, not compulsive",
+      "More time for the things that actually matter",
+      "Ongoing tracking to stay on course",
     ],
     insight:
-      "The goal isn't zero phone use—it's intentional use. You're in control now.",
+      "The goal is not zero phone use. It is intentional use. You are in control.",
   },
 ];
 
@@ -88,8 +88,8 @@ export default function HowItWorksPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="The Process"
-            title="Your Journey to Freedom"
-            subtitle="A proven 21-day program to break free from social media addiction. Based on neuroscience and cognitive behavioral therapy."
+            title="Your 14-Day Detox, Step by Step"
+            subtitle="One setup, 14 days of complete blocking, then controlled access. Based on neuroscience and cognitive behavioral therapy."
           />
         </div>
       </section>
@@ -181,19 +181,19 @@ export default function HowItWorksPage() {
           <div className="mt-24 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-6">
               <CheckCircle className="w-4 h-4" />
-              After 21 Days
+              After 14 Days
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              You&apos;re Rewired
+              You&apos;re in Control
             </h3>
             <p className="text-foreground-muted max-w-2xl mx-auto mb-8">
-              The compulsion is gone. You can use your phone when you choose to, 
-              not when the algorithm tells you to. This isn&apos;t the end—it&apos;s the 
-              beginning of a healthier relationship with technology.
+              The compulsive pull is gone. You use your phone when you choose to, 
+              not when the algorithm pulls you in. Set a daily time budget and 
+              keep your usage intentional from here on out.
             </p>
             <div className="flex items-center justify-center gap-4 text-foreground-muted">
               <ArrowRight className="w-5 h-5 text-accent" />
-              <span>Continue with maintenance mode or explore advanced programs</span>
+              <span>Continue with controlled daily access or adjust your limits anytime</span>
             </div>
           </div>
         </div>

@@ -23,55 +23,55 @@ const detailedFeatures = [
     icon: Shield,
     title: "Screen Time API Integration",
     description:
-      "Unlike apps that rely on self-reporting, Rewired uses Apple's official Screen Time API for objective tracking and true blocking that can't be bypassed.",
+      "Rewired uses Apple's official Screen Time API for real tracking and true blocking that can't be bypassed. Not self-reporting.",
   },
   {
     icon: Brain,
     title: "CBT-Inspired Interventions",
     description:
-      "Evidence-based cognitive behavioral techniques including urge surfing, cognitive restructuring, and trigger identification—adapted specifically for digital addiction.",
+      "Evidence-based cognitive behavioral techniques including urge surfing, cognitive restructuring, and trigger identification, built for digital addiction.",
   },
   {
     icon: Sparkles,
     title: "Habit Replacement System",
     description:
-      "Don't just quit—build something better. Our library of alternatives helps you develop healthier dopamine sources and meaningful habits.",
+      "Don't just quit. Build something better. A library of alternatives to help you develop healthier habits and dopamine sources.",
   },
   {
     icon: Clock,
-    title: "Adaptive Blocking",
+    title: "14-Day Complete Detox",
     description:
-      "Smart scheduling that learns when you're most vulnerable. Gradual exposure mode for realistic, sustainable recovery.",
+      "Full app blocking for 14 days straight. No access, no exceptions. Your dopamine system starts resetting within the first week.",
   },
   {
     icon: BarChart3,
     title: "Progress Analytics",
     description:
-      "Detailed insights into your journey. See your patterns, celebrate milestones, and understand what triggers your usage.",
+      "See your patterns, celebrate milestones, and understand what triggers your usage. Real data, not guesswork.",
   },
   {
     icon: Lock,
     title: "Privacy First",
     description:
-      "All data stays on your device. No cloud sync, no tracking, no ads. Your recovery journey is yours alone.",
+      "All data stays on your device. No cloud sync, no tracking, no ads. Your data never leaves your phone.",
   },
   {
     icon: Target,
     title: "Personalized Goals",
     description:
-      "Set realistic, achievable targets based on your current usage. We meet you where you are, not where we think you should be.",
+      "Set targets based on your actual usage and work toward them at your own pace.",
   },
   {
     icon: RefreshCw,
-    title: "21-Day Programs",
+    title: "Post-Detox Time Budgets",
     description:
-      "Structured programs backed by habit science. Each day builds on the last, creating lasting neural pathway changes.",
+      "After your 14-day detox, set daily limits of 15, 30, or 60 minutes. Controlled access that keeps you in charge.",
   },
   {
     icon: Bell,
     title: "Smart Notifications",
     description:
-      "Gentle nudges when you need them, silence when you don't. Notifications that help, not distract.",
+      "Helpful nudges when you need them, silence when you don't. Notifications that support you, not distract you.",
   },
   {
     icon: Smartphone,
@@ -83,13 +83,13 @@ const detailedFeatures = [
     icon: TrendingUp,
     title: "Progress Sharing",
     description:
-      "Optional accountability features to share progress with friends or family—on your terms.",
+      "Optional accountability features to share progress with friends or family, on your terms.",
   },
   {
     icon: Calendar,
     title: "Flexible Scheduling",
     description:
-      "Set different limits for weekdays vs weekends. Allow exceptions for special occasions without derailing progress.",
+      "Different limits for weekdays vs weekends. Adjust as needed without losing your progress.",
   },
 ];
 
@@ -144,8 +144,8 @@ export default function FeaturesPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Features"
-            title="Everything You Need to Break Free"
-            subtitle="A comprehensive toolkit designed specifically for overcoming social media addiction. Science-backed, privacy-first, and actually effective."
+            title="Everything You Need to Break the Habit"
+            subtitle="OS-level blocking, AI coaching, and post-detox time budgets. Science-backed, privacy-first, and built to actually work."
           />
         </div>
       </section>
