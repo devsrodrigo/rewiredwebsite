@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy",
   description:
-    "Your data. Your device. Period. Learn about Rewired's privacy-first approach and how we protect your information.",
+    "Your data. Your device. Period. Learn about LOCK IN's privacy-first approach and how we protect your information.",
 };
 
 const promises = [
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
               <span className="gradient-text">Period.</span>
             </h1>
             <p className="text-xl text-foreground-muted">
-              We built Rewired for people escaping apps that exploit their data.
+              We built LOCK IN for people escaping apps that exploit their data.
               We&apos;re not going to turn around and do the same thing.
             </p>
           </div>

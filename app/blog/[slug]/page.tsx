@@ -22,7 +22,7 @@ const blogPosts: Record<string, {
     category: "Science",
     readTime: "8 min read",
     date: "2026-02-01",
-    author: "Rewired Team",
+    author: "LOCK IN Team",
     content: `
 ## The Infinite Scroll Trap
 
@@ -55,7 +55,7 @@ Understanding the mechanism is the first step. Here's how to actually break free
 
 Apps like TikTok and Instagram are designed without natural stopping points. Consider:
 - Setting hard time limits that can't be bypassed
-- Using apps that add friction (like Rewired)
+- Using apps that add friction (like LOCK IN)
 - Switching to chronological feeds where possible
 
 ### 2. Recognize the Urge
@@ -92,7 +92,7 @@ The deck is stacked against you, but understanding the game is the first step to
     category: "Science",
     readTime: "6 min read",
     date: "2026-01-28",
-    author: "Rewired Team",
+    author: "LOCK IN Team",
     content: `
 ## The Dopamine Detox Trend
 
@@ -162,7 +162,7 @@ Focus on sustainable change, not dramatic gestures.
     category: "Science",
     readTime: "5 min read",
     date: "2026-02-25",
-    author: "Rewired Team",
+    author: "LOCK IN Team",
     content: `
 You've told yourself you'd stop scrolling at 10pm. It's now 1am.
 
@@ -216,7 +216,7 @@ Willpower alone doesn't cut it. Not because you don't have willpower, but becaus
 
 What works is changing the environment. Interrupting the cue before it becomes a craving. Replacing the routine with something that satisfies the same underlying need: novelty, connection, stimulation, or escape, through a source that builds you up instead of draining you.
 
-That's the whole idea behind Rewired. Not "just stop using your phone." Not guilt, shame, or white-knuckling through withdrawal. A systematic rewiring of the loop: the cue, the routine, the reward.
+That's the whole idea behind LOCK IN. Not "just stop using your phone." Not guilt, shame, or white-knuckling through withdrawal. A systematic rewiring of the loop: the cue, the routine, the reward.
 
 Your brain got conditioned into this pattern over months and years. With the right approach, it can be conditioned out, and into something that actually serves you.
 
@@ -230,7 +230,7 @@ You're not weak. You were targeted. Now you know.
     category: "Science",
     readTime: "6 min read",
     date: "2026-02-22",
-    author: "Rewired Team",
+    author: "LOCK IN Team",
     content: `
 You just spent three hours watching videos. You're not entertained. You're not relaxed. You're not happy.
 
@@ -324,7 +324,7 @@ That's not a motivational slogan. It's neuroscience. And it's available to you.
     category: "Science",
     readTime: "8 min read",
     date: "2026-02-19",
-    author: "Rewired Team",
+    author: "LOCK IN Team",
     content: `
 Most people who try to quit scrolling last about two days.
 
@@ -448,7 +448,7 @@ And the direction is always the same: toward a brain that's yours again.
     category: "Science",
     readTime: "7 min read",
     date: "2026-02-16",
-    author: "Rewired Team",
+    author: "LOCK IN Team",
     content: `
 "Just put your phone down."
 
@@ -494,7 +494,7 @@ Removing the phone without addressing the anxiety leaves you with a broken leg a
 
 ### What actually works
 
-Treating the anxiety alongside reducing phone use. Building genuine alternative coping tools: breathing techniques, grounding exercises, movement, talking to someone real. Gradually introducing tolerance for discomfort through structured exposure. Rewired's approach with this profile is gentle, graduated, and always paired with skills to handle what the phone was covering up.
+Treating the anxiety alongside reducing phone use. Building genuine alternative coping tools: breathing techniques, grounding exercises, movement, talking to someone real. Gradually introducing tolerance for discomfort through structured exposure. LOCK IN's approach with this profile is gentle, graduated, and always paired with skills to handle what the phone was covering up.
 
 ## 3. The Social Validator
 
@@ -560,7 +560,7 @@ What matters is identifying which one is doing the most damage, because that's t
 
 Generic apps give everyone the same solution. A personalized approach starts with knowing who you actually are.
 
-That's the whole premise behind Rewired. The assessment isn't just intake data, it's the difference between a plan that fits and a plan that fails.
+That's the whole premise behind LOCK IN. The assessment isn't just intake data, it's the difference between a plan that fits and a plan that fails.
 
 Which profile is yours?
     `,
@@ -572,7 +572,7 @@ Which profile is yours?
     category: "Science",
     readTime: "5 min read",
     date: "2026-02-13",
-    author: "Rewired Team",
+    author: "LOCK IN Team",
     content: `
 Everyone thinks willpower is a tank that runs dry.
 
@@ -634,7 +634,7 @@ It might be putting your phone in another room when you sit down to work. It mig
 
 The domain matters less than the consistency. Small, regular exposure to voluntary discomfort, the kind where you could easily take the easier option but don't, is what builds the infrastructure.
 
-And here's the thing about Rewired's daily goal structure: it's not just about reducing screen time. Every goal you complete that felt hard to start is aMCC training. Every focus session you honor when your phone was pulling at you. Every day you keep the streak going when breaking it would have been easy.
+And here's the thing about LOCK IN's daily goal structure: it's not just about reducing screen time. Every goal you complete that felt hard to start is aMCC training. Every focus session you honor when your phone was pulling at you. Every day you keep the streak going when breaking it would have been easy.
 
 You're not just managing a habit. You're building the version of yourself for whom managing that habit is natural.
 

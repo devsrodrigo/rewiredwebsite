@@ -23,7 +23,7 @@ const detailedFeatures = [
     icon: Shield,
     title: "Screen Time API Integration",
     description:
-      "Rewired uses Apple's official Screen Time API for real tracking and true blocking that can't be bypassed. Not self-reporting.",
+      "LOCK IN uses Apple's official Screen Time API for real tracking and true blocking that can't be bypassed. Not self-reporting.",
   },
   {
     icon: Brain,
@@ -165,8 +165,8 @@ export default function FeaturesPage() {
       <section className="py-20 md:py-32 bg-background">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            title="How Rewired Compares"
-            subtitle="See why Rewired is more effective than generic screen time apps or relying on willpower alone."
+            title="How LOCK IN Compares"
+            subtitle="See why LOCK IN is more effective than generic screen time apps or relying on willpower alone."
           />
 
           <div className="mt-12 overflow-x-auto">
@@ -177,7 +177,7 @@ export default function FeaturesPage() {
                     Feature
                   </th>
                   <th className="text-center py-4 px-4 text-foreground font-semibold">
-                    Rewired
+                    LOCK IN
                   </th>
                   <th className="text-center py-4 px-4 text-foreground font-semibold">
                     Generic Apps

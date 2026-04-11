@@ -16,8 +16,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rewired - Lock Your Apps. Reset Your Brain.",
-    template: "%s | Rewired",
+    default: "LOCK IN - Stop Social Media",
+    template: "%s | LOCK IN",
   },
   description:
     "14-day social media detox with OS-level app blocking. No bypass, no workarounds. Then controlled daily access on your terms. Built for Gen Z.",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     "mental health",
     "digital wellness",
   ],
-  authors: [{ name: "Rewired" }],
-  creator: "Rewired",
+  authors: [{ name: "LOCK IN" }],
+  creator: "LOCK IN",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://getrewired.org",
-    siteName: "Rewired",
-    title: "Rewired - Lock Your Apps. Reset Your Brain.",
+    siteName: "LOCK IN",
+    title: "LOCK IN - Stop Social Media",
     description:
       "14-day social media detox with OS-level app blocking. No bypass, no workarounds. Then controlled daily access on your terms.",
     images: [
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Rewired - Break Free From Social Media Addiction",
+        alt: "LOCK IN - Stop Social Media",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rewired - Lock Your Apps. Reset Your Brain.",
+    title: "LOCK IN - Stop Social Media",
     description:
       "14-day social media detox with OS-level app blocking. No bypass, no workarounds.",
     images: ["/og-image.png"],
@@ -73,12 +73,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://getrewired.org"),
   icons: {
     icon: [
-      { url: "/favicon.ico?v=3", sizes: "any" },
-      { url: "/favicon.png?v=3", type: "image/png" },
-      { url: "/logo-icon.png?v=3", type: "image/png" },
+      { url: "/favicon.png?v=3", sizes: "any", type: "image/png" },
+      { url: "/logo.png?v=3", type: "image/png" },
     ],
-    apple: "/logo-icon.png?v=3",
-    shortcut: "/favicon.ico?v=3",
+    apple: "/logo.png?v=3",
+    shortcut: "/favicon.png?v=3",
   },
 };
 

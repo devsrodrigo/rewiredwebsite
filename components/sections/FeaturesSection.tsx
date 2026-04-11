@@ -62,7 +62,7 @@ export function FeaturesSection() {
         <SectionHeading
           badge="Features"
           title="Built for When Willpower Fails"
-          subtitle="Willpower runs out. Hardware doesn't. Rewired takes the decision away."
+          subtitle="Willpower runs out. Hardware doesn't. LOCK IN takes the decision away."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Rewired Terms of Service - Rules and guidelines for using our app and services.",
+  description: "LOCK IN Terms of Service - Rules and guidelines for using our app and services.",
 };
 
 export default function TermsPage() {
@@ -17,14 +17,14 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">1. Agreement to Terms</h2>
               <p className="text-foreground-muted leading-relaxed">
-                By accessing or using Rewired (the &quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Service.
+                By accessing or using LOCK IN (the &quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Service.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">2. Eligibility</h2>
               <p className="text-foreground-muted leading-relaxed">
-                You must be at least 13 years old to use Rewired. If you are between 13 and 18 years old, you must have permission from a parent or legal guardian to use the Service.
+                You must be at least 13 years old to use LOCK IN. If you are between 13 and 18 years old, you must have permission from a parent or legal guardian to use the Service.
               </p>
               <p className="text-foreground-muted leading-relaxed">
                 By using the Service, you represent and warrant that you meet these eligibility requirements.
@@ -34,7 +34,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">3. Description of Service</h2>
               <p className="text-foreground-muted leading-relaxed">
-                Rewired is a mobile application designed to help users manage their relationship with social media and digital devices. The Service includes:
+                LOCK IN is a mobile application designed to help users manage their relationship with social media and digital devices. The Service includes:
               </p>
               <ul className="list-disc pl-6 text-foreground-muted space-y-2">
                 <li>Screen Time tracking and management</li>
@@ -50,12 +50,12 @@ export default function TermsPage() {
               
               <h3 className="text-xl font-semibold text-foreground mb-3">4.1 Not Medical Advice</h3>
               <p className="text-foreground-muted leading-relaxed">
-                Rewired is not a medical device and does not provide medical advice, diagnosis, or treatment. The Service is designed as a self-help tool and should not be used as a substitute for professional medical advice, psychological counseling, or treatment.
+                LOCK IN is not a medical device and does not provide medical advice, diagnosis, or treatment. The Service is designed as a self-help tool and should not be used as a substitute for professional medical advice, psychological counseling, or treatment.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">4.2 Not Therapy</h3>
               <p className="text-foreground-muted leading-relaxed">
-                While Rewired incorporates techniques inspired by Cognitive Behavioral Therapy (CBT), using the app does not constitute therapy or establish a therapist-client relationship. If you are experiencing mental health issues, please seek help from a qualified mental health professional.
+                While LOCK IN incorporates techniques inspired by Cognitive Behavioral Therapy (CBT), using the app does not constitute therapy or establish a therapist-client relationship. If you are experiencing mental health issues, please seek help from a qualified mental health professional.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">4.3 When to Seek Professional Help</h3>
@@ -100,7 +100,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">7. Intellectual Property</h2>
               <p className="text-foreground-muted leading-relaxed">
-                The Service and its original content, features, and functionality are owned by Rewired and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
+                The Service and its original content, features, and functionality are owned by LOCK IN and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
               </p>
             </section>
 
@@ -119,7 +119,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">9. Limitation of Liability</h2>
               <p className="text-foreground-muted leading-relaxed">
-                To the maximum extent permitted by law, Rewired shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, arising out of or in connection with the Service.
+                To the maximum extent permitted by law, LOCK IN shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, arising out of or in connection with the Service.
               </p>
               <p className="text-foreground-muted leading-relaxed">
                 Our total liability for any claim arising from the Service shall not exceed the amount you paid to us in the 12 months preceding the claim.

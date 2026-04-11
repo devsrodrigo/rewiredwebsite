@@ -5,7 +5,7 @@ import { MessageCircle, Mail, ChevronDown } from "lucide-react";
 export const metadata: Metadata = {
   title: "Support",
   description:
-    "Get help with Rewired. FAQs, troubleshooting, and contact information for the Rewired support team.",
+    "Get help with LOCK IN. FAQs, troubleshooting, and contact information for the LOCK IN support team.",
 };
 
 const faqCategories = [
@@ -13,34 +13,34 @@ const faqCategories = [
     title: "Getting Started",
     faqs: [
       {
-        question: "When will Rewired be available?",
+        question: "When will LOCK IN be available?",
         answer:
-          "Rewired is launching Spring 2026 on iOS. Join our waitlist to be notified the moment we launch and get early access.",
+          "LOCK IN is launching Spring 2026 on iOS. Join our waitlist to be notified the moment we launch and get early access.",
       },
       {
-        question: "Is Rewired free?",
+        question: "Is LOCK IN free?",
         answer:
-          "Rewired will offer a free tier with core features. Premium features will be available through a subscription. Waitlist members get premium free for 3 months.",
+          "LOCK IN will offer a free tier with core features. Premium features will be available through a subscription. Waitlist members get premium free for 3 months.",
       },
       {
         question: "What iOS version do I need?",
         answer:
-          "Rewired will require iOS 16 or later to access Screen Time API features. We recommend updating to the latest iOS version for the best experience.",
+          "LOCK IN will require iOS 16 or later to access Screen Time API features. We recommend updating to the latest iOS version for the best experience.",
       },
       {
         question: "Do I need Screen Time enabled?",
         answer:
-          "Yes, Rewired integrates with Apple's Screen Time to provide accurate tracking and true app blocking. You'll be guided through setup when you first open the app.",
+          "Yes, LOCK IN integrates with Apple's Screen Time to provide accurate tracking and true app blocking. You'll be guided through setup when you first open the app.",
       },
     ],
   },
   {
-    title: "Using Rewired",
+    title: "Using LOCK IN",
     faqs: [
       {
         question: "How does the blocking work?",
         answer:
-          "Rewired uses Apple's Screen Time API to create genuine app limits. When an app is blocked, you cannot access it. There's no 'one more minute' button to bypass. This is by design.",
+          "LOCK IN uses Apple's Screen Time API to create genuine app limits. When an app is blocked, you cannot access it. There's no 'one more minute' button to bypass. This is by design.",
       },
       {
         question: "Can I override blocks in an emergency?",
@@ -50,7 +50,7 @@ const faqCategories = [
       {
         question: "What are replacement habits?",
         answer:
-          "When you try to open a blocked app, Rewired suggests alternative activities based on your preferences: exercise, reading, journaling, calling a friend, etc. These help you build healthier dopamine sources.",
+          "When you try to open a blocked app, LOCK IN suggests alternative activities based on your preferences: exercise, reading, journaling, calling a friend, etc. These help you build healthier dopamine sources.",
       },
       {
         question: "How do the 14-day programs work?",
@@ -75,12 +75,12 @@ const faqCategories = [
       {
         question: "Can you see what apps I use?",
         answer:
-          "No. Rewired uses Apple's Screen Time API which processes everything on-device. We receive aggregate statistics (like total screen time) but never specific app usage or content.",
+          "No. LOCK IN uses Apple's Screen Time API which processes everything on-device. We receive aggregate statistics (like total screen time) but never specific app usage or content.",
       },
       {
         question: "How do I delete my data?",
         answer:
-          "You can delete all Rewired data from within the app settings. Since data is stored locally, deleting the app also removes all associated data from your device.",
+          "You can delete all LOCK IN data from within the app settings. Since data is stored locally, deleting the app also removes all associated data from your device.",
       },
     ],
   },
@@ -90,17 +90,17 @@ const faqCategories = [
       {
         question: "Screen Time isn't syncing",
         answer:
-          "Make sure Screen Time is enabled in your iPhone Settings. If issues persist, try revoking and re-granting Screen Time access to Rewired in Settings > Privacy > Screen Time.",
+          "Make sure Screen Time is enabled in your iPhone Settings. If issues persist, try revoking and re-granting Screen Time access to LOCK IN in Settings > Privacy > Screen Time.",
       },
       {
         question: "Blocks aren't working",
         answer:
-          "Verify that you've granted all necessary permissions during setup. Check that the apps you want to block are correctly selected in Rewired settings.",
+          "Verify that you've granted all necessary permissions during setup. Check that the apps you want to block are correctly selected in LOCK IN settings.",
       },
       {
         question: "The app is using too much battery",
         answer:
-          "Rewired is optimized to use minimal battery by leveraging Apple's native Screen Time. If you notice high battery usage, try reinstalling the app or contact support.",
+          "LOCK IN is optimized to use minimal battery by leveraging Apple's native Screen Time. If you notice high battery usage, try reinstalling the app or contact support.",
       },
       {
         question: "I forgot my app PIN",

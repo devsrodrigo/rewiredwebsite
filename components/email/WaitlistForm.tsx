@@ -51,7 +51,7 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
         </div>
         <div>
           <p className="font-semibold text-foreground">You&apos;re on the list!</p>
-          <p className="text-sm text-foreground-muted">We&apos;ll notify you when Rewired launches.</p>
+          <p className="text-sm text-foreground-muted">We&apos;ll notify you when LOCK IN launches.</p>
         </div>
       </motion.div>
     );

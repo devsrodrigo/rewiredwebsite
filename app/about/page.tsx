@@ -6,7 +6,7 @@ import { Heart, Target, Users, Shield, Eye, Lightbulb, Zap } from "lucide-react"
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about the story behind Rewired. Built by people who have been through social media addiction themselves. Our mission is to help Gen Z take back control.",
+    "Learn about the story behind LOCK IN. Built by people who have been through social media addiction themselves. Our mission is to help Gen Z take back control.",
 };
 
 const values = [
@@ -59,13 +59,13 @@ const timeline = [
     year: "2025",
     title: "Research & Development",
     description:
-      "Deep dive into neuroscience, CBT techniques, and what actually works for behavioral addiction. Consulted with therapists, psychologists, and former social media employees. Built the foundation of what would become Rewired.",
+      "Deep dive into neuroscience, CBT techniques, and what actually works for behavioral addiction. Consulted with therapists, psychologists, and former social media employees. Built the foundation of what would become LOCK IN.",
   },
   {
     year: "2026",
     title: "Launch",
     description:
-      "Rewired launches to the public. Our goal: help 1 million young people break free from social media addiction by 2027. This is just the beginning.",
+      "LOCK IN launches to the public. Our goal: help 1 million young people break free from social media addiction by 2027. This is just the beginning.",
   },
   {
     year: "Future",
@@ -88,7 +88,7 @@ export default function AboutPage() {
           <SectionHeading
             badge="Our Story"
             title="Built By People Who've Been There"
-            subtitle="Rewired was created by students who struggled with the same addiction you're facing. We built the tool we wished existed."
+            subtitle="LOCK IN was created by students who struggled with the same addiction you're facing. We built the tool we wished existed."
           />
         </div>
       </section>
@@ -99,7 +99,7 @@ export default function AboutPage() {
           <div className="prose prose-lg prose-invert mx-auto">
             <div className="bg-background rounded-2xl border border-border p-8 md:p-12">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Why We Built Rewired
+                Why We Built LOCK IN
               </h2>
               
               <div className="space-y-6 text-foreground-muted">
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 </p>
                 
                 <p className="leading-relaxed">
-                  So we built Rewired. Not another timer app. Not another productivity tool. 
+                  So we built LOCK IN. Not another timer app. Not another productivity tool. 
                   A genuine intervention based on the same CBT techniques that therapists 
                   use for behavioral addictions, combined with Apple&apos;s Screen Time API 
                   for blocking that actually works.

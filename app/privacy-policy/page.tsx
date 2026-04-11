@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Rewired Privacy Policy - How we handle your data and protect your privacy.",
+  description: "LOCK IN Privacy Policy - How we handle your data and protect your privacy.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
               <p className="text-foreground-muted leading-relaxed">
-                Rewired (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the &quot;Service&quot;).
+                LOCK IN (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the &quot;Service&quot;).
               </p>
               <p className="text-foreground-muted leading-relaxed">
                 Please read this Privacy Policy carefully. By using the Service, you agree to the collection and use of information in accordance with this policy.
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
               
               <h3 className="text-xl font-semibold text-foreground mb-3">2.1 Information Stored on Your Device</h3>
               <p className="text-foreground-muted leading-relaxed">
-                The Rewired app processes and stores the following information locally on your device:
+                The LOCK IN app processes and stores the following information locally on your device:
               </p>
               <ul className="list-disc pl-6 text-foreground-muted space-y-2">
                 <li>Screen Time data accessed through Apple&apos;s Screen Time API</li>
@@ -138,7 +138,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">8. Children&apos;s Privacy</h2>
               <p className="text-foreground-muted leading-relaxed">
-                Rewired is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
+                LOCK IN is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
               </p>
             </section>
 

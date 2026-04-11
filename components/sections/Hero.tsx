@@ -49,7 +49,7 @@ export function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1]"
           >
             Lock Your Apps.{" "}
-            <span className="gradient-text">Reset Your Brain.</span>
+            <span className="gradient-text">Earn Your Dopamine.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -59,7 +59,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground-muted mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            Rewired blocks social media at the OS level for 14 days. No workarounds, no bypass, no &ldquo;just five more minutes.&rdquo;{" "}
+            LOCK IN blocks social media at the OS level for 14 days. No workarounds, no bypass, no &ldquo;just five more minutes.&rdquo;{" "}
             <span className="text-foreground font-medium">After the detox, you set a daily time budget.</span>
           </motion.p>
 

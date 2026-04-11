@@ -6,7 +6,7 @@ import { WaitlistForm } from "@/components/email/WaitlistForm";
 export const metadata: Metadata = {
   title: "Join the Waitlist",
   description:
-    "Be the first to break free. Join the Rewired waitlist for early access to the app that helps you overcome social media addiction.",
+    "Be the first to break free. Join the LOCK IN waitlist for early access to the app that helps you overcome social media addiction.",
 };
 
 const benefits = [
@@ -23,7 +23,7 @@ const benefits = [
   {
     icon: Bell,
     title: "Launch Notification",
-    description: "We'll email you the moment Rewired is available",
+    description: "We'll email you the moment LOCK IN is available",
   },
   {
     icon: Users,
@@ -53,7 +53,7 @@ export default function DownloadPage() {
           </h1>
 
           <p className="text-xl text-foreground-muted mb-12 max-w-2xl mx-auto">
-            Join 10,000+ people on the waitlist for Rewired. Get early access, 
+            Join 10,000+ people on the waitlist for LOCK IN. Get early access, 
             premium features free for 3 months, and be part of the first wave.
           </p>
 
@@ -120,7 +120,7 @@ export default function DownloadPage() {
             Know Someone Who Needs This?
           </h2>
           <p className="text-foreground-muted mb-8">
-            Share Rewired with someone who could use a 14-day reset.
+            Share LOCK IN with someone who could use a 14-day reset.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

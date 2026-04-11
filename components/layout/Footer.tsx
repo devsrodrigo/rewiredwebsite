@@ -36,14 +36,14 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 flex items-center justify-center">
                 <Image
-                  src="/logo-icon.png"
-                  alt="Rewired Logo"
+                  src="/logo.png"
+                  alt="LOCK IN Logo"
                   width={40}
                   height={40}
                   className="w-10 h-10"
                 />
               </div>
-              <span className="text-xl font-bold text-foreground">Rewired</span>
+              <span className="text-xl font-bold text-foreground">LOCK IN</span>
             </Link>
             <p className="text-foreground-muted text-sm leading-relaxed mb-6">
               Break free from social media addiction. 14-day detox with real app blocking. Then controlled daily access.
@@ -119,7 +119,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-foreground-muted text-sm">
-            © {new Date().getFullYear()} Rewired. All rights reserved.
+            © {new Date().getFullYear()} LOCK IN. All rights reserved.
           </p>
           <p className="text-foreground-muted text-sm flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-warning fill-warning" /> for Gen Z breaking free

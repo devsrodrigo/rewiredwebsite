@@ -6,7 +6,7 @@ import { Eye, ShieldOff, RefreshCw, CheckCircle, ArrowRight } from "lucide-react
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "Learn how Rewired helps you break social media addiction: 14 days of complete app blocking, then controlled daily access on your terms.",
+    "Learn how LOCK IN helps you break social media addiction: 14 days of complete app blocking, then controlled daily access on your terms.",
 };
 
 const phases = [
@@ -18,7 +18,7 @@ const phases = [
     description: "Connect Screen Time, pick the apps you want blocked, and see your real usage.",
     color: "from-blue-500 to-cyan-500",
     steps: [
-      "Connect your Screen Time to Rewired",
+      "Connect your Screen Time to LOCK IN",
       "See your real usage numbers",
       "Select the apps you want blocked",
       "Set your goals and start the detox",

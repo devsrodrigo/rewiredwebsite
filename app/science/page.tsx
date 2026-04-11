@@ -6,7 +6,7 @@ import { Brain, Zap, RefreshCw, Shield, BookOpen, FlaskConical } from "lucide-re
 export const metadata: Metadata = {
   title: "The Science",
   description:
-    "Understand the neuroscience of digital addiction and how Rewired uses evidence-based CBT techniques to help you break free.",
+    "Understand the neuroscience of digital addiction and how LOCK IN uses evidence-based CBT techniques to help you break free.",
 };
 
 const scienceSections = [
@@ -60,7 +60,7 @@ const scienceSections = [
       },
       {
         subtitle: "The 14-Day Reset",
-        text: "Long-term habit formation takes about 66 days on average, but the first 14 days are where the biggest shift happens. Dopamine receptors start recalibrating within 10 days. Rewired's 14-day detox targets this critical window.",
+        text: "Long-term habit formation takes about 66 days on average, but the first 14 days are where the biggest shift happens. Dopamine receptors start recalibrating within 10 days. LOCK IN's 14-day detox targets this critical window.",
       },
     ],
   },
@@ -74,7 +74,7 @@ const scienceSections = [
       },
       {
         subtitle: "Techniques We Use",
-        text: "Urge surfing (riding out cravings without acting on them), cognitive restructuring (challenging the 'just 5 more minutes' lie), and trigger identification (knowing your weak points) are core CBT techniques built into Rewired.",
+        text: "Urge surfing (riding out cravings without acting on them), cognitive restructuring (challenging the 'just 5 more minutes' lie), and trigger identification (knowing your weak points) are core CBT techniques built into LOCK IN.",
       },
       {
         subtitle: "Evidence-Based Approach",
@@ -115,7 +115,7 @@ export default function SciencePage() {
           <SectionHeading
             badge="The Science"
             title="The Neuroscience of Digital Addiction"
-            subtitle="Understanding why you can't stop scrolling is the first step. Here's what's happening in your brain, and how Rewired fixes it."
+            subtitle="Understanding why you can't stop scrolling is the first step. Here's what's happening in your brain, and how LOCK IN fixes it."
           />
         </div>
       </section>
@@ -197,7 +197,7 @@ export default function SciencePage() {
                   Our Commitment to Science
                 </h3>
                 <p className="text-foreground-muted text-sm leading-relaxed">
-                  Rewired is built on peer-reviewed research and evidence-based practices. 
+                  LOCK IN is built on peer-reviewed research and evidence-based practices. 
                   We continuously update our methods based on the latest findings in 
                   behavioral psychology, neuroscience, and digital wellness research. 
                   This isn&apos;t self-help pseudoscience. It&apos;s real science, applied thoughtfully.

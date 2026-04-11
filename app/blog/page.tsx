@@ -34,7 +34,7 @@ const blogPosts = [
   },
   {
     slug: "screen-time-vs-rewired",
-    title: "Screen Time vs. Rewired: Understanding the Difference",
+    title: "Screen Time vs. LOCK IN: Understanding the Difference",
     excerpt:
       "Apple's built-in Screen Time is a good start, but here's why it's not enough for actual addiction recovery.",
     category: "Product",

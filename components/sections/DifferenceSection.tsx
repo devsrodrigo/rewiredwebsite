@@ -33,9 +33,9 @@ export function DifferenceSection() {
     <section className="py-20 md:py-32 bg-background relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="Why Rewired"
+          badge="Why LOCK IN"
           title="This Isn't a Wellness App"
-          subtitle="No journaling prompts. No mindfulness reminders. No 'be present' notifications. Rewired blocks your apps at the hardware level and lets your brain recover."
+          subtitle="No journaling prompts. No mindfulness reminders. No 'be present' notifications. LOCK IN blocks your apps at the hardware level and lets your brain recover."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">

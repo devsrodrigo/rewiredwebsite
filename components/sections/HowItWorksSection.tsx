@@ -10,7 +10,7 @@ const steps = [
     icon: ShieldOff,
     title: "Choose & Lock",
     description:
-      "Pick the apps you want blocked. Rewired locks them at the OS level through Apple's Screen Time. No workarounds. No exceptions.",
+      "Pick the apps you want blocked. LOCK IN locks them at the OS level through Apple's Screen Time. No workarounds. No exceptions.",
     color: "from-blue-500 to-cyan-500",
   },
   {
