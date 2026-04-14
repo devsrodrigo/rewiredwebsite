@@ -48,8 +48,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1]"
           >
-            Lock Your Apps.{" "}
-            <span className="gradient-text">Earn Your Dopamine.</span>
+            <span className="block">Lock Your Apps.</span>
+            <span className="block gradient-text">Reset Your Dopamine Levels.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -147,8 +147,8 @@ export function Hero() {
                           />
                           <defs>
                             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                              <stop offset="0%" stopColor="#6366F1" />
-                              <stop offset="100%" stopColor="#8B5CF6" />
+                              <stop offset="0%" stopColor="#111111" />
+                              <stop offset="100%" stopColor="#4D4D4D" />
                             </linearGradient>
                           </defs>
                         </svg>
@@ -162,8 +162,8 @@ export function Hero() {
                     <div className="space-y-2 flex-1">
                       <p className="text-xs text-foreground-muted mb-2">Currently Blocked</p>
                       <div className="flex gap-2">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-red-500" />
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600" />
+                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-900 to-slate-700" />
+                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-700 to-slate-500" />
                         <div className="w-10 h-10 rounded-xl bg-black" />
                       </div>
                     </div>

@@ -11,7 +11,7 @@ const steps = [
     title: "Choose & Lock",
     description:
       "Pick the apps you want blocked. LOCK IN locks them at the OS level through Apple's Screen Time. No workarounds. No exceptions.",
-    color: "from-blue-500 to-cyan-500",
+    color: "from-slate-900 to-slate-700",
   },
   {
     number: "02",
@@ -19,7 +19,7 @@ const steps = [
     title: "14-Day Detox",
     description:
       "Complete blocking for 14 days. Your dopamine receptors start resetting within the first week. The urge to check gets weaker every day.",
-    color: "from-purple-500 to-pink-500",
+    color: "from-slate-700 to-slate-500",
   },
   {
     number: "03",
@@ -27,7 +27,7 @@ const steps = [
     title: "Controlled Access",
     description:
       "After detox, you set a daily time budget: 15, 30, or 60 minutes. Distributed across your apps. Controlled use on your terms.",
-    color: "from-orange-500 to-red-500",
+    color: "from-slate-900 to-slate-700",
   },
   {
     number: "04",
@@ -35,7 +35,7 @@ const steps = [
     title: "New Baseline",
     description:
       "By day 30, your phone is a tool again. You use it when you choose to, not because you can't stop.",
-    color: "from-green-500 to-emerald-500",
+    color: "from-slate-900 to-slate-700",
   },
 ];
 

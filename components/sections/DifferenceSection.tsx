@@ -10,21 +10,21 @@ const differences = [
     title: "Hard Lock. No Bypass.",
     description:
       "OS-level blocking through Apple's Screen Time. Not a website filter. Not an honor system. No exception window. No 'just this once.' Your phone says no.",
-    gradient: "from-blue-500 to-blue-600",
+    gradient: "from-slate-900 to-slate-700",
   },
   {
     icon: Brain,
     title: "14-Day Complete Detox",
     description:
       "Your selected apps go dark for 14 days. Your dopamine receptors start resetting within 10 days. By day 14, the constant pull is noticeably weaker.",
-    gradient: "from-purple-500 to-purple-600",
+    gradient: "from-slate-700 to-slate-500",
   },
   {
     icon: Sparkles,
     title: "Echo, Your AI Coach",
     description:
       "Available when cravings hit, including at 11pm when willpower is lowest. Trained to help you through the hardest moments.",
-    gradient: "from-green-500 to-green-600",
+    gradient: "from-slate-900 to-slate-700",
   },
 ];
 

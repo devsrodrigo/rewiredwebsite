@@ -16,7 +16,7 @@ const phases = [
     duration: "Day 1",
     icon: Eye,
     description: "Connect Screen Time, pick the apps you want blocked, and see your real usage.",
-    color: "from-blue-500 to-cyan-500",
+    color: "from-slate-800 to-slate-600",
     steps: [
       "Connect your Screen Time to LOCK IN",
       "See your real usage numbers",
@@ -32,7 +32,7 @@ const phases = [
     duration: "Days 1-14",
     icon: ShieldOff,
     description: "Complete blocking. No access to your selected apps for 14 full days.",
-    color: "from-purple-500 to-pink-500",
+    color: "from-slate-700 to-slate-500",
     steps: [
       "Selected apps are fully blocked at the OS level",
       "AI Coach Echo helps you through cravings",
@@ -48,7 +48,7 @@ const phases = [
     duration: "Day 15+",
     icon: RefreshCw,
     description: "Set a daily time budget and use your apps on your terms.",
-    color: "from-orange-500 to-red-500",
+    color: "from-slate-900 to-slate-700",
     steps: [
       "Choose a daily limit: 15, 30, or 60 minutes",
       "Budget is distributed across your apps",
@@ -64,7 +64,7 @@ const phases = [
     duration: "Day 30+",
     icon: CheckCircle,
     description: "Your phone is a tool again. You pick it up when you choose to, not out of habit.",
-    color: "from-green-500 to-emerald-500",
+    color: "from-slate-900 to-slate-700",
     steps: [
       "New habits are established",
       "Phone use is intentional, not compulsive",
