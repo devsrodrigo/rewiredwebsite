@@ -1,3 +1,5 @@
+"use client";
+
 import { Metadata } from "next";
 import { Apple, Bell, Gift, Users, Sparkles, ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui";
