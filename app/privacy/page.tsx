@@ -51,7 +51,7 @@ const dataDetails = [
   {
     category: "What We May Collect",
     items: [
-      "Email address (if you sign up for waitlist/account)",
+      "Email address (if you sign up for an account or subscribe to updates)",
       "General device info for bug fixes (iOS version, device model)",
       "Crash reports (opt-in only)",
       "Anonymous usage statistics (opt-in only)",

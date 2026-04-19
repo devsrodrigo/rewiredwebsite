@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
                 We may collect information you voluntarily provide:
               </p>
               <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>Email address when joining our waitlist or creating an account</li>
+                <li>Email address when creating an account or subscribing to updates</li>
                 <li>Name (optional)</li>
                 <li>Feedback and support requests</li>
                 <li>Survey responses</li>
@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <ul className="list-disc pl-6 text-foreground-muted space-y-2">
                 <li>Provide and maintain the Service</li>
-                <li>Send you updates about the app launch (waitlist only)</li>
+                <li>Send you product updates and important account information</li>
                 <li>Respond to your support requests</li>
                 <li>Improve the Service based on aggregate, anonymous data</li>
                 <li>Detect and prevent technical issues</li>

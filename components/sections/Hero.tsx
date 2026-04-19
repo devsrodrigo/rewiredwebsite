@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { WaitlistForm } from "@/components/email/WaitlistForm";
+import { APP_STORE_URL } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -37,7 +37,7 @@ export function Hero() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8">
               <Sparkles className="w-4 h-4" />
-              App launching Spring 2026
+              Now available on the App Store
             </span>
           </motion.div>
 
@@ -70,7 +70,14 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
-            <WaitlistForm variant="inline" className="w-full max-w-md" />
+            <Button
+              type="button"
+              variant="primary"
+              className="w-full max-w-md"
+              onClick={() => window.open(APP_STORE_URL, "_blank", "noopener,noreferrer")}
+            >
+              Download Now
+            </Button>
           </motion.div>
 
           {/* Secondary CTA */}

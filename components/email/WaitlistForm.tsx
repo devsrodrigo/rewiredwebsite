@@ -9,12 +9,28 @@ import { Input } from "@/components/ui/Input";
 interface WaitlistFormProps {
   variant?: "default" | "inline" | "large";
   className?: string;
+  submitText?: string;
+  successTitle?: string;
+  successMessage?: string;
+  placeholder?: string;
 }
 
-export function WaitlistForm({ variant = "default", className = "" }: WaitlistFormProps) {
+export function WaitlistForm({
+  variant = "default",
+  className = "",
+  submitText,
+  successTitle,
+  successMessage,
+  placeholder,
+}: WaitlistFormProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const submitLabel = submitText ?? "Submit";
+  const successHeading = successTitle ?? "You're on the list!";
+  const successBody =
+    successMessage ?? "We'll send updates soon.";
+  const placeholderText = placeholder ?? "Enter your email";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -50,8 +66,8 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
           <Check className="w-5 h-5 text-white" />
         </div>
         <div>
-          <p className="font-semibold text-foreground">You&apos;re on the list!</p>
-          <p className="text-sm text-foreground-muted">We&apos;ll notify you when LOCK IN launches.</p>
+          <p className="font-semibold text-foreground">{successHeading}</p>
+          <p className="text-sm text-foreground-muted">{successBody}</p>
         </div>
       </motion.div>
     );
@@ -62,7 +78,7 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
       <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-3 ${className}`}>
         <Input
           type="email"
-          placeholder="Enter your email"
+          placeholder={placeholderText}
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -72,7 +88,7 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
           className="flex-1"
         />
         <Button type="submit" isLoading={status === "loading"} className="sm:w-auto">
-          {status === "loading" ? "Joining..." : "Join Waitlist"}
+          {status === "loading" ? "Submitting..." : submitLabel}
           {status !== "loading" && <ArrowRight className="w-4 h-4" />}
         </Button>
       </form>
@@ -91,7 +107,7 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
         <div className="flex flex-col gap-4">
           <Input
             type="email"
-            placeholder="Enter your email"
+            placeholder={placeholderText}
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
@@ -104,11 +120,11 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
             {status === "loading" ? (
               <>
                 <Loader2 className="w-5 h-5 animate-spin" />
-                Joining...
+                Submitting...
               </>
             ) : (
               <>
-                Join the Waitlist
+                {submitLabel}
                 <ArrowRight className="w-5 h-5" />
               </>
             )}
@@ -125,7 +141,7 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
     <form onSubmit={handleSubmit} className={`flex flex-col gap-3 ${className}`}>
       <Input
         type="email"
-        placeholder="Enter your email"
+        placeholder={placeholderText}
         value={email}
         onChange={(e) => {
           setEmail(e.target.value);
@@ -134,7 +150,7 @@ export function WaitlistForm({ variant = "default", className = "" }: WaitlistFo
         error={status === "error" ? errorMessage : undefined}
       />
       <Button type="submit" isLoading={status === "loading"}>
-        {status === "loading" ? "Joining..." : "Join Waitlist"}
+        {status === "loading" ? "Submitting..." : submitLabel}
         {status !== "loading" && <ArrowRight className="w-4 h-4" />}
       </Button>
       <p className="text-xs text-foreground-muted text-center">

@@ -8,7 +8,7 @@ const trustItems = [
   {
     icon: Users,
     value: "10,000+",
-    label: "on the waitlist",
+    label: "active users",
   },
   {
     icon: ShieldCheck,
@@ -28,8 +28,8 @@ export function SocialProofSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Join Us"
-          title="Join 10,000+ on the Waitlist"
-          subtitle="Real people who got tired of deleting apps and reinstalling them the same night."
+          title="Trusted by 10,000+ people"
+          subtitle="Real people who stopped the cycle of reinstalling apps and finally stayed off social media."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">

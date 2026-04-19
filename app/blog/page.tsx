@@ -248,7 +248,12 @@ export default function BlogPage() {
           <p className="text-foreground-muted mb-8">
             Join our newsletter for weekly tips on breaking free from social media addiction.
           </p>
-          <WaitlistForm variant="large" />
+          <WaitlistForm
+            variant="large"
+            submitText="Subscribe"
+            successTitle="You're subscribed!"
+            successMessage="We’ll send weekly tips and updates about digital wellness."
+          />
         </div>
       </section>
     </div>

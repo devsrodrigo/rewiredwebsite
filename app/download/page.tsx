@@ -1,34 +1,35 @@
 import { Metadata } from "next";
 import { Apple, Bell, Gift, Users, Sparkles, ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui";
-import { WaitlistForm } from "@/components/email/WaitlistForm";
+import { Button } from "@/components/ui/Button";
+import { APP_STORE_URL } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Join the Waitlist",
+  title: "Download LOCK IN",
   description:
-    "Be the first to break free. Join the LOCK IN waitlist for early access to the app that helps you overcome social media addiction.",
+    "Download LOCK IN now on the App Store to stop social media and reset your phone habits.",
 };
 
 const benefits = [
   {
     icon: Gift,
-    title: "Early Access",
-    description: "Be first to download when we launch",
+    title: "Free core access",
+    description: "Use LOCK IN for free with essential app blocking and progress tracking.",
   },
   {
     icon: Sparkles,
-    title: "Free Premium Features",
-    description: "Waitlist members get premium features free for 3 months",
+    title: "Premium tools",
+    description: "Unlock smart routines, deeper insights, and advanced controls with premium.",
   },
   {
     icon: Bell,
-    title: "Launch Notification",
-    description: "We'll email you the moment LOCK IN is available",
+    title: "Launch-ready",
+    description: "LOCK IN is live today on the App Store for immediate download.",
   },
   {
     icon: Users,
-    title: "Shape the Product",
-    description: "Opportunity to join our beta program and give feedback",
+    title: "Trusted by users",
+    description: "Join thousands of people who are reclaiming time and attention.",
   },
 ];
 
@@ -45,29 +46,33 @@ export default function DownloadPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-8">
             <Sparkles className="w-4 h-4" />
-            Launching Spring 2026
+            Available Now
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Be First to <span className="gradient-text">Lock Your Apps</span>
+            Download LOCK IN on the <span className="gradient-text">App Store</span>
           </h1>
 
           <p className="text-xl text-foreground-muted mb-12 max-w-2xl mx-auto">
-            Join 10,000+ people on the waitlist for LOCK IN. Get early access, 
-            premium features free for 3 months, and be part of the first wave.
+            LOCK IN is available now on iOS. Start your 14-day detox, block distraction apps, and reclaim your focus today.
           </p>
 
-          {/* Waitlist Form */}
           <div className="max-w-md mx-auto mb-16">
-            <WaitlistForm variant="large" />
+            <Button
+              type="button"
+              size="lg"
+              className="w-full"
+              onClick={() => window.open(APP_STORE_URL, "_blank", "noopener,noreferrer")}
+            >
+              Download on the App Store
+            </Button>
           </div>
 
-          {/* App Store Placeholder */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <div className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-background-secondary border border-border">
               <Apple className="w-10 h-10 text-foreground" />
               <div className="text-left">
-                <p className="text-xs text-foreground-muted">Coming Soon on</p>
+                <p className="text-xs text-foreground-muted">Available Now on</p>
                 <p className="font-semibold text-foreground text-lg">App Store</p>
               </div>
             </div>
@@ -88,8 +93,8 @@ export default function DownloadPage() {
       <section className="py-20 bg-background-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            title="Why Join the Waitlist?"
-            subtitle="Exclusive benefits for early supporters"
+            title="Why LOCK IN?"
+            subtitle="A smarter way to reset your phone habits."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">

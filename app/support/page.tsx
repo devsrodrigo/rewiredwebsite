@@ -15,12 +15,12 @@ const faqCategories = [
       {
         question: "When will LOCK IN be available?",
         answer:
-          "LOCK IN is launching Spring 2026 on iOS. Join our waitlist to be notified the moment we launch and get early access.",
+          "LOCK IN is available now on the App Store for iOS. Download it today and start your first 14-day detox.",
       },
       {
         question: "Is LOCK IN free?",
         answer:
-          "LOCK IN will offer a free tier with core features. Premium features will be available through a subscription. Waitlist members get premium free for 3 months.",
+          "LOCK IN offers a free tier with core features. Premium features are available through a subscription, and new users can try premium with an introductory offer.",
       },
       {
         question: "What iOS version do I need?",

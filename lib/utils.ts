@@ -13,3 +13,6 @@ export function formatNumber(num: number): string {
   }
   return num.toString();
 }
+
+export const APP_STORE_URL =
+  "https://apps.apple.com/us/app/lock-in-stop-social-media/id6758021299";

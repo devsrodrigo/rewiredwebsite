@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Apple } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { WaitlistForm } from "@/components/email/WaitlistForm";
+import { APP_STORE_URL } from "@/lib/utils";
 
 export function CTASection() {
   return (
@@ -38,7 +38,15 @@ export function CTASection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mb-10"
         >
-          <WaitlistForm variant="large" />
+          <Button
+            type="button"
+            size="lg"
+            variant="primary"
+            className="w-full sm:w-auto"
+            onClick={() => window.open(APP_STORE_URL, "_blank", "noopener,noreferrer")}
+          >
+            Download Now
+          </Button>
         </motion.div>
 
         {/* App Store Badge Placeholder */}
@@ -49,16 +57,14 @@ export function CTASection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <div className="flex items-center gap-3 px-6 py-3 rounded-xl bg-background-secondary border border-border opacity-60">
+          <div className="flex items-center gap-3 px-6 py-3 rounded-xl bg-background-secondary border border-border">
             <Apple className="w-8 h-8" />
             <div className="text-left">
-              <p className="text-xs text-foreground-muted">Coming Soon on</p>
+              <p className="text-xs text-foreground-muted">Available Now on</p>
               <p className="font-semibold text-foreground">App Store</p>
             </div>
           </div>
-          <p className="text-foreground-muted text-sm">
-            Launching Spring 2026
-          </p>
+          <p className="text-foreground-muted text-sm">Download now</p>
         </motion.div>
 
         {/* Secondary Action */}

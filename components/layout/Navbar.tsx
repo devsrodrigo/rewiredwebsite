@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import { APP_STORE_URL } from "@/lib/utils";
 
 const navLinks = [
   { href: "/features", label: "Features" },
@@ -70,9 +71,13 @@ export function Navbar() {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <Link href="/download">
-                <Button size="sm">Join Waitlist</Button>
-              </Link>
+              <Button
+                size="sm"
+                type="button"
+                onClick={() => window.open(APP_STORE_URL, "_blank", "noopener,noreferrer")}
+              >
+                Download Now
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -124,9 +129,16 @@ export function Navbar() {
                 transition={{ delay: navLinks.length * 0.1 }}
                 className="mt-4"
               >
-                <Link href="/download" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button size="lg">Join Waitlist</Button>
-                </Link>
+                <Button
+                  size="lg"
+                  type="button"
+                  onClick={() => {
+                    window.open(APP_STORE_URL, "_blank", "noopener,noreferrer");
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Download Now
+                </Button>
               </motion.div>
             </div>
           </motion.div>
