@@ -60,6 +60,10 @@ export default function PrivacyPolicyPage() {
                 <li>Device information (model, operating system version)</li>
                 <li>Crash reports and error logs</li>
                 <li>Anonymous usage statistics</li>
+                <li>Technical identifiers, such as Vendor ID (IDFV), App User ID, and assigned aliases</li>
+                <li>Device metadata, including operating system version, device model, system language, and timezone</li>
+                <li>App interaction metadata, such as install date, number of paywall views, and subscription status (e.g., Active or Trial)</li>
+                <li>Approximate location derived from IP address, typically limited to city/country level</li>
               </ul>
               <p className="text-foreground-muted leading-relaxed mt-4">
                 All automatic collection is opt-in and can be disabled in app settings.
@@ -109,7 +113,19 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">6. Data Security</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">6. Third-Party Processors</h2>
+              <p className="text-foreground-muted leading-relaxed">
+                We engage third-party providers to support certain aspects of the Service. One such provider is Superwall (Superwall, Inc.), which assists with paywall and subscription management.
+              </p>
+              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
+                <li><strong>Data Collected:</strong> Device information (OS version, model, locale), app usage data (paywall views, conversion events), and internal identifiers (App User ID, Vendor ID).</li>
+                <li><strong>Purpose:</strong> To provide and optimize our subscription services and personalize the user experience.</li>
+                <li><strong>Privacy Safeguards:</strong> Superwall acts as a Data Processor on our behalf. We have a Data Processing Agreement (DPA) in place that restricts their use of your data to only those services necessary to operate the app. They do not sell your personal information to third parties.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mb-4">7. Data Security</h2>
               <p className="text-foreground-muted leading-relaxed">
                 We implement appropriate technical and organizational measures to protect your information:
               </p>
@@ -122,7 +138,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">7. Your Rights</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">8. Your Rights</h2>
               <p className="text-foreground-muted leading-relaxed">
                 You have the right to:
               </p>
@@ -136,28 +152,28 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">8. Children&apos;s Privacy</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">9. Children&apos;s Privacy</h2>
               <p className="text-foreground-muted leading-relaxed">
                 LOCK IN is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">9. International Data Transfers</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">10. International Data Transfers</h2>
               <p className="text-foreground-muted leading-relaxed">
                 Since data is primarily stored on your device, international transfers are minimal. Any cloud services we use comply with applicable data protection regulations including GDPR.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">10. Changes to This Policy</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">11. Changes to This Policy</h2>
               <p className="text-foreground-muted leading-relaxed">
                 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date. Significant changes will be communicated via email or in-app notification.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">11. Contact Us</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">12. Contact Us</h2>
               <p className="text-foreground-muted leading-relaxed">
                 If you have questions about this Privacy Policy, please contact us:
               </p>
