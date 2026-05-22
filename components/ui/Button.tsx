@@ -1,28 +1,23 @@
 "use client";
 
 import { forwardRef, ButtonHTMLAttributes } from "react";
-import { motion, HTMLMotionProps } from "framer-motion";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost" | "outline";
+  variant?: "primary" | "secondary" | "ghost";
   size?: "sm" | "md" | "lg";
   isLoading?: boolean;
 }
 
 const variants = {
-  primary:
-    "gradient-bg text-white hover:opacity-90 shadow-lg hover:shadow-xl",
-  secondary:
-    "bg-background-secondary text-foreground border border-border hover:bg-border/50",
-  ghost: "text-foreground hover:bg-background-secondary",
-  outline:
-    "border-2 border-primary text-primary hover:bg-primary hover:text-white",
+  primary: "btn btn-primary",
+  secondary: "btn btn-secondary",
+  ghost: "btn btn-ghost",
 };
 
 const sizes = {
-  sm: "px-4 py-2 text-sm",
-  md: "px-6 py-3 text-base",
-  lg: "px-8 py-4 text-lg",
+  sm: "btn-sm",
+  md: "",
+  lg: "btn-lg",
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -39,26 +34,18 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     return (
-      <motion.button
+      <button
         ref={ref}
-        whileHover={{ scale: disabled || isLoading ? 1 : 1.02 }}
-        whileTap={{ scale: disabled || isLoading ? 1 : 0.98 }}
-        className={`
-          inline-flex items-center justify-center gap-2 
-          font-semibold rounded-full 
-          transition-all duration-200
-          disabled:opacity-50 disabled:cursor-not-allowed
-          ${variants[variant]}
-          ${sizes[size]}
-          ${className}
-        `}
+        className={`${variants[variant]} ${sizes[size]} ${className} ${
+          disabled || isLoading ? "opacity-60 cursor-not-allowed" : ""
+        }`}
         disabled={disabled || isLoading}
-        {...(props as HTMLMotionProps<"button">)}
+        {...props}
       >
         {isLoading ? (
-          <>
+          <span className="inline-flex items-center gap-2">
             <svg
-              className="animate-spin h-5 w-5"
+              className="animate-spin h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -77,12 +64,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
                 d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
               />
             </svg>
-            Loading...
-          </>
+            Loading
+          </span>
         ) : (
           children
         )}
-      </motion.button>
+      </button>
     );
   }
 );

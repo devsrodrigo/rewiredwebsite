@@ -5,32 +5,32 @@ import { MessageCircle, Mail, ChevronDown } from "lucide-react";
 export const metadata: Metadata = {
   title: "Support",
   description:
-    "Get help with LOCK IN. FAQs, troubleshooting, and contact information for the LOCK IN support team.",
+    "Help with LOCK IN — answers to common questions and how to reach the team.",
 };
 
 const faqCategories = [
   {
-    title: "Getting Started",
+    title: "Getting started",
     faqs: [
       {
-        question: "When will LOCK IN be available?",
+        question: "When is LOCK IN available?",
         answer:
-          "LOCK IN is available now on the App Store for iOS. Download it today and start your first 14-day detox.",
+          "LOCK IN is live now on the App Store for iOS. Download it today and start your first 14-day reset.",
       },
       {
         question: "Is LOCK IN free?",
         answer:
-          "LOCK IN offers a free tier with core features. Premium features are available through a subscription, and new users can try premium with an introductory offer.",
+          "Yes — the core block, the 14-day reset, Echo, and effortful actions are free. Premium unlocks advanced schedules, deeper analytics, and the full reading library.",
       },
       {
         question: "What iOS version do I need?",
         answer:
-          "LOCK IN will require iOS 16 or later to access Screen Time API features. We recommend updating to the latest iOS version for the best experience.",
+          "iOS 16 or later. Newer is better, since Apple keeps improving the Screen Time API.",
       },
       {
         question: "Do I need Screen Time enabled?",
         answer:
-          "Yes, LOCK IN integrates with Apple's Screen Time to provide accurate tracking and true app blocking. You'll be guided through setup when you first open the app.",
+          "Yes. LOCK IN uses Apple Screen Time to enforce blocks. The app walks you through enabling it during onboarding.",
       },
     ],
   },
@@ -38,74 +38,44 @@ const faqCategories = [
     title: "Using LOCK IN",
     faqs: [
       {
-        question: "How does the blocking work?",
+        question: "How does the block work?",
         answer:
-          "LOCK IN uses Apple's Screen Time API to create genuine app limits. When an app is blocked, you cannot access it. There's no 'one more minute' button to bypass. This is by design.",
+          "We use the Screen Time API to refuse to open the app at the OS level. There is no 'one more minute' button. That is the point.",
       },
       {
-        question: "Can I override blocks in an emergency?",
+        question: "Can I override a block in an emergency?",
         answer:
-          "For accountability, blocks cannot be easily overridden. However, you can set up trusted contacts who can unlock apps in genuine emergencies, or use our scheduled unlock feature for planned breaks.",
+          "No mid-detox bypass. You can set trusted contacts for genuine emergencies, or schedule planned unlock windows in advance.",
       },
       {
-        question: "What are replacement habits?",
+        question: "What are effortful actions?",
         answer:
-          "When you try to open a blocked app, LOCK IN suggests alternative activities based on your preferences: exercise, reading, journaling, calling a friend, etc. These help you build healthier dopamine sources.",
+          "Logged real-world wins — workouts, walks, reading, cold showers, real conversations. They rebuild a non-screen reward baseline.",
       },
       {
-        question: "How do the 14-day programs work?",
+        question: "How does the 14-day reset work?",
         answer:
-          "Our 14-day detox completely blocks your selected apps for the full period. After the detox, you transition to controlled daily access with time budgets you set yourself.",
+          "Full block for 14 days. After that, you set a daily time budget for the apps that return.",
       },
     ],
   },
   {
-    title: "Privacy & Security",
+    title: "Privacy",
     faqs: [
       {
         question: "Is my data private?",
         answer:
-          "Yes, absolutely. All your data is processed and stored on your device only. We don't have access to your Screen Time data, browsing history, or usage patterns.",
+          "Yes. Everything is processed on your device. We don't see your usage data.",
       },
       {
         question: "Where is my data stored?",
         answer:
-          "All data stays on your iPhone. We don't have servers storing your personal information. Any optional cloud sync (like backing up settings) is encrypted end-to-end.",
+          "Locally. Optional backups are encrypted. If you delete the app, the data goes with it.",
       },
       {
         question: "Can you see what apps I use?",
         answer:
-          "No. LOCK IN uses Apple's Screen Time API which processes everything on-device. We receive aggregate statistics (like total screen time) but never specific app usage or content.",
-      },
-      {
-        question: "How do I delete my data?",
-        answer:
-          "You can delete all LOCK IN data from within the app settings. Since data is stored locally, deleting the app also removes all associated data from your device.",
-      },
-    ],
-  },
-  {
-    title: "Troubleshooting",
-    faqs: [
-      {
-        question: "Screen Time isn't syncing",
-        answer:
-          "Make sure Screen Time is enabled in your iPhone Settings. If issues persist, try revoking and re-granting Screen Time access to LOCK IN in Settings > Privacy > Screen Time.",
-      },
-      {
-        question: "Blocks aren't working",
-        answer:
-          "Verify that you've granted all necessary permissions during setup. Check that the apps you want to block are correctly selected in LOCK IN settings.",
-      },
-      {
-        question: "The app is using too much battery",
-        answer:
-          "LOCK IN is optimized to use minimal battery by leveraging Apple's native Screen Time. If you notice high battery usage, try reinstalling the app or contact support.",
-      },
-      {
-        question: "I forgot my app PIN",
-        answer:
-          "For security, PIN recovery requires verification. Use the 'Forgot PIN' option in the app and follow the recovery process, which may involve trusted contacts or waiting period.",
+          "No. The Screen Time API gives us aggregate data on-device, not app-specific content.",
       },
     ],
   },
@@ -113,45 +83,40 @@ const faqCategories = [
 
 export default function SupportPage() {
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-end/10 rounded-full blur-3xl" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28">
+      <section className="py-16 md:py-24">
+        <div className="container-app">
           <SectionHeading
-            badge="Support"
-            title="We're Here to Help"
-            subtitle="Find answers to common questions or get in touch with our support team."
+            eyebrow="Support"
+            title="Help, when you need it."
+            subtitle="Common questions first. Direct contact below that."
+            align="left"
           />
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-background-secondary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-12">
-            {faqCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex}>
-                <h2 className="text-2xl font-bold text-foreground mb-6">
+      <section className="border-t border-[color:var(--color-line)] py-20 md:py-28 bg-[color:var(--color-bg-1)]">
+        <div className="container-app max-w-4xl">
+          <div className="space-y-16">
+            {faqCategories.map((category) => (
+              <div key={category.title}>
+                <h2 className="font-display text-[24px] md:text-[32px] font-semibold tracking-[-0.03em] text-white mb-6">
                   {category.title}
                 </h2>
-                <div className="space-y-4">
-                  {category.faqs.map((faq, faqIndex) => (
+                <div className="space-y-3">
+                  {category.faqs.map((faq) => (
                     <details
-                      key={faqIndex}
-                      className="group bg-background rounded-2xl border border-border overflow-hidden"
+                      key={faq.question}
+                      className="group surface overflow-hidden"
                     >
                       <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                        <span className="font-medium text-foreground pr-4">
+                        <span className="text-[16px] font-medium text-white pr-4">
                           {faq.question}
                         </span>
-                        <ChevronDown className="w-5 h-5 text-foreground-muted group-open:rotate-180 transition-transform" />
+                        <ChevronDown className="w-4 h-4 text-[color:var(--color-ink-3)] group-open:rotate-180 transition-transform" />
                       </summary>
                       <div className="px-6 pb-6 pt-0">
-                        <p className="text-foreground-muted leading-relaxed">
+                        <p className="text-[15px] text-[color:var(--color-ink-3)] leading-relaxed">
                           {faq.answer}
                         </p>
                       </div>
@@ -164,58 +129,43 @@ export default function SupportPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-20 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="border-t border-[color:var(--color-line)] py-20 md:py-28">
+        <div className="container-app max-w-4xl">
           <SectionHeading
-            title="Still Need Help?"
-            subtitle="Our support team is here for you"
+            eyebrow="Talk to us"
+            title="Still need a person?"
+            align="left"
           />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">
             <a
               href="mailto:info@getrewired.org"
-              className="p-6 rounded-2xl bg-background-secondary border border-border hover:border-primary/50 transition-all duration-300 group"
+              className="surface p-7 group hover:border-[color:var(--color-line-2)] transition-colors"
             >
-              <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
-                <Mail className="w-7 h-7 text-white" />
+              <div className="w-10 h-10 rounded-xl border border-[color:var(--color-line)] bg-[color:var(--color-bg-3)] flex items-center justify-center mb-5">
+                <Mail className="w-5 h-5 text-white" strokeWidth={1.75} />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">
-                Email Support
-              </h3>
-              <p className="text-foreground-muted mb-4">
-                Send us an email and we&apos;ll respond within 24 hours.
+              <h3 className="text-[18px] font-semibold text-white tracking-tight mb-2">Email</h3>
+              <p className="text-[15px] text-[color:var(--color-ink-3)] mb-3">
+                Within 24 hours on business days.
               </p>
-              <span className="text-primary font-medium">
-                info@getrewired.org
-              </span>
+              <span className="text-[14px] text-white">info@getrewired.org</span>
             </a>
 
             <a
               href="https://instagram.com/getrewiredapp"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-6 rounded-2xl bg-background-secondary border border-border hover:border-primary/50 transition-all duration-300 group"
+              className="surface p-7 group hover:border-[color:var(--color-line-2)] transition-colors"
             >
-              <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
-                <MessageCircle className="w-7 h-7 text-white" />
+              <div className="w-10 h-10 rounded-xl border border-[color:var(--color-line)] bg-[color:var(--color-bg-3)] flex items-center justify-center mb-5">
+                <MessageCircle className="w-5 h-5 text-white" strokeWidth={1.75} />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">
-                Social Media
-              </h3>
-              <p className="text-foreground-muted mb-4">
-                DM us on Instagram for quick questions.
+              <h3 className="text-[18px] font-semibold text-white tracking-tight mb-2">Instagram</h3>
+              <p className="text-[15px] text-[color:var(--color-ink-3)] mb-3">
+                DMs for quick stuff.
               </p>
-              <span className="text-primary font-medium">@getrewiredapp</span>
+              <span className="text-[14px] text-white">@getrewiredapp</span>
             </a>
-          </div>
-
-          <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/20 text-center">
-            <p className="text-foreground-muted">
-              <strong className="text-foreground">Response Times:</strong> We
-              typically respond to emails within 24 hours on business days.
-              Social media DMs may take longer.
-            </p>
           </div>
         </div>
       </section>

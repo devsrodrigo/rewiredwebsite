@@ -7,11 +7,12 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <div className="pt-20">
-      <section className="py-20 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Terms of Service</h1>
-          <p className="text-foreground-muted mb-8">Last updated: February 4, 2026</p>
+    <div className="pt-28">
+      <section className="py-16 md:py-24">
+        <div className="container-app max-w-3xl">
+          <p className="eyebrow mb-4">Legal</p>
+          <h1 className="font-display text-[44px] md:text-[60px] font-semibold tracking-[-0.045em] text-white leading-[1.04]">Terms of service</h1>
+          <p className="text-[14px] text-[color:var(--color-ink-4)] mt-5 mb-12">Last updated: February 4, 2026</p>
 
           <div className="prose prose-lg prose-invert max-w-none space-y-8">
             <section>

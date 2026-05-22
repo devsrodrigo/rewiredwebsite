@@ -1,74 +1,83 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Users, ShieldCheck, HeartHandshake } from "lucide-react";
 
-const trustItems = [
+const quotes = [
   {
-    icon: Users,
-    value: "10,000+",
-    label: "active users",
+    quote:
+      "I deleted TikTok three times. It always came back within a week. LOCK IN was the first thing that actually held.",
+    name: "Maya",
+    detail: "Junior, NYU",
   },
   {
-    icon: ShieldCheck,
-    value: "Privacy-first",
-    label: "no ads, no data selling",
+    quote:
+      "By day 10 I wasn't reaching for my phone in the elevator anymore. I didn't realize I did that.",
+    name: "Marcus",
+    detail: "Software engineer",
   },
   {
-    icon: HeartHandshake,
-    value: "Built by students",
-    label: "who broke free themselves",
+    quote:
+      "The countdown ring is what kept me in. I could see I was halfway through. I wasn't going to lose that.",
+    name: "Sara",
+    detail: "Senior, UT Austin",
   },
+];
+
+const metrics = [
+  { value: "14", label: "Days of full block" },
+  { value: "10k+", label: "Users in the door" },
+  { value: "0", label: "Bypass loopholes" },
+  { value: "100%", label: "On-device & private" },
 ];
 
 export function SocialProofSection() {
   return (
-    <section className="py-20 md:py-32 bg-background-secondary relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge="Join Us"
-          title="Trusted by 10,000+ people"
-          subtitle="Real people who stopped the cycle of reinstalling apps and finally stayed off social media."
-        />
+    <section className="py-24 md:py-32 border-t border-[color:var(--color-line)]">
+      <div className="container-app">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-3xl"
+        >
+          <p className="eyebrow mb-4">Already working</p>
+          <h2 className="font-display text-[40px] md:text-[60px] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
+            People who tried everything else found their way back here.
+          </h2>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          {trustItems.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
+        <div className="mt-16 grid md:grid-cols-3 gap-6">
+          {quotes.map((q, i) => (
+            <motion.figure
+              key={i}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative p-8 rounded-2xl bg-background border border-border text-center group hover:border-primary/50 transition-all duration-300"
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6, delay: i * 0.06, ease: [0.16, 1, 0.3, 1] }}
+              className="surface p-8 flex flex-col gap-6"
             >
-              {/* Glow Effect */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-primary-end/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-              <div className="relative">
-                <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-white" />
-                </div>
-                <div className="text-3xl font-bold text-foreground mb-1">
-                  {item.value}
-                </div>
-                <div className="text-foreground-muted">{item.label}</div>
-              </div>
-            </motion.div>
+              <blockquote className="text-[18px] leading-relaxed text-white">
+                &ldquo;{q.quote}&rdquo;
+              </blockquote>
+              <figcaption className="flex flex-col">
+                <span className="text-[14px] text-white">{q.name}</span>
+                <span className="text-[13px] text-[color:var(--color-ink-4)]">{q.detail}</span>
+              </figcaption>
+            </motion.figure>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16 p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-end/10 border border-primary/20 text-center"
-        >
-          <p className="text-xl text-foreground italic mb-4">
-            &ldquo;I deleted TikTok three times. It came back three times. LOCK IN was the first thing that actually held. I have 2 hours a day back and I don&apos;t know what I was doing before.&rdquo;
-          </p>
-          <p className="text-foreground-muted">Early Beta User</p>
-        </motion.div>
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)] rounded-2xl overflow-hidden">
+          {metrics.map((m) => (
+            <div key={m.label} className="bg-black p-8 text-center">
+              <div className="font-display text-[40px] md:text-[52px] font-semibold tracking-[-0.04em] text-white leading-none">
+                {m.value}
+              </div>
+              <div className="mt-2 text-[13px] text-[color:var(--color-ink-3)]">{m.label}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

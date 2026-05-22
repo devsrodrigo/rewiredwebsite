@@ -1,23 +1,23 @@
 import Link from "next/link";
-import { Instagram, Video, Heart } from "lucide-react";
 import Image from "next/image";
+import { Instagram, Video } from "lucide-react";
 
 const footerLinks = {
   product: [
     { href: "/features", label: "Features" },
-    { href: "/how-it-works", label: "How It Works" },
+    { href: "/how-it-works", label: "How it works" },
     { href: "/download", label: "Download" },
     { href: "/science", label: "Science" },
   ],
   company: [
     { href: "/about", label: "About" },
-    { href: "/blog", label: "Blog" },
+    { href: "/blog", label: "Journal" },
     { href: "/support", label: "Support" },
   ],
   legal: [
+    { href: "/privacy-policy", label: "Privacy policy" },
     { href: "/privacy", label: "Privacy" },
-    { href: "/privacy-policy", label: "Privacy Policy" },
-    { href: "/terms", label: "Terms of Service" },
+    { href: "/terms", label: "Terms" },
   ],
 };
 
@@ -28,87 +28,84 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-background-secondary border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-          {/* Brand Column */}
-          <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 flex items-center justify-center">
-                <Image
-                  src="/logo.png"
-                  alt="LOCK IN Logo"
-                  width={40}
-                  height={40}
-                  className="w-10 h-10"
-                />
-              </div>
-              <span className="text-xl font-bold text-foreground">LOCK IN</span>
+    <footer className="border-t border-[color:var(--color-line)] bg-black">
+      <div className="container-app py-16 md:py-24">
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-10">
+          <div className="col-span-2 md:col-span-5">
+            <Link href="/" className="flex items-center gap-2.5 mb-6">
+              <Image
+                src="/logo.png"
+                alt=""
+                width={28}
+                height={28}
+                className="w-7 h-7 rounded-md"
+              />
+              <span className="text-[15px] font-semibold tracking-tight text-white">
+                LOCK IN
+              </span>
             </Link>
-            <p className="text-foreground-muted text-sm leading-relaxed mb-6">
-              Break free from social media addiction. 14-day detox with real app blocking. Then controlled daily access.
+            <p className="text-[15px] leading-relaxed text-[color:var(--color-ink-3)] max-w-sm">
+              The detox app for people who already tried screen time, deleting apps, and
+              promising themselves &ldquo;just five more minutes.&rdquo;
             </p>
-            <div className="flex gap-4">
-              {socialLinks.map((social) => (
+            <div className="flex gap-2 mt-8">
+              {socialLinks.map((s) => (
                 <a
-                  key={social.label}
-                  href={social.href}
+                  key={s.label}
+                  href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-background flex items-center justify-center text-foreground-muted hover:text-foreground hover:bg-border transition-colors"
-                  aria-label={social.label}
+                  className="w-10 h-10 rounded-full border border-[color:var(--color-line)] text-[color:var(--color-ink-3)] hover:text-white hover:border-[color:var(--color-line-2)] transition-colors flex items-center justify-center"
+                  aria-label={s.label}
                 >
-                  <social.icon className="w-5 h-5" />
+                  <s.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Product Links */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Product</h3>
+          <div className="md:col-span-2">
+            <h3 className="eyebrow mb-5">Product</h3>
             <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.href}>
+              {footerLinks.product.map((l) => (
+                <li key={l.href}>
                   <Link
-                    href={link.href}
-                    className="text-foreground-muted hover:text-foreground transition-colors text-sm"
+                    href={l.href}
+                    className="text-[14px] text-[color:var(--color-ink-2)] hover:text-white transition-colors"
                   >
-                    {link.label}
+                    {l.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Company Links */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Company</h3>
+          <div className="md:col-span-2">
+            <h3 className="eyebrow mb-5">Company</h3>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.href}>
+              {footerLinks.company.map((l) => (
+                <li key={l.href}>
                   <Link
-                    href={link.href}
-                    className="text-foreground-muted hover:text-foreground transition-colors text-sm"
+                    href={l.href}
+                    className="text-[14px] text-[color:var(--color-ink-2)] hover:text-white transition-colors"
                   >
-                    {link.label}
+                    {l.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Legal Links */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Legal</h3>
+          <div className="md:col-span-3">
+            <h3 className="eyebrow mb-5">Legal</h3>
             <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.href}>
+              {footerLinks.legal.map((l) => (
+                <li key={l.href}>
                   <Link
-                    href={link.href}
-                    className="text-foreground-muted hover:text-foreground transition-colors text-sm"
+                    href={l.href}
+                    className="text-[14px] text-[color:var(--color-ink-2)] hover:text-white transition-colors"
                   >
-                    {link.label}
+                    {l.label}
                   </Link>
                 </li>
               ))}
@@ -116,13 +113,12 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-foreground-muted text-sm">
+        <div className="mt-16 pt-8 border-t border-[color:var(--color-line)] flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p className="text-[13px] text-[color:var(--color-ink-4)]">
             © {new Date().getFullYear()} LOCK IN. All rights reserved.
           </p>
-          <p className="text-foreground-muted text-sm flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-warning fill-warning" /> for Gen Z breaking free
+          <p className="text-[13px] text-[color:var(--color-ink-4)]">
+            Designed and built for people who&apos;d rather live their life.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -7,30 +7,31 @@ import { Footer } from "@/components/layout/Footer";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "LOCK IN - Stop Social Media",
-    template: "%s | LOCK IN",
+    default: "LOCK IN — Stop scrolling. Start living.",
+    template: "%s · LOCK IN",
   },
   description:
-    "14-day social media detox with OS-level app blocking. No bypass, no workarounds. Then controlled daily access on your terms. Built for Gen Z.",
+    "A 14-day social media detox enforced at the OS level. No bypass, no workarounds. After the reset, you decide how much time the apps get — not the algorithm.",
   keywords: [
     "social media addiction",
     "digital detox",
     "screen time",
     "dopamine detox",
-    "CBT",
     "phone addiction",
     "Gen Z",
-    "mental health",
     "digital wellness",
+    "focus app",
   ],
   authors: [{ name: "LOCK IN" }],
   creator: "LOCK IN",
@@ -39,23 +40,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://getrewired.org",
     siteName: "LOCK IN",
-    title: "LOCK IN - Stop Social Media",
+    title: "LOCK IN — Stop scrolling. Start living.",
     description:
-      "14-day social media detox with OS-level app blocking. No bypass, no workarounds. Then controlled daily access on your terms.",
+      "A 14-day social media detox enforced at the OS level. After the reset, you set the daily budget.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "LOCK IN - Stop Social Media",
+        alt: "LOCK IN",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LOCK IN - Stop Social Media",
+    title: "LOCK IN — Stop scrolling. Start living.",
     description:
-      "14-day social media detox with OS-level app blocking. No bypass, no workarounds.",
+      "A 14-day social media detox enforced at the OS level. After the reset, you set the daily budget.",
     images: ["/og-image.png"],
     creator: "@getrewired",
   },
@@ -87,9 +88,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} antialiased bg-background text-foreground`}
+        className={`${inter.variable} ${interTight.variable} antialiased`}
       >
         <Navbar />
         <main>{children}</main>

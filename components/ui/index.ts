@@ -5,3 +5,4 @@ export { Badge } from "./Badge";
 export { StatCounter } from "./StatCounter";
 export { FeatureCard } from "./FeatureCard";
 export { SectionHeading } from "./SectionHeading";
+export { Phone, PhoneFloat } from "./Phone";

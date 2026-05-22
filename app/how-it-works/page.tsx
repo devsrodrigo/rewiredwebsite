@@ -1,76 +1,53 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui";
 import { CTASection } from "@/components/sections";
-import { Eye, ShieldOff, RefreshCw, CheckCircle, ArrowRight } from "lucide-react";
+import { screenshots } from "@/lib/assets";
 
 export const metadata: Metadata = {
-  title: "How It Works",
+  title: "How it works",
   description:
-    "Learn how LOCK IN helps you break social media addiction: 14 days of complete app blocking, then controlled daily access on your terms.",
+    "The full LOCK IN protocol: pick your apps, disappear for fourteen days, then return on your terms.",
 };
 
 const phases = [
   {
-    phase: "Phase 1",
-    title: "Setup",
-    duration: "Day 1",
-    icon: Eye,
-    description: "Connect Screen Time, pick the apps you want blocked, and see your real usage.",
-    color: "from-slate-800 to-slate-600",
-    steps: [
-      "Connect your Screen Time to LOCK IN",
-      "See your real usage numbers",
-      "Select the apps you want blocked",
-      "Set your goals and start the detox",
-    ],
+    phase: "Phase 01",
+    duration: "Day 0 — Setup",
+    title: "Choose the apps that own your evenings.",
+    body:
+      "Connect Screen Time. Pick six. LOCK IN binds them at the OS level. There is no toggle to turn this off mid-detox — you knew that going in.",
+    image: screenshots.onboardingShare,
     insight:
       "Most people underestimate their daily screen time by 50%. The real number is usually a wake-up call.",
   },
   {
-    phase: "Phase 2",
-    title: "14-Day Detox",
-    duration: "Days 1-14",
-    icon: ShieldOff,
-    description: "Complete blocking. No access to your selected apps for 14 full days.",
-    color: "from-slate-700 to-slate-500",
-    steps: [
-      "Selected apps are fully blocked at the OS level",
-      "AI Coach Echo helps you through cravings",
-      "Dopamine receptors begin recalibrating",
-      "Urges peak around day 3-5, then get weaker",
-    ],
+    phase: "Phase 02",
+    duration: "Days 1–3 — Acute withdrawal",
+    title: "Your brain notices.",
+    body:
+      "Restlessness, phantom buzzes, the urge to check things that aren't there. This is your dopamine system asking for its old habit. Echo and the I'm Bored menu route you somewhere useful instead.",
+    image: screenshots.countdownAcute,
     insight:
-      "The urge to check your phone peaks at about 10 minutes. If you ride it out, it fades. By day 10, most people notice a real difference.",
+      "The pull peaks around minute ten and fades. By day five most people stop reaching for the phone in elevators.",
   },
   {
-    phase: "Phase 3",
-    title: "Controlled Access",
-    duration: "Day 15+",
-    icon: RefreshCw,
-    description: "Set a daily time budget and use your apps on your terms.",
-    color: "from-slate-900 to-slate-700",
-    steps: [
-      "Choose a daily limit: 15, 30, or 60 minutes",
-      "Budget is distributed across your apps",
-      "Automatic blocking when your time is up",
-      "Track your usage patterns over time",
-    ],
+    phase: "Phase 03",
+    duration: "Days 4–13 — Reset",
+    title: "The world gets quieter.",
+    body:
+      "Time stretches. Boredom comes back, which is a feature, not a bug. You finish a book. You go for a walk without filming it.",
+    image: screenshots.earnedToday,
     insight:
-      "The goal is controlled use, not zero use. You decide how much time to spend and when.",
+      "Earn dopamine the hard way. Logged effortful actions stack up, rebuilding a non-screen reward baseline.",
   },
   {
-    phase: "Phase 4",
-    title: "New Normal",
-    duration: "Day 30+",
-    icon: CheckCircle,
-    description: "Your phone is a tool again. You pick it up when you choose to, not out of habit.",
-    color: "from-slate-900 to-slate-700",
-    steps: [
-      "New habits are established",
-      "Phone use is intentional, not compulsive",
-      "More time for the things that actually matter",
-      "Ongoing tracking to stay on course",
-    ],
+    phase: "Phase 04",
+    duration: "Day 14+ — Re-entry",
+    title: "You set the budget.",
+    body:
+      "Pick a daily ceiling: 15, 30, or 60 minutes. Apps return — but on your schedule, distributed how you want. You stay in control after.",
+    image: screenshots.focusBlocked,
     insight:
       "The goal is not zero phone use. It is intentional use. You are in control.",
   },
@@ -78,124 +55,65 @@ const phases = [
 
 export default function HowItWorksPage() {
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-end/10 rounded-full blur-3xl" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28">
+      <section className="py-16 md:py-24">
+        <div className="container-app">
           <SectionHeading
-            badge="The Process"
-            title="Your 14-Day Detox, Step by Step"
-            subtitle="One setup, 14 days of complete blocking, then controlled access. Based on neuroscience and cognitive behavioral therapy."
+            eyebrow="The protocol"
+            title="A fourteen-day reset, built like a piece of hardware."
+            subtitle="One decision up front, four phases your brain actually goes through, one new baseline at the end."
+            align="left"
           />
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 md:py-32 bg-background-secondary relative">
-        {/* Vertical Line */}
-        <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-border to-transparent hidden lg:block" />
-
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16 lg:space-y-24">
-            {phases.map((phase, index) => (
+      <section className="border-t border-[color:var(--color-line)]">
+        <div className="container-app py-24 md:py-32 space-y-28 md:space-y-40">
+          {phases.map((p, i) => {
+            const reversed = i % 2 === 1;
+            return (
               <div
-                key={index}
-                className={`relative lg:grid lg:grid-cols-2 lg:gap-16 ${
-                  index % 2 === 1 ? "lg:direction-rtl" : ""
-                }`}
+                key={i}
+                className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center"
               >
-                {/* Timeline Dot */}
-                <div className="hidden lg:block absolute left-1/2 top-8 -translate-x-1/2 z-10">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${phase.color} flex items-center justify-center shadow-lg`}>
-                    <phase.icon className="w-8 h-8 text-white" />
-                  </div>
-                </div>
-
-                {/* Content */}
                 <div
-                  className={`${index % 2 === 1 ? "lg:col-start-1 lg:text-right" : "lg:col-start-2"}`}
+                  className={`lg:col-span-5 flex justify-center ${
+                    reversed ? "lg:order-2 lg:justify-end" : "lg:justify-start"
+                  }`}
                 >
-                  <div className="bg-background rounded-2xl border border-border p-8 hover:border-primary/50 transition-all duration-300">
-                    {/* Mobile Icon */}
-                    <div className={`lg:hidden w-14 h-14 rounded-2xl bg-gradient-to-br ${phase.color} flex items-center justify-center mb-6`}>
-                      <phase.icon className="w-7 h-7 text-white" />
-                    </div>
-
-                    {/* Phase Badge */}
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="px-3 py-1 rounded-full gradient-bg text-white text-sm font-medium">
-                        {phase.phase}
-                      </span>
-                      <span className="text-foreground-muted text-sm">
-                        {phase.duration}
-                      </span>
-                    </div>
-
-                    {/* Title & Description */}
-                    <h3 className="text-2xl font-bold text-foreground mb-3">
-                      {phase.title}
-                    </h3>
-                    <p className="text-foreground-muted mb-6">
-                      {phase.description}
-                    </p>
-
-                    {/* Steps */}
-                    <ul className="space-y-3 mb-6">
-                      {phase.steps.map((step, stepIndex) => (
-                        <li
-                          key={stepIndex}
-                          className={`flex items-start gap-3 ${
-                            index % 2 === 1 ? "lg:flex-row-reverse lg:text-right" : ""
-                          }`}
-                        >
-                          <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm flex-shrink-0 mt-0.5">
-                            {stepIndex + 1}
-                          </span>
-                          <span className="text-foreground">{step}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Insight */}
-                    <div className={`p-4 rounded-xl bg-primary/5 border border-primary/20 ${
-                      index % 2 === 1 ? "lg:text-right" : ""
-                    }`}>
-                      <p className="text-sm text-foreground-muted italic">
-                        💡 {phase.insight}
-                      </p>
+                  <div className="iphone-frame" style={{ width: 280 }}>
+                    <div className="iphone-screen">
+                      <div className="iphone-notch" />
+                      <Image
+                        src={p.image}
+                        alt={p.title}
+                        fill
+                        sizes="280px"
+                        className="object-cover"
+                      />
                     </div>
                   </div>
                 </div>
-
-                {/* Empty column for alternating layout */}
-                <div className={`hidden lg:block ${index % 2 === 1 ? "lg:col-start-2" : "lg:col-start-1"}`} />
+                <div className={`lg:col-span-7 ${reversed ? "lg:order-1" : ""}`}>
+                  <div className="text-[12px] tracking-[0.14em] uppercase text-[color:var(--color-ink-4)] mb-3">
+                    {p.phase} · <span className="text-[color:var(--color-ink-3)]">{p.duration}</span>
+                  </div>
+                  <h3 className="font-display text-[36px] md:text-[52px] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
+                    {p.title}
+                  </h3>
+                  <p className="mt-5 text-[17px] md:text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[56ch]">
+                    {p.body}
+                  </p>
+                  <div className="mt-8 surface p-6 max-w-[56ch]">
+                    <p className="text-[14px] text-[color:var(--color-ink-3)] leading-relaxed">
+                      <span className="text-white">Note · </span>
+                      {p.insight}
+                    </p>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
-
-          {/* After 21 Days */}
-          <div className="mt-24 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-6">
-              <CheckCircle className="w-4 h-4" />
-              After 14 Days
-            </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              You&apos;re in Control
-            </h3>
-            <p className="text-foreground-muted max-w-2xl mx-auto mb-8">
-              The compulsive pull is gone. You use your phone when you choose to, 
-              not when the algorithm pulls you in. Set a daily time budget and 
-              keep your usage intentional from here on out.
-            </p>
-            <div className="flex items-center justify-center gap-4 text-foreground-muted">
-              <ArrowRight className="w-5 h-5 text-accent" />
-              <span>Continue with controlled daily access or adjust your limits anytime</span>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
 

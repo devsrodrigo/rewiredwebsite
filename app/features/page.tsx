@@ -1,8 +1,9 @@
 "use client";
 
-import { SectionHeading } from "@/components/ui";
-import { FeatureCard } from "@/components/ui";
+import { SectionHeading, FeatureCard } from "@/components/ui";
 import { CTASection } from "@/components/sections";
+import Image from "next/image";
+import { screenshots } from "@/lib/assets";
 import {
   Shield,
   Brain,
@@ -12,225 +13,187 @@ import {
   Lock,
   Smartphone,
   Target,
-  TrendingUp,
   RefreshCw,
   Bell,
   Calendar,
+  BookOpen,
 } from "lucide-react";
 
 const detailedFeatures = [
   {
     icon: Shield,
-    title: "Screen Time API Integration",
+    title: "OS-level hard block",
     description:
-      "LOCK IN uses Apple's official Screen Time API for real tracking and true blocking that can't be bypassed. Not self-reporting.",
+      "Built on Apple's Screen Time API. The system itself refuses to open the app — not a filter, not an honor system.",
   },
   {
     icon: Brain,
-    title: "CBT-Inspired Interventions",
+    title: "Echo, your coach",
     description:
-      "Evidence-based cognitive behavioral techniques including urge surfing, cognitive restructuring, and trigger identification, built for digital addiction.",
+      "An always-on companion grounded in CBT. Trained to help with cravings, urges, and 11 pm relapse moments.",
   },
   {
     icon: Sparkles,
-    title: "Habit Replacement System",
+    title: "14-day reset",
     description:
-      "Don't just quit. Build something better. A library of alternatives to help you develop healthier habits and dopamine sources.",
+      "A continuous block long enough for dopamine receptors to recalibrate. Phased countdown shows where you are.",
+  },
+  {
+    icon: BookOpen,
+    title: "Built-in reading",
+    description:
+      "Long-form articles and a course like The Monk Mode Protocol — content that doesn't end every nine seconds.",
   },
   {
     icon: Clock,
-    title: "14-Day Complete Detox",
+    title: "Dumb-phone mode",
     description:
-      "Full app blocking for 14 days straight. No access, no exceptions. Your dopamine system starts resetting within the first week.",
+      "Tap 15, 25, 45, or 60 minutes and the device goes quiet. Schedule it daily.",
   },
   {
     icon: BarChart3,
-    title: "Progress Analytics",
+    title: "Brain wiring view",
     description:
-      "See your patterns, celebrate milestones, and understand what triggers your usage. Real data, not guesswork.",
+      "A daily visualization of your reward system. Chaotic on day one, calmer by the end.",
   },
   {
     icon: Lock,
-    title: "Privacy First",
+    title: "Private by default",
     description:
-      "All data stays on your device. No cloud sync, no tracking, no ads. Your data never leaves your phone.",
+      "Everything stays on your device. No cloud sync, no ads, no third-party trackers.",
   },
   {
     icon: Target,
-    title: "Personalized Goals",
+    title: "Effortful actions",
     description:
-      "Set targets based on your actual usage and work toward them at your own pace.",
+      "Walk, workout, journal, cold shower, real conversation. Earn dopamine the hard way.",
   },
   {
     icon: RefreshCw,
-    title: "Post-Detox Time Budgets",
+    title: "Time budgets",
     description:
-      "After your 14-day detox, set daily limits of 15, 30, or 60 minutes. Controlled access that keeps you in charge.",
+      "After detox: 15, 30, or 60 minutes a day. Distributed across the apps you allow.",
   },
   {
     icon: Bell,
-    title: "Smart Notifications",
+    title: "Smart nudges",
     description:
-      "Helpful nudges when you need them, silence when you don't. Notifications that support you, not distract you.",
+      "A handful of notifications that actually help. Silence by default for everything else.",
   },
   {
     icon: Smartphone,
-    title: "App-Specific Controls",
+    title: "Per-app controls",
     description:
-      "Different rules for different apps. Block TikTok completely while allowing limited Instagram for close friends.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Progress Sharing",
-    description:
-      "Optional accountability features to share progress with friends or family, on your terms.",
+      "Block TikTok entirely. Allow 10 minutes of close friends. Different rules per surface.",
   },
   {
     icon: Calendar,
-    title: "Flexible Scheduling",
+    title: "Flexible schedules",
     description:
-      "Different limits for weekdays vs weekends. Adjust as needed without losing your progress.",
+      "Different rules for weekdays and weekends. Tune without losing progress.",
   },
 ];
 
-const comparisonData = [
+const screensTour = [
   {
-    feature: "True app blocking",
-    rewired: true,
-    others: "Easily bypassed",
-    willpower: false,
+    eyebrow: "01 / Detox countdown",
+    title: "A clock you can't argue with.",
+    body:
+      "Every second of the 14-day reset is visible. Phases — Acute Withdrawal, Reset, Re-entry — name what your brain is actually going through.",
+    image: screenshots.countdownAcute,
   },
   {
-    feature: "Screen Time API integration",
-    rewired: true,
-    others: false,
-    willpower: false,
+    eyebrow: "02 / Focus",
+    title: "Block six apps with two taps.",
+    body:
+      "Pick what to lock. Schedule focus blocks. Tap into Dumb Phone Mode when you need a quiet hour.",
+    image: screenshots.focusBlocked,
   },
   {
-    feature: "CBT techniques",
-    rewired: true,
-    others: false,
-    willpower: false,
+    eyebrow: "03 / Echo",
+    title: "Someone to talk to instead.",
+    body:
+      "A coach designed for the late-night moments when the app is closed but the urge isn't. Real CBT, not feel-good fluff.",
+    image: screenshots.echoChat,
   },
   {
-    feature: "Habit replacement",
-    rewired: true,
-    others: "Basic suggestions",
-    willpower: false,
-  },
-  {
-    feature: "Privacy-first approach",
-    rewired: true,
-    others: "Often tracks data",
-    willpower: true,
-  },
-  {
-    feature: "Personalized programs",
-    rewired: true,
-    others: "One-size-fits-all",
-    willpower: false,
+    eyebrow: "04 / Profile",
+    title: "See your brain rewire.",
+    body:
+      "The Brain Wiring view is the receipt. Day one looks like static. Day fourteen looks like signal.",
+    image: screenshots.profileBrain,
   },
 ];
 
 export default function FeaturesPage() {
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-end/10 rounded-full blur-3xl" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28">
+      <section className="py-16 md:py-24">
+        <div className="container-app">
           <SectionHeading
-            badge="Features"
-            title="Everything You Need to Break the Habit"
-            subtitle="OS-level blocking, AI coaching, and post-detox time budgets. Science-backed, privacy-first, and built to actually work."
+            eyebrow="Features"
+            title="Everything you need. Nothing you don't."
+            subtitle="LOCK IN is six well-built features, not a hundred shallow ones. Each one earned its place by being used."
+            align="left"
           />
         </div>
       </section>
 
-      {/* Detailed Features Grid */}
-      <section className="py-20 md:py-32 bg-background-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {detailedFeatures.map((feature, index) => (
-              <FeatureCard key={index} {...feature} index={index} />
+      <section className="border-t border-[color:var(--color-line)]">
+        <div className="container-app py-24 md:py-32 space-y-28 md:space-y-36">
+          {screensTour.map((s, i) => {
+            const reversed = i % 2 === 1;
+            return (
+              <div
+                key={i}
+                className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center"
+              >
+                <div
+                  className={`lg:col-span-5 flex justify-center ${
+                    reversed ? "lg:order-2 lg:justify-end" : "lg:justify-start"
+                  }`}
+                >
+                  <div className="iphone-frame" style={{ width: 280 }}>
+                    <div className="iphone-screen">
+                      <div className="iphone-notch" />
+                      <Image
+                        src={s.image}
+                        alt={s.title}
+                        fill
+                        sizes="280px"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className={`lg:col-span-7 ${reversed ? "lg:order-1" : ""}`}>
+                  <div className="text-[12px] tracking-[0.14em] uppercase text-[color:var(--color-ink-4)] mb-4">
+                    {s.eyebrow}
+                  </div>
+                  <h3 className="font-display text-[36px] md:text-[52px] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
+                    {s.title}
+                  </h3>
+                  <p className="mt-5 text-[17px] md:text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[56ch]">
+                    {s.body}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="border-t border-[color:var(--color-line)] py-24 md:py-32 bg-[color:var(--color-bg-1)]">
+        <div className="container-app">
+          <SectionHeading
+            eyebrow="The full set"
+            title="Every feature, in one view."
+            align="left"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">
+            {detailedFeatures.map((f, i) => (
+              <FeatureCard key={f.title} {...f} index={i} />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Comparison Table */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            title="How LOCK IN Compares"
-            subtitle="See why LOCK IN is more effective than generic screen time apps or relying on willpower alone."
-          />
-
-          <div className="mt-12 overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-border">
-                  <th className="text-left py-4 px-4 text-foreground font-semibold">
-                    Feature
-                  </th>
-                  <th className="text-center py-4 px-4 text-foreground font-semibold">
-                    LOCK IN
-                  </th>
-                  <th className="text-center py-4 px-4 text-foreground font-semibold">
-                    Generic Apps
-                  </th>
-                  <th className="text-center py-4 px-4 text-foreground font-semibold">
-                    Willpower
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {comparisonData.map((row, index) => (
-                  <tr
-                    key={index}
-                    className="border-b border-border hover:bg-background-secondary transition-colors"
-                  >
-                    <td className="py-4 px-4 text-foreground">{row.feature}</td>
-                    <td className="py-4 px-4 text-center">
-                      {row.rewired === true ? (
-                        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-accent text-white text-sm">
-                          ✓
-                        </span>
-                      ) : (
-                        <span className="text-foreground-muted">{row.rewired}</span>
-                      )}
-                    </td>
-                    <td className="py-4 px-4 text-center">
-                      {row.others === true ? (
-                        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-accent text-white text-sm">
-                          ✓
-                        </span>
-                      ) : row.others === false ? (
-                        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-warning/20 text-warning text-sm">
-                          ✗
-                        </span>
-                      ) : (
-                        <span className="text-foreground-muted text-sm">{row.others}</span>
-                      )}
-                    </td>
-                    <td className="py-4 px-4 text-center">
-                      {row.willpower === true ? (
-                        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-accent text-white text-sm">
-                          ✓
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-warning/20 text-warning text-sm">
-                          ✗
-                        </span>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
           </div>
         </div>
       </section>

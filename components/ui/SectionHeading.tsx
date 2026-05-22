@@ -3,36 +3,43 @@
 import { motion } from "framer-motion";
 
 interface SectionHeadingProps {
-  badge?: string;
+  eyebrow?: string;
   title: string;
   subtitle?: string;
+  align?: "center" | "left";
+  className?: string;
+  /** @deprecated keep for back-compat */
+  badge?: string;
+  /** @deprecated keep for back-compat */
   centered?: boolean;
 }
 
 export function SectionHeading({
-  badge,
+  eyebrow,
   title,
   subtitle,
-  centered = true,
+  align = "center",
+  className = "",
+  badge,
+  centered,
 }: SectionHeadingProps) {
+  const finalEyebrow = eyebrow ?? badge;
+  const finalAlign = centered === false ? "left" : align;
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5 }}
-      className={`max-w-3xl ${centered ? "mx-auto text-center" : ""} mb-12`}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      className={`${finalAlign === "center" ? "mx-auto text-center" : ""} max-w-3xl ${className}`}
     >
-      {badge && (
-        <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium gradient-bg text-white rounded-full">
-          {badge}
-        </span>
-      )}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">
+      {finalEyebrow && <p className="eyebrow mb-4">{finalEyebrow}</p>}
+      <h2 className="font-display text-[40px] sm:text-[52px] md:text-[64px] font-semibold text-white">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">
+        <p className="mt-5 text-[17px] md:text-[19px] text-[color:var(--color-ink-3)] leading-relaxed">
           {subtitle}
         </p>
       )}

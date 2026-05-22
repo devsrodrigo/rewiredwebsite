@@ -1,230 +1,119 @@
 import { Metadata } from "next";
 import { SectionHeading } from "@/components/ui";
 import { CTASection } from "@/components/sections";
-import { Heart, Target, Users, Shield, Eye, Lightbulb, Zap } from "lucide-react";
+import { Heart, Target, Users, Shield, Eye, Lightbulb } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about the story behind LOCK IN. Built by people who have been through social media addiction themselves. Our mission is to help Gen Z take back control.",
+    "Built by people who were stuck on their phones and could not stop. LOCK IN is the tool we wished existed.",
 };
 
 const values = [
-  {
-    icon: Shield,
-    title: "Privacy First",
-    description:
-      "Your data stays on your device. No tracking, no selling, no compromise.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Science-Backed",
-    description:
-      "Every feature is grounded in peer-reviewed research and proven techniques.",
-  },
-  {
-    icon: Heart,
-    title: "No Judgment",
-    description:
-      "Addiction isn't a moral failure. We meet you where you are with compassion.",
-  },
-  {
-    icon: Target,
-    title: "Sustainable Change",
-    description:
-      "Quick fixes don't work. We focus on lasting transformation, not temporary hacks.",
-  },
-  {
-    icon: Eye,
-    title: "Transparency",
-    description:
-      "We're honest about what works, what doesn't, and how we make money.",
-  },
-  {
-    icon: Users,
-    title: "Community",
-    description:
-      "Breaking addiction is easier together. We're building a movement, not just an app.",
-  },
+  { icon: Shield, title: "Private by default", body: "On-device. No selling, no third parties." },
+  { icon: Lightbulb, title: "Evidence first", body: "Every feature ties back to research we can cite." },
+  { icon: Heart, title: "No moralizing", body: "Addiction is not a character flaw. We won't treat it like one." },
+  { icon: Target, title: "Sustainable change", body: "Hard locks short-term so that ordinary life works long-term." },
+  { icon: Eye, title: "Transparent", body: "We explain what works, what doesn't, and how we make money." },
+  { icon: Users, title: "Built with users", body: "Every screen has been used by someone who actually needed it." },
 ];
 
 const timeline = [
   {
     year: "2024",
-    title: "The Breaking Point",
-    description:
-      "After years of struggling with social media addiction themselves, our founders decided enough was enough. Existing solutions felt like band-aids: timer apps that were easy to bypass, motivational apps that didn't understand the psychology.",
+    title: "The breaking point",
+    body:
+      "We tried Screen Time, grayscale, deleting apps. Nothing held. We were not the problem — the tools were.",
   },
   {
     year: "2025",
-    title: "Research & Development",
-    description:
-      "Deep dive into neuroscience, CBT techniques, and what actually works for behavioral addiction. Consulted with therapists, psychologists, and former social media employees. Built the foundation of what would become LOCK IN.",
+    title: "Research and development",
+    body:
+      "Read the literature. Talked to clinicians. Built the protocol around what the science already knew.",
   },
   {
     year: "2026",
-    title: "Launch",
-    description:
-      "LOCK IN launches to the public. Our goal: help 1 million young people break free from social media addiction by 2027. This is just the beginning.",
-  },
-  {
-    year: "Future",
-    title: "What's Next",
-    description:
-      "Android support, family plans, school partnerships, and deeper integration with mental health resources. We're building the future of digital wellness.",
+    title: "Public launch",
+    body:
+      "LOCK IN on the App Store. Goal: help a million people get the next two weeks of their life back.",
   },
 ];
 
 export default function AboutPage() {
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-end/10 rounded-full blur-3xl" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28">
+      <section className="py-16 md:py-24">
+        <div className="container-app">
           <SectionHeading
-            badge="Our Story"
-            title="Built By People Who've Been There"
-            subtitle="LOCK IN was created by students who struggled with the same addiction you're facing. We built the tool we wished existed."
+            eyebrow="Our story"
+            title="We built it because we needed it."
+            subtitle="A small team of people who spent five hours a day in feeds they could not put down."
+            align="left"
           />
         </div>
       </section>
 
-      {/* The Story */}
-      <section className="py-20 md:py-32 bg-background-secondary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg prose-invert mx-auto">
-            <div className="bg-background rounded-2xl border border-border p-8 md:p-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Why We Built LOCK IN
-              </h2>
-              
-              <div className="space-y-6 text-foreground-muted">
-                <p className="text-lg leading-relaxed">
-                  It started with a simple realization: <span className="text-foreground font-medium">we were spending 6+ hours a day on social media, and we hated it.</span>
-                </p>
-                
-                <p className="leading-relaxed">
-                  We tried everything. Screen time limits that we immediately bypassed. 
-                  Grayscale mode that lasted a day. Deleting apps only to reinstall them 
-                  hours later. We read books about digital minimalism and felt inspired, until 
-                  we picked up our phones again.
-                </p>
-                
-                <p className="leading-relaxed">
-                  The problem wasn&apos;t willpower. The problem was that we were fighting 
-                  billion-dollar algorithms with nothing but good intentions. These apps 
-                  were literally engineered by the smartest minds in tech to be as addictive 
-                  as possible. We needed better tools.
-                </p>
-                
-                <p className="leading-relaxed">
-                  So we built LOCK IN. Not another timer app. Not another productivity tool. 
-                  A genuine intervention based on the same CBT techniques that therapists 
-                  use for behavioral addictions, combined with Apple&apos;s Screen Time API 
-                  for blocking that actually works.
-                </p>
-                
-                <p className="text-lg leading-relaxed text-foreground">
-                  Today, we&apos;re a small team with a big mission: help our generation 
-                  break free from social media addiction and reclaim their time, attention, 
-                  and mental health.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mx-auto mb-6">
-              <Zap className="w-8 h-8 text-white" />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Mission
-            </h2>
-            <p className="text-xl text-foreground-muted">
-              Help Gen Z take back control of their digital lives. Build technology 
-              that respects users instead of exploiting them. Prove that dopamine 
-              can be rewired. Make digital wellness accessible to everyone.
+      <section className="border-t border-[color:var(--color-line)] py-24 md:py-32 bg-[color:var(--color-bg-1)]">
+        <div className="container-app max-w-3xl">
+          <div className="surface p-8 md:p-12 space-y-6 text-[17px] leading-relaxed text-[color:var(--color-ink-3)]">
+            <p>
+              It started with a number: <span className="text-white">six hours a day.</span> That was
+              the average screen time across the small group that became this team. We hated it. We
+              also could not stop.
+            </p>
+            <p>
+              We tried the usual things. Timer apps that we bypassed in twenty seconds. Grayscale
+              that lasted a day. Deleting Instagram and reinstalling it before dinner. None of it
+              survived a Friday night.
+            </p>
+            <p>
+              The problem was not motivation. The problem was that we were fighting billion-dollar
+              algorithms with notes-app affirmations. So we built a different kind of tool: one that
+              moves the decision out of the moment, locks the apps at the OS level, and treats the
+              fourteen days afterwards as the actual product.
+            </p>
+            <p>
+              LOCK IN is what we wished existed. We hope it works for you the way it has for us.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20 md:py-32 bg-background-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            title="Our Values"
-            subtitle="These principles guide everything we build."
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center mb-4">
-                  <value.icon className="w-6 h-6 text-white" />
+      <section className="border-t border-[color:var(--color-line)] py-24 md:py-32">
+        <div className="container-app">
+          <SectionHeading eyebrow="Principles" title="What we won't compromise on." align="left" />
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {values.map((v) => (
+              <div key={v.title} className="surface p-7">
+                <div className="w-10 h-10 rounded-xl border border-[color:var(--color-line)] bg-[color:var(--color-bg-3)] flex items-center justify-center mb-5">
+                  <v.icon className="w-5 h-5 text-white" strokeWidth={1.75} />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-foreground-muted">{value.description}</p>
+                <h3 className="text-[18px] font-semibold text-white tracking-tight mb-2">{v.title}</h3>
+                <p className="text-[15px] text-[color:var(--color-ink-3)] leading-relaxed">{v.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            title="Our Journey"
-            subtitle="From frustration to solution."
-          />
-
-          <div className="mt-12 relative">
-            {/* Vertical line */}
-            <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
-
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <div
-                  key={index}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
-                >
-                  {/* Year Badge */}
-                  <div className="absolute left-0 md:left-1/2 -translate-x-1/2 w-16 h-8 rounded-full gradient-bg flex items-center justify-center text-white text-sm font-bold z-10">
-                    {item.year}
-                  </div>
-
-                  {/* Content */}
-                  <div className={`md:w-1/2 pl-12 md:pl-0 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"}`}>
-                    <div className="bg-background-secondary rounded-2xl border border-border p-6">
-                      <h3 className="text-xl font-semibold text-foreground mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-foreground-muted">{item.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Empty space for alternating layout */}
-                  <div className="hidden md:block md:w-1/2" />
+      <section className="border-t border-[color:var(--color-line)] py-24 md:py-32 bg-[color:var(--color-bg-1)]">
+        <div className="container-app max-w-4xl">
+          <SectionHeading eyebrow="Timeline" title="From frustration to product." align="left" />
+          <div className="mt-16 space-y-6">
+            {timeline.map((t) => (
+              <div
+                key={t.year}
+                className="grid grid-cols-12 gap-6 border-t border-[color:var(--color-line)] pt-8"
+              >
+                <div className="col-span-3 md:col-span-2 font-mono text-[13px] tracking-widest text-[color:var(--color-ink-4)]">
+                  {t.year}
                 </div>
-              ))}
-            </div>
+                <div className="col-span-9 md:col-span-10">
+                  <h3 className="text-[20px] font-semibold text-white mb-2 tracking-tight">{t.title}</h3>
+                  <p className="text-[15px] text-[color:var(--color-ink-3)] leading-relaxed">{t.body}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

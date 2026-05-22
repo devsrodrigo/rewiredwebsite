@@ -1,100 +1,110 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Eye, ShieldOff, RefreshCw, CheckCircle } from "lucide-react";
+import Image from "next/image";
+import { screenshots } from "@/lib/assets";
 
 const steps = [
   {
-    number: "01",
-    icon: ShieldOff,
-    title: "Choose & Lock",
-    description:
-      "Pick the apps you want blocked. LOCK IN locks them at the OS level through Apple's Screen Time. No workarounds. No exceptions.",
-    color: "from-slate-900 to-slate-700",
+    no: "01",
+    title: "Pick what holds you back.",
+    body:
+      "Choose the apps that own your evenings. LOCK IN binds them at the OS level through Apple Screen Time.",
+    image: screenshots.onboardingShare,
+    alt: "Onboarding: declare you're taking 14 days off social media",
   },
   {
-    number: "02",
-    icon: RefreshCw,
-    title: "14-Day Detox",
-    description:
-      "Complete blocking for 14 days. Your dopamine receptors start resetting within the first week. The urge to check gets weaker every day.",
-    color: "from-slate-700 to-slate-500",
+    no: "02",
+    title: "Disappear for 14 days.",
+    body:
+      "Full block, no bypass. A live countdown shows where you are in withdrawal. Echo and the I'm Bored menu carry you through.",
+    image: screenshots.countdownAcute,
+    alt: "Detox countdown — Day 13, Acute Withdrawal",
   },
   {
-    number: "03",
-    icon: Eye,
-    title: "Controlled Access",
-    description:
-      "After detox, you set a daily time budget: 15, 30, or 60 minutes. Distributed across your apps. Controlled use on your terms.",
-    color: "from-slate-900 to-slate-700",
+    no: "03",
+    title: "Earn your way back.",
+    body:
+      "Workouts, walks, reading, real conversations — log effortful actions and rebuild a non-screen reward system.",
+    image: screenshots.earnedToday,
+    alt: "Earned Today panel — effortful actions",
   },
   {
-    number: "04",
-    icon: CheckCircle,
-    title: "New Baseline",
-    description:
-      "By day 30, your phone is a tool again. You use it when you choose to, not because you can't stop.",
-    color: "from-slate-900 to-slate-700",
+    no: "04",
+    title: "You set the budget.",
+    body:
+      "After the detox, 15, 30, or 60 minutes a day. Controlled access — on your terms, not the algorithm's.",
+    image: screenshots.focusBlocked,
+    alt: "Focus tab with blocked apps and Dumb Phone Mode",
   },
 ];
 
 export function HowItWorksSection() {
   return (
-    <section className="py-20 md:py-32 bg-background-secondary relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-50">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-border to-transparent" />
-      </div>
+    <section className="py-24 md:py-32 border-t border-[color:var(--color-line)]">
+      <div className="container-app">
+        <div className="max-w-3xl">
+          <p className="eyebrow mb-4">How it works</p>
+          <h2 className="font-display text-[40px] md:text-[64px] font-semibold tracking-[-0.04em] text-white leading-[1.04]">
+            One setup. Fourteen days. A different person.
+          </h2>
+          <p className="mt-6 text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-2xl">
+            Based on the neuroscience of dopamine recovery and the practical realities of an
+            iPhone you already carry everywhere.
+          </p>
+        </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge="The Process"
-          title="How It Works"
-          subtitle="One setup. 14 days of complete blocking. Then controlled access on your terms."
-        />
-
-        <div className="mt-16 space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8">
-          {steps.map((step, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative"
-            >
-              {/* Connector Line (Desktop) */}
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-12 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px">
-                  <div className="w-full h-full bg-gradient-to-r from-border via-primary/30 to-border" />
-                </div>
-              )}
-
-              {/* Card */}
-              <div className="relative p-6 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-300">
-                {/* Step Number */}
-                <div className="absolute -top-3 -left-3 w-10 h-10 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-sm shadow-lg">
-                  {step.number}
-                </div>
-
-                {/* Icon */}
-                <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center mb-4 mx-auto`}
+        <div className="mt-20 space-y-28 md:space-y-36">
+          {steps.map((step, i) => {
+            const reversed = i % 2 === 1;
+            return (
+              <div
+                key={step.no}
+                className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center"
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 22 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+                  className={`lg:col-span-5 flex ${
+                    reversed ? "lg:order-2 lg:justify-end" : "lg:justify-start"
+                  } justify-center`}
                 >
-                  <step.icon className="w-8 h-8 text-white" />
-                </div>
+                  <div className="iphone-frame" style={{ width: 280 }}>
+                    <div className="iphone-screen">
+                      <div className="iphone-notch" />
+                      <Image
+                        src={step.image}
+                        alt={step.alt}
+                        fill
+                        sizes="280px"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </motion.div>
 
-                {/* Content */}
-                <h3 className="text-xl font-semibold text-foreground text-center mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-foreground-muted text-center leading-relaxed text-sm">
-                  {step.description}
-                </p>
+                <motion.div
+                  initial={{ opacity: 0, y: 18 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  className={`lg:col-span-7 ${reversed ? "lg:order-1" : ""}`}
+                >
+                  <div className="text-[13px] tracking-[0.14em] text-[color:var(--color-ink-4)] mb-4 font-mono">
+                    STEP {step.no}
+                  </div>
+                  <h3 className="font-display text-[34px] md:text-[48px] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
+                    {step.title}
+                  </h3>
+                  <p className="mt-5 text-[17px] md:text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[55ch]">
+                    {step.body}
+                  </p>
+                </motion.div>
               </div>
-            </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

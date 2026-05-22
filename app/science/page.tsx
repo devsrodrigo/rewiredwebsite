@@ -4,81 +4,81 @@ import { CTASection } from "@/components/sections";
 import { Brain, Zap, RefreshCw, Shield, BookOpen, FlaskConical } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "The Science",
+  title: "The science",
   description:
-    "Understand the neuroscience of digital addiction and how LOCK IN uses evidence-based CBT techniques to help you break free.",
+    "The neuroscience of digital addiction and how LOCK IN's 14-day protocol is built around dopamine recovery and CBT.",
 };
 
 const scienceSections = [
   {
     icon: Brain,
-    title: "How Social Media Hijacks Your Brain",
+    title: "How social media hijacks your brain",
     content: [
       {
-        subtitle: "The Dopamine Connection",
-        text: "Every like, comment, and notification triggers a dopamine release in your brain's reward center. This is the same neurotransmitter involved in all addictions, from gambling to substances. Social media has turned your phone into a slot machine in your pocket.",
+        subtitle: "Dopamine is not pleasure.",
+        text: "Dopamine is the signal your brain uses to say 'do that again.' It is released in anticipation of reward, not at the moment of pleasure. Social media has wired itself directly into that loop.",
       },
       {
-        subtitle: "Variable Reward Schedules",
-        text: "Tech companies use 'variable reward schedules,' the same psychological principle that makes slot machines addictive. You never know when the next satisfying notification will come, so you keep checking. This unpredictability makes the behavior extremely hard to stop.",
+        subtitle: "Variable rewards.",
+        text: "Sometimes the feed is great. Sometimes it isn't. That randomness — the same principle behind slot machines — is what makes scrolling so hard to stop.",
       },
       {
-        subtitle: "Infinite Scroll & Auto-Play",
-        text: "Features like infinite scroll and auto-play remove natural stopping points. In the past, you'd finish a TV episode or reach the end of a newspaper. Now, there's always more content, engineered to keep you engaged just a little longer.",
+        subtitle: "No natural stop.",
+        text: "Infinite scroll and autoplay strip out the cues that used to end a session: the bottom of the page, the end of an episode. Without them, attention drifts without a finish line.",
       },
     ],
   },
   {
     icon: Zap,
-    title: "Why Willpower Isn't Enough",
+    title: "Why willpower isn't enough",
     content: [
       {
-        subtitle: "Ego Depletion",
-        text: "Willpower is a finite resource that gets used up throughout the day. By evening, when most social media binging happens, your self-control is at its lowest. Relying on willpower alone is setting yourself up to fail.",
+        subtitle: "Decision fatigue.",
+        text: "Every micro-resistance costs energy. By evening — when most scrolling happens — your reserves are gone. Relying on willpower alone is a plan that fails on schedule.",
       },
       {
-        subtitle: "Decision Fatigue",
-        text: "Every time you resist the urge to check your phone, you're making a decision. After hundreds of these micro-decisions, your brain is exhausted. Eventually, it takes the path of least resistance: scrolling.",
+        subtitle: "External constraints work better.",
+        text: "Research consistently shows environmental constraints outperform internal motivation. Lock the cookie jar; don't promise to be strong around cookies.",
       },
       {
-        subtitle: "The Case for External Systems",
-        text: "Research shows that external constraints (like app blockers) are more effective than internal motivation alone. By removing the decision from the equation, you preserve mental energy for things that matter.",
+        subtitle: "Hardware beats hope.",
+        text: "An app you can override is an app you will override. LOCK IN moves the decision out of the moment and into the past tense.",
       },
     ],
   },
   {
     icon: RefreshCw,
-    title: "The Rewiring Process",
+    title: "The rewiring window",
     content: [
       {
-        subtitle: "Neuroplasticity",
-        text: "Your brain is not fixed. It constantly changes based on your behaviors. The neural pathways you use most become stronger, while unused pathways weaken. This is neuroplasticity, and it's the scientific basis for habit change.",
+        subtitle: "Neuroplasticity is real but slow.",
+        text: "Pathways you use most get stronger. Pathways you stop using weaken. That's the entire mechanism — and it doesn't happen in a weekend.",
       },
       {
-        subtitle: "Breaking the Habit Loop",
-        text: "Every habit has three parts: cue, routine, reward. Social media has hijacked this loop. By identifying your cues and replacing the routine with healthier alternatives, you can redirect the pathway to a better reward.",
+        subtitle: "Why fourteen.",
+        text: "Receptor density begins to recalibrate around day ten. By day fourteen, the cue-response loop is meaningfully weaker. The protocol is sized to that biological reality.",
       },
       {
-        subtitle: "The 14-Day Reset",
-        text: "Long-term habit formation takes about 66 days on average, but the first 14 days are where the biggest shift happens. Dopamine receptors start recalibrating within 10 days. LOCK IN's 14-day detox targets this critical window.",
+        subtitle: "What you replace it with.",
+        text: "Effortful actions — exercise, reading, real conversation — supply dopamine on a slower curve. They rebuild the part of you that finds non-screen things rewarding.",
       },
     ],
   },
   {
     icon: Shield,
-    title: "CBT for Digital Addiction",
+    title: "CBT, adapted for the phone",
     content: [
       {
-        subtitle: "What is CBT?",
-        text: "Cognitive Behavioral Therapy (CBT) is one of the most researched and effective forms of psychological treatment. It focuses on identifying and changing negative thought patterns and behaviors. We've adapted these principles specifically for phone addiction.",
+        subtitle: "Urge surfing.",
+        text: "Cravings are waves: rising, cresting, falling. Riding them out — without acting — is a learnable skill and the single highest-leverage CBT technique here.",
       },
       {
-        subtitle: "Techniques We Use",
-        text: "Urge surfing (riding out cravings without acting on them), cognitive restructuring (challenging the 'just 5 more minutes' lie), and trigger identification (knowing your weak points) are core CBT techniques built into LOCK IN.",
+        subtitle: "Cognitive restructuring.",
+        text: "The 'just five more minutes' thought is a story your brain tells. Naming it shrinks it. Echo is built to surface and challenge it in real time.",
       },
       {
-        subtitle: "Evidence-Based Approach",
-        text: "CBT has been proven effective for treating behavioral addictions including gambling and internet addiction. Studies show significant improvements in self-control and reduced compulsive behaviors after CBT interventions.",
+        subtitle: "Trigger mapping.",
+        text: "Most relapses happen in three or four predictable contexts. Identify them. Plan around them. That is the unglamorous work that actually moves the number.",
       },
     ],
   },
@@ -86,67 +86,59 @@ const scienceSections = [
 
 const research = [
   {
-    quote: "Variable ratio reinforcement schedules produce high, steady rates of responding and are resistant to extinction.",
-    source: "B.F. Skinner's research on operant conditioning",
-    relevance: "This is exactly how social media notifications work",
+    quote:
+      "Variable ratio reinforcement schedules produce high, steady rates of responding and are resistant to extinction.",
+    source: "B. F. Skinner, operant conditioning research",
+    relevance: "Exactly the structure of a social feed",
   },
   {
-    quote: "Smartphone addiction shares neurobiological mechanisms with substance use disorders.",
+    quote:
+      "Smartphone addiction shares neurobiological mechanisms with substance use disorders.",
     source: "Journal of Behavioral Addictions, 2019",
-    relevance: "Digital addiction is real and measurable",
+    relevance: "It is not a metaphor",
   },
   {
-    quote: "Exerting self-control may consume self-control strength, reducing the amount of strength available for subsequent self-control efforts.",
-    source: "Baumeister et al., Ego Depletion Theory",
-    relevance: "Why willpower alone fails",
+    quote:
+      "Exerting self-control may consume self-control strength, reducing the amount of strength available for subsequent self-control efforts.",
+    source: "Baumeister et al., ego depletion",
+    relevance: "Why willpower alone fails by evening",
   },
 ];
 
 export default function SciencePage() {
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-end/10 rounded-full blur-3xl" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28">
+      <section className="py-16 md:py-24">
+        <div className="container-app">
           <SectionHeading
-            badge="The Science"
-            title="The Neuroscience of Digital Addiction"
-            subtitle="Understanding why you can't stop scrolling is the first step. Here's what's happening in your brain, and how LOCK IN fixes it."
+            eyebrow="The science"
+            title="The mechanism, not the moralizing."
+            subtitle="Phone addiction is a real, measurable behavioral pattern. LOCK IN is built around the parts of it that the literature actually agrees on."
+            align="left"
           />
         </div>
       </section>
 
-      {/* Main Content Sections */}
-      <section className="py-20 md:py-32 bg-background-secondary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-20">
-            {scienceSections.map((section, index) => (
-              <div key={index} className="relative">
-                {/* Section Header */}
-                <div className="flex items-start gap-4 mb-8">
-                  <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center flex-shrink-0">
-                    <section.icon className="w-7 h-7 text-white" />
+      <section className="border-t border-[color:var(--color-line)] bg-[color:var(--color-bg-1)] py-24 md:py-32">
+        <div className="container-app">
+          <div className="space-y-24">
+            {scienceSections.map((section, i) => (
+              <div key={i} className="grid lg:grid-cols-12 gap-12 items-start">
+                <div className="lg:col-span-4">
+                  <div className="w-12 h-12 rounded-xl border border-[color:var(--color-line)] bg-[color:var(--color-bg-3)] flex items-center justify-center mb-5">
+                    <section.icon className="w-5 h-5 text-white" strokeWidth={1.75} />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground pt-2">
+                  <h2 className="font-display text-[28px] md:text-[36px] font-semibold tracking-[-0.03em] text-white leading-tight">
                     {section.title}
                   </h2>
                 </div>
-
-                {/* Content Blocks */}
-                <div className="space-y-8 pl-0 md:pl-18">
-                  {section.content.map((block, blockIndex) => (
-                    <div
-                      key={blockIndex}
-                      className="bg-background rounded-2xl border border-border p-6 hover:border-primary/50 transition-all duration-300"
-                    >
-                      <h3 className="text-lg font-semibold text-foreground mb-3">
+                <div className="lg:col-span-8 grid gap-5">
+                  {section.content.map((block, bi) => (
+                    <div key={bi} className="surface p-7">
+                      <h3 className="text-[17px] font-semibold text-white tracking-tight mb-2">
                         {block.subtitle}
                       </h3>
-                      <p className="text-foreground-muted leading-relaxed">
+                      <p className="text-[15px] text-[color:var(--color-ink-3)] leading-relaxed">
                         {block.text}
                       </p>
                     </div>
@@ -158,49 +150,40 @@ export default function SciencePage() {
         </div>
       </section>
 
-      {/* Research Citations */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="border-t border-[color:var(--color-line)] py-24 md:py-32">
+        <div className="container-app max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
-            <BookOpen className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-foreground">
-              Research & Evidence
+            <BookOpen className="w-5 h-5 text-white" />
+            <h2 className="font-display text-[28px] md:text-[34px] font-semibold tracking-[-0.03em] text-white">
+              Sources we lean on.
             </h2>
           </div>
-
-          <div className="space-y-6">
-            {research.map((item, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-2xl bg-background-secondary border border-border"
-              >
-                <blockquote className="text-lg text-foreground italic mb-4">
-                  &ldquo;{item.quote}&rdquo;
+          <div className="space-y-4">
+            {research.map((r, i) => (
+              <div key={i} className="surface p-7">
+                <blockquote className="text-[17px] text-white italic leading-relaxed">
+                  &ldquo;{r.quote}&rdquo;
                 </blockquote>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                  <cite className="text-foreground-muted text-sm not-italic">
-                    {item.source}
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                  <cite className="text-[13px] text-[color:var(--color-ink-4)] not-italic">
+                    {r.source}
                   </cite>
-                  <span className="text-primary text-sm font-medium">
-                    {item.relevance}
+                  <span className="text-[13px] text-[color:var(--color-ink-3)]">
+                    {r.relevance}
                   </span>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/20">
+          <div className="mt-10 surface p-8">
             <div className="flex items-start gap-4">
-              <FlaskConical className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+              <FlaskConical className="w-5 h-5 text-white mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">
-                  Our Commitment to Science
-                </h3>
-                <p className="text-foreground-muted text-sm leading-relaxed">
-                  LOCK IN is built on peer-reviewed research and evidence-based practices. 
-                  We continuously update our methods based on the latest findings in 
-                  behavioral psychology, neuroscience, and digital wellness research. 
-                  This isn&apos;t self-help pseudoscience. It&apos;s real science, applied thoughtfully.
+                <h3 className="text-[17px] font-semibold text-white mb-2">Our commitment to the literature</h3>
+                <p className="text-[15px] text-[color:var(--color-ink-3)] leading-relaxed">
+                  LOCK IN's protocol is updated as the evidence changes. We do not market certainty
+                  we don't have. If a technique stops outperforming, we cut it.
                 </p>
               </div>
             </div>

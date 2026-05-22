@@ -672,73 +672,71 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   return (
-    <div className="pt-20">
-      {/* Article Header */}
-      <section className="py-12 md:py-20 bg-background-secondary">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28">
+      <section className="py-12 md:py-20">
+        <div className="container-app max-w-3xl">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-foreground-muted hover:text-foreground transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-[color:var(--color-ink-3)] hover:text-white transition-colors mb-10 text-[14px]"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Blog
+            Back to journal
           </Link>
 
-          <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+          <div className="text-[12px] tracking-[0.14em] uppercase text-[color:var(--color-ink-4)] mb-5">
             {post.category}
-          </span>
+          </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h1 className="font-display text-[40px] md:text-[64px] font-semibold tracking-[-0.045em] text-white leading-[1.04] mb-7">
             {post.title}
           </h1>
 
-          <p className="text-xl text-foreground-muted mb-8">{post.excerpt}</p>
+          <p className="text-[19px] text-[color:var(--color-ink-3)] leading-relaxed mb-8 max-w-2xl">
+            {post.excerpt}
+          </p>
 
-          <div className="flex flex-wrap items-center gap-4 text-sm text-foreground-muted">
+          <div className="flex flex-wrap items-center gap-3 text-[13px] text-[color:var(--color-ink-4)]">
             <span>{post.author}</span>
-            <span>•</span>
-            <span className="flex items-center gap-1">
-              <Calendar className="w-4 h-4" />
+            <span className="w-1 h-1 rounded-full bg-[color:var(--color-ink-5)]" />
+            <span className="flex items-center gap-1.5">
+              <Calendar className="w-3.5 h-3.5" />
               {new Date(post.date).toLocaleDateString("en-US", {
                 month: "long",
                 day: "numeric",
                 year: "numeric",
               })}
             </span>
-            <span>•</span>
-            <span className="flex items-center gap-1">
-              <Clock className="w-4 h-4" />
+            <span className="w-1 h-1 rounded-full bg-[color:var(--color-ink-5)]" />
+            <span className="flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5" />
               {post.readTime}
             </span>
           </div>
         </div>
       </section>
 
-      {/* Article Content */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <article className="prose prose-lg prose-invert max-w-none">
+      <section className="border-t border-[color:var(--color-line)] py-16 md:py-24">
+        <div className="container-app max-w-2xl">
+          <article className="prose-article">
             <div
-              className="text-foreground-muted leading-relaxed space-y-6"
+              className="text-[17px] text-[color:var(--color-ink-2)] leading-[1.75] space-y-5"
               dangerouslySetInnerHTML={{
                 __html: post.content
                   .split("\n")
                   .map((line) => {
                     if (line.startsWith("## ")) {
-                      return `<h2 class="text-2xl font-bold text-foreground mt-12 mb-4">${line.slice(3)}</h2>`;
+                      return `<h2 class="font-display text-[28px] md:text-[36px] font-semibold tracking-[-0.03em] text-white mt-16 mb-5 leading-tight">${line.slice(3)}</h2>`;
                     }
                     if (line.startsWith("### ")) {
-                      return `<h3 class="text-xl font-semibold text-foreground mt-8 mb-3">${line.slice(4)}</h3>`;
+                      return `<h3 class="text-[20px] font-semibold tracking-tight text-white mt-10 mb-3">${line.slice(4)}</h3>`;
                     }
                     if (line.startsWith("- ")) {
-                      return `<li class="ml-4">${line.slice(2)}</li>`;
+                      return `<li class="ml-5 list-disc">${line.slice(2)}</li>`;
                     }
-                    if (line.startsWith("1. ") || line.startsWith("2. ") || line.startsWith("3. ") || line.startsWith("4. ")) {
-                      return `<li class="ml-4">${line.slice(3)}</li>`;
+                    if (/^\d+\.\s/.test(line)) {
+                      return `<li class="ml-5 list-decimal">${line.replace(/^\d+\.\s/, "")}</li>`;
                     }
-                    if (line.trim() === "") {
-                      return "";
-                    }
+                    if (line.trim() === "") return "";
                     return `<p>${line}</p>`;
                   })
                   .join(""),
@@ -746,9 +744,8 @@ export default async function BlogPostPage({ params }: Props) {
             />
           </article>
 
-          {/* Share */}
-          <div className="mt-12 pt-8 border-t border-border flex items-center justify-between">
-            <span className="text-foreground-muted">Share this article</span>
+          <div className="mt-16 pt-8 border-t border-[color:var(--color-line)] flex items-center justify-between">
+            <span className="text-[14px] text-[color:var(--color-ink-3)]">Share this</span>
             <Button variant="secondary" size="sm">
               <Share2 className="w-4 h-4" />
               Share

@@ -2,186 +2,141 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "LOCK IN Privacy Policy - How we handle your data and protect your privacy.",
+  description: "LOCK IN Privacy Policy — how we handle your data.",
 };
+
+const sections = [
+  {
+    h: "1. Introduction",
+    body: [
+      "LOCK IN (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the “Service”).",
+      "By using the Service, you agree to the collection and use of information in accordance with this policy.",
+    ],
+  },
+  {
+    h: "2. Information we collect",
+    body: [
+      "2.1 Information stored on your device. The LOCK IN app processes and stores the following information locally on your device:",
+    ],
+    list: [
+      "Screen Time data accessed through Apple's Screen Time API",
+      "App usage statistics and blocking schedules",
+      "Personal goals and progress data",
+      "App preferences and settings",
+    ],
+    after:
+      "This data is stored exclusively on your device and is not transmitted to our servers unless you explicitly opt into cloud sync features.",
+  },
+  {
+    h: "3. How we use it",
+    list: [
+      "Provide and maintain the Service",
+      "Send product updates and important account information",
+      "Respond to support requests",
+      "Improve the Service based on aggregate, anonymous data",
+      "Detect and prevent technical issues",
+    ],
+  },
+  {
+    h: "4. What we do not collect",
+    list: [
+      "The content of your messages, emails, or communications",
+      "Photos, videos, or files",
+      "Contacts or address book",
+      "Keystrokes or screen recordings",
+      "Precise location data",
+      "Browsing history or search queries",
+      "Specific app usage details from Screen Time",
+    ],
+  },
+  {
+    h: "5. Sharing and disclosure",
+    body: [
+      "We do not sell, trade, or rent your personal information. We may share information only in the following circumstances:",
+    ],
+    list: [
+      "Service providers bound by confidentiality (e.g., email delivery)",
+      "Where required by law or to protect our rights",
+      "In connection with a merger or acquisition, with notice to users",
+    ],
+  },
+  {
+    h: "6. Third-party processors",
+    body: [
+      "We engage third-party providers to support certain aspects of the Service. One such provider is Superwall (Superwall, Inc.), which assists with paywall and subscription management. Superwall acts as a Data Processor on our behalf under a Data Processing Agreement. They do not sell your personal information.",
+    ],
+  },
+  {
+    h: "7. Security",
+    list: [
+      "Local data is encrypted using iOS device encryption",
+      "Any cloud sync uses end-to-end encryption",
+      "HTTPS for all data transmission",
+      "Access to user data is strictly limited",
+    ],
+  },
+  {
+    h: "8. Your rights",
+    list: [
+      "Access information we hold about you",
+      "Export your data in a portable format",
+      "Delete your data on request",
+      "Opt out of optional data collection",
+      "Withdraw previously given consent",
+    ],
+  },
+  {
+    h: "9. Children's privacy",
+    body: [
+      "LOCK IN is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.",
+    ],
+  },
+  {
+    h: "10. Changes",
+    body: [
+      "We may update this Privacy Policy from time to time. Significant changes will be communicated via email or in-app notification.",
+    ],
+  },
+  {
+    h: "11. Contact",
+    body: ["Email: privacy@getrewired.org", "Website: getrewired.org/support"],
+  },
+];
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="pt-20">
-      <section className="py-20 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Privacy Policy</h1>
-          <p className="text-foreground-muted mb-8">Last updated: February 4, 2026</p>
+    <div className="pt-28">
+      <section className="py-16 md:py-24">
+        <div className="container-app max-w-3xl">
+          <p className="eyebrow mb-4">Legal</p>
+          <h1 className="font-display text-[44px] md:text-[60px] font-semibold tracking-[-0.045em] text-white leading-[1.04]">
+            Privacy policy
+          </h1>
+          <p className="mt-5 text-[14px] text-[color:var(--color-ink-4)]">Last updated: February 4, 2026</p>
+        </div>
+      </section>
 
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                LOCK IN (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the &quot;Service&quot;).
-              </p>
-              <p className="text-foreground-muted leading-relaxed">
-                Please read this Privacy Policy carefully. By using the Service, you agree to the collection and use of information in accordance with this policy.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">2. Information We Collect</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">2.1 Information Stored on Your Device</h3>
-              <p className="text-foreground-muted leading-relaxed">
-                The LOCK IN app processes and stores the following information locally on your device:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>Screen Time data accessed through Apple&apos;s Screen Time API</li>
-                <li>App usage statistics and blocking schedules</li>
-                <li>Personal goals and progress data</li>
-                <li>App preferences and settings</li>
-              </ul>
-              <p className="text-foreground-muted leading-relaxed mt-4">
-                This data is stored exclusively on your device and is not transmitted to our servers unless you explicitly opt into cloud sync features.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">2.2 Information You Provide</h3>
-              <p className="text-foreground-muted leading-relaxed">
-                We may collect information you voluntarily provide:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>Email address when creating an account or subscribing to updates</li>
-                <li>Name (optional)</li>
-                <li>Feedback and support requests</li>
-                <li>Survey responses</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">2.3 Automatically Collected Information</h3>
-              <p className="text-foreground-muted leading-relaxed">
-                With your consent, we may collect:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>Device information (model, operating system version)</li>
-                <li>Crash reports and error logs</li>
-                <li>Anonymous usage statistics</li>
-                <li>Technical identifiers, such as Vendor ID (IDFV), App User ID, and assigned aliases</li>
-                <li>Device metadata, including operating system version, device model, system language, and timezone</li>
-                <li>App interaction metadata, such as install date, number of paywall views, and subscription status (e.g., Active or Trial)</li>
-                <li>Approximate location derived from IP address, typically limited to city/country level</li>
-              </ul>
-              <p className="text-foreground-muted leading-relaxed mt-4">
-                All automatic collection is opt-in and can be disabled in app settings.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">3. How We Use Your Information</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                We use collected information to:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>Provide and maintain the Service</li>
-                <li>Send you product updates and important account information</li>
-                <li>Respond to your support requests</li>
-                <li>Improve the Service based on aggregate, anonymous data</li>
-                <li>Detect and prevent technical issues</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Information We Do NOT Collect</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                We do not collect or have access to:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>The content of your messages, emails, or communications</li>
-                <li>Your photos, videos, or files</li>
-                <li>Your contacts or address book</li>
-                <li>Keystroke logging or screen recording</li>
-                <li>Precise location data</li>
-                <li>Browsing history or search queries</li>
-                <li>Specific app usage details from Screen Time</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Data Sharing and Disclosure</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                We do not sell, trade, or rent your personal information. We may share information only in the following circumstances:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li><strong>Service Providers:</strong> With trusted third parties who assist in operating our Service (e.g., email delivery), bound by confidentiality agreements</li>
-                <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
-                <li><strong>Business Transfers:</strong> In connection with a merger or acquisition, with notice to users</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">6. Third-Party Processors</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                We engage third-party providers to support certain aspects of the Service. One such provider is Superwall (Superwall, Inc.), which assists with paywall and subscription management.
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li><strong>Data Collected:</strong> Device information (OS version, model, locale), app usage data (paywall views, conversion events), and internal identifiers (App User ID, Vendor ID).</li>
-                <li><strong>Purpose:</strong> To provide and optimize our subscription services and personalize the user experience.</li>
-                <li><strong>Privacy Safeguards:</strong> Superwall acts as a Data Processor on our behalf. We have a Data Processing Agreement (DPA) in place that restricts their use of your data to only those services necessary to operate the app. They do not sell your personal information to third parties.</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">7. Data Security</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                We implement appropriate technical and organizational measures to protect your information:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>Local data is encrypted using iOS device encryption</li>
-                <li>Any cloud sync uses end-to-end encryption</li>
-                <li>We use HTTPS for all data transmission</li>
-                <li>Access to user data is strictly limited</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">8. Your Rights</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                You have the right to:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li><strong>Access:</strong> Request information about data we hold about you</li>
-                <li><strong>Export:</strong> Download your data in a portable format</li>
-                <li><strong>Delete:</strong> Request deletion of your data</li>
-                <li><strong>Opt-out:</strong> Disable optional data collection at any time</li>
-                <li><strong>Withdraw Consent:</strong> Revoke previously given consent</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">9. Children&apos;s Privacy</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                LOCK IN is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">10. International Data Transfers</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                Since data is primarily stored on your device, international transfers are minimal. Any cloud services we use comply with applicable data protection regulations including GDPR.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">11. Changes to This Policy</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date. Significant changes will be communicated via email or in-app notification.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">12. Contact Us</h2>
-              <p className="text-foreground-muted leading-relaxed">
-                If you have questions about this Privacy Policy, please contact us:
-              </p>
-              <ul className="list-disc pl-6 text-foreground-muted space-y-2">
-                <li>Email: privacy@getrewired.org</li>
-                <li>Website: getrewired.org/support</li>
-              </ul>
-            </section>
+      <section className="border-t border-[color:var(--color-line)] py-16 md:py-20">
+        <div className="container-app max-w-3xl">
+          <div className="space-y-12">
+            {sections.map((s) => (
+              <section key={s.h}>
+                <h2 className="font-display text-[24px] md:text-[28px] font-semibold tracking-tight text-white mb-4">
+                  {s.h}
+                </h2>
+                <div className="space-y-4 text-[16px] text-[color:var(--color-ink-3)] leading-[1.75]">
+                  {s.body?.map((p, i) => <p key={i}>{p}</p>)}
+                  {s.list && (
+                    <ul className="list-disc pl-5 space-y-2">
+                      {s.list.map((it, i) => (
+                        <li key={i}>{it}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {s.after && <p>{s.after}</p>}
+                </div>
+              </section>
+            ))}
           </div>
         </div>
       </section>

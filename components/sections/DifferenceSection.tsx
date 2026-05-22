@@ -1,76 +1,72 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Shield, Brain, Sparkles } from "lucide-react";
-
-const differences = [
-  {
-    icon: Shield,
-    title: "Hard Lock. No Bypass.",
-    description:
-      "OS-level blocking through Apple's Screen Time. Not a website filter. Not an honor system. No exception window. No 'just this once.' Your phone says no.",
-    gradient: "from-slate-900 to-slate-700",
-  },
-  {
-    icon: Brain,
-    title: "14-Day Complete Detox",
-    description:
-      "Your selected apps go dark for 14 days. Your dopamine receptors start resetting within 10 days. By day 14, the constant pull is noticeably weaker.",
-    gradient: "from-slate-700 to-slate-500",
-  },
-  {
-    icon: Sparkles,
-    title: "Echo, Your AI Coach",
-    description:
-      "Available when cravings hit, including at 11pm when willpower is lowest. Trained to help you through the hardest moments.",
-    gradient: "from-slate-900 to-slate-700",
-  },
-];
+import Image from "next/image";
+import { screenshots } from "@/lib/assets";
 
 export function DifferenceSection() {
   return (
-    <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge="Why LOCK IN"
-          title="This Isn't a Wellness App"
-          subtitle="No journaling prompts. No mindfulness reminders. No 'be present' notifications. LOCK IN blocks your apps at the hardware level and lets your brain recover."
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          {differences.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -8 }}
-              className="group relative"
-            >
-              {/* Card */}
-              <div className="relative h-full p-8 rounded-2xl bg-background-secondary border border-border group-hover:border-primary/50 transition-all duration-300">
-                {/* Glow Effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-primary-end/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
-                <div className="relative">
-                  {/* Icon */}
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <item.icon className="w-7 h-7 text-white" />
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-foreground-muted leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
+    <section className="py-24 md:py-32 border-t border-[color:var(--color-line)] bg-[color:var(--color-bg-1)]">
+      <div className="container-app">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          {/* Phone showing the lockout overlay */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 flex justify-center lg:justify-start"
+          >
+            <div className="iphone-frame" style={{ width: 300 }}>
+              <div className="iphone-screen">
+                <div className="iphone-notch" />
+                <Image
+                  src={screenshots.lockoutFull}
+                  alt="LOCK IN lockout: You already decided this matters"
+                  fill
+                  sizes="320px"
+                  className="object-cover"
+                />
               </div>
-            </motion.div>
-          ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-7"
+          >
+            <p className="eyebrow mb-4">Why LOCK IN works</p>
+            <h2 className="font-display text-[40px] md:text-[60px] font-semibold tracking-[-0.04em] text-white leading-[1.04]">
+              It doesn&apos;t ask. It refuses.
+            </h2>
+            <p className="mt-6 text-[18px] md:text-[19px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[58ch]">
+              Other apps nudge, remind, or politely ask. LOCK IN closes the door at the operating system.
+              When you reach for the app, the system says no — and gives you back the decision you
+              already made.
+            </p>
+
+            <div className="mt-10 grid sm:grid-cols-2 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)] rounded-2xl overflow-hidden">
+              <div className="bg-black p-7">
+                <p className="text-[13px] text-[color:var(--color-ink-4)] mb-2 tracking-tight">Other apps</p>
+                <ul className="space-y-2 text-[15px] text-[color:var(--color-ink-3)]">
+                  <li>Easily bypassed timers</li>
+                  <li>Honor-system reminders</li>
+                  <li>&ldquo;Just this once&rdquo; loopholes</li>
+                </ul>
+              </div>
+              <div className="bg-black p-7">
+                <p className="text-[13px] text-[color:var(--color-signal)] mb-2 tracking-tight">LOCK IN</p>
+                <ul className="space-y-2 text-[15px] text-white">
+                  <li>OS-level Screen Time enforcement</li>
+                  <li>No exception windows</li>
+                  <li>A 14-day reset that actually holds</li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

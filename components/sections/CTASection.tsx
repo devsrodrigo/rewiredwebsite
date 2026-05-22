@@ -1,87 +1,76 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Apple } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 import { APP_STORE_URL } from "@/lib/utils";
+import { screenshots } from "@/lib/assets";
 
 export function CTASection() {
   return (
-    <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-primary/20 to-primary-end/20 rounded-full blur-3xl" />
-      </div>
-
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            One Setup. 14 Days.{" "}
-            <span className="gradient-text">Done.</span>
-          </h2>
-          <p className="text-lg md:text-xl text-foreground-muted mb-10 max-w-2xl mx-auto">
-            Stop thinking about cutting back.{" "}
-            <span className="text-foreground font-medium">Lock the apps, do the detox, and get on with your life.</span>
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="mb-10"
-        >
-          <Button
-            type="button"
-            size="lg"
-            variant="primary"
-            className="w-full sm:w-auto"
-            onClick={() => window.open(APP_STORE_URL, "_blank", "noopener,noreferrer")}
+    <section className="py-24 md:py-32 border-t border-[color:var(--color-line)] bg-black relative overflow-hidden grain">
+      <div
+        aria-hidden
+        className="absolute inset-0 dot-grid opacity-40 pointer-events-none"
+      />
+      <div className="container-app relative">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-7"
           >
-            Download Now
-          </Button>
-        </motion.div>
-
-        {/* App Store Badge Placeholder */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <div className="flex items-center gap-3 px-6 py-3 rounded-xl bg-background-secondary border border-border">
-            <Apple className="w-8 h-8" />
-            <div className="text-left">
-              <p className="text-xs text-foreground-muted">Available Now on</p>
-              <p className="font-semibold text-foreground">App Store</p>
+            <p className="eyebrow mb-4">The decision</p>
+            <h2 className="font-display text-[44px] md:text-[80px] font-semibold tracking-[-0.045em] text-white leading-[1.02]">
+              You already decided this matters.
+            </h2>
+            <p className="mt-6 text-[18px] md:text-[20px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[55ch]">
+              The next two weeks are going to happen either way. Either with the apps, or without
+              them. Pick once.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-3">
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-lg"
+              >
+                Download on the App Store
+              </a>
+              <a
+                href="/how-it-works"
+                className="btn btn-secondary btn-lg"
+              >
+                Read how it works
+              </a>
             </div>
-          </div>
-          <p className="text-foreground-muted text-sm">Download now</p>
-        </motion.div>
+            <p className="mt-6 text-[13px] text-[color:var(--color-ink-4)]">
+              Free to start. iPhone only for now. Google Play later in 2026.
+            </p>
+          </motion.div>
 
-        {/* Secondary Action */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-8"
-        >
-          <Link href="/how-it-works">
-            <Button variant="ghost" className="group">
-              See How It Works
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 flex justify-center lg:justify-end"
+          >
+            <div className="iphone-frame" style={{ width: 280 }}>
+              <div className="iphone-screen">
+                <div className="iphone-notch" />
+                <Image
+                  src={screenshots.lockoutOverlay}
+                  alt="LOCK IN reminder: you already decided this matters"
+                  fill
+                  sizes="280px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
