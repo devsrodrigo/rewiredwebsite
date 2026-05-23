@@ -42,7 +42,7 @@ const blogPosts = [
   {
     slug: "21-habits-to-replace-scrolling",
     title: "Twenty-one habits to replace scrolling.",
-    excerpt: "Practical alternatives for the moment the urge hits — from two-minute fixes to bigger shifts.",
+    excerpt: "Practical alternatives for the moment the urge hits, from two-minute fixes to bigger shifts.",
     category: "Tips",
     readTime: "10 min read",
     date: "2026-01-20",
@@ -78,7 +78,7 @@ const blogPosts = [
   {
     slug: "hard-dopamine-vs-easy-dopamine",
     title: "Hard dopamine vs. easy dopamine.",
-    excerpt: "Why your brain feels dead after a three-hour scroll — and what to do instead.",
+    excerpt: "Why your brain feels dead after a three-hour scroll and what to do instead.",
     category: "Science",
     readTime: "6 min read",
     date: "2026-02-22",
@@ -235,7 +235,7 @@ export default function BlogPage() {
             Get the weekly note.
           </h2>
           <p className="text-[15px] text-[color:var(--color-ink-3)] mb-8">
-            One quiet email a week — long-form essays on attention, dopamine, and the protocol.
+            One quiet email a week: long-form essays on attention, dopamine, and the protocol.
           </p>
           <WaitlistForm
             variant="large"

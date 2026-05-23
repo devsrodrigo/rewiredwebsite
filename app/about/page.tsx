@@ -23,7 +23,7 @@ const timeline = [
     year: "2024",
     title: "The breaking point",
     body:
-      "We tried Screen Time, grayscale, deleting apps. Nothing held. We were not the problem — the tools were.",
+      "We tried Screen Time, grayscale, deleting apps. Nothing held. We were not the problem. The tools were.",
   },
   {
     year: "2025",

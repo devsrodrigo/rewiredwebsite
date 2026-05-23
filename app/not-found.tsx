@@ -14,7 +14,7 @@ export default function NotFound() {
           Page not found.
         </h1>
         <p className="text-[15px] text-[color:var(--color-ink-3)] mb-10 leading-relaxed">
-          You scrolled too far. Don&apos;t worry — happens to all of us.
+          You scrolled too far. Don&apos;t worry. It happens to all of us.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link href="/" className="btn btn-primary">

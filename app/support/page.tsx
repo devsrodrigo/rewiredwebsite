@@ -5,7 +5,7 @@ import { MessageCircle, Mail, ChevronDown } from "lucide-react";
 export const metadata: Metadata = {
   title: "Support",
   description:
-    "Help with LOCK IN — answers to common questions and how to reach the team.",
+    "Help with LOCK IN: answers to common questions and how to reach the team.",
 };
 
 const faqCategories = [
@@ -20,7 +20,7 @@ const faqCategories = [
       {
         question: "Is LOCK IN free?",
         answer:
-          "Yes — the core block, the 14-day reset, Echo, and effortful actions are free. Premium unlocks advanced schedules, deeper analytics, and the full reading library.",
+          "Yes. The core block, the 14-day reset, Echo, and effortful actions are free. Premium unlocks advanced schedules, deeper analytics, and the full reading library.",
       },
       {
         question: "What iOS version do I need?",
@@ -50,12 +50,12 @@ const faqCategories = [
       {
         question: "What are effortful actions?",
         answer:
-          "Logged real-world wins — workouts, walks, reading, cold showers, real conversations. They rebuild a non-screen reward baseline.",
+          "Logged real-world wins: workouts, walks, reading, cold showers, real conversations. They rebuild a non-screen reward baseline.",
       },
       {
         question: "How does the 14-day reset work?",
         answer:
-          "Full block for 14 days. After that, you set a daily time budget for the apps that return.",
+          "Full block for 14 days. After that, you get 10 minutes shared across all blocked apps. Distribute your time however you want.",
       },
     ],
   },

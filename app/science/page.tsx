@@ -20,7 +20,7 @@ const scienceSections = [
       },
       {
         subtitle: "Variable rewards.",
-        text: "Sometimes the feed is great. Sometimes it isn't. That randomness — the same principle behind slot machines — is what makes scrolling so hard to stop.",
+        text: "Sometimes the feed is great. Sometimes it isn't. That randomness, the same principle behind slot machines, is what makes scrolling so hard to stop.",
       },
       {
         subtitle: "No natural stop.",
@@ -34,7 +34,7 @@ const scienceSections = [
     content: [
       {
         subtitle: "Decision fatigue.",
-        text: "Every micro-resistance costs energy. By evening — when most scrolling happens — your reserves are gone. Relying on willpower alone is a plan that fails on schedule.",
+        text: "Every micro-resistance costs energy. By evening, when most scrolling happens, your reserves are gone. Relying on willpower alone is a plan that fails on schedule.",
       },
       {
         subtitle: "External constraints work better.",
@@ -52,7 +52,7 @@ const scienceSections = [
     content: [
       {
         subtitle: "Neuroplasticity is real but slow.",
-        text: "Pathways you use most get stronger. Pathways you stop using weaken. That's the entire mechanism — and it doesn't happen in a weekend.",
+        text: "Pathways you use most get stronger. Pathways you stop using weaken. That's the entire mechanism and it doesn't happen in a weekend.",
       },
       {
         subtitle: "Why fourteen.",
@@ -60,7 +60,7 @@ const scienceSections = [
       },
       {
         subtitle: "What you replace it with.",
-        text: "Effortful actions — exercise, reading, real conversation — supply dopamine on a slower curve. They rebuild the part of you that finds non-screen things rewarding.",
+        text: "Exercise, reading, and real conversation supply dopamine on a slower curve. They rebuild the part of you that finds non-screen things rewarding.",
       },
     ],
   },
@@ -70,7 +70,7 @@ const scienceSections = [
     content: [
       {
         subtitle: "Urge surfing.",
-        text: "Cravings are waves: rising, cresting, falling. Riding them out — without acting — is a learnable skill and the single highest-leverage CBT technique here.",
+        text: "Cravings are waves: rising, cresting, falling. Riding them out without acting is a learnable skill and the single highest-leverage CBT technique here.",
       },
       {
         subtitle: "Cognitive restructuring.",

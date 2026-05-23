@@ -13,41 +13,45 @@ export const metadata: Metadata = {
 const phases = [
   {
     phase: "Phase 01",
-    duration: "Day 0 — Setup",
+    duration: "Day 0: Setup",
     title: "Choose the apps that own your evenings.",
     body:
-      "Connect Screen Time. Pick six. LOCK IN binds them at the OS level. There is no toggle to turn this off mid-detox — you knew that going in.",
-    image: screenshots.onboardingShare,
+      "Connect Screen Time. Pick your apps. LOCK IN binds them at the OS level. There is no toggle to turn this off mid-detox. You knew that going in.",
+    image: screenshots.pickHoldsYouBack,
+    isPhone: false,
     insight:
       "Most people underestimate their daily screen time by 50%. The real number is usually a wake-up call.",
   },
   {
     phase: "Phase 02",
-    duration: "Days 1–3 — Acute withdrawal",
+    duration: "Days 1 to 3: Acute withdrawal",
     title: "Your brain notices.",
     body:
       "Restlessness, phantom buzzes, the urge to check things that aren't there. This is your dopamine system asking for its old habit. Echo and the I'm Bored menu route you somewhere useful instead.",
-    image: screenshots.countdownAcute,
+    image: screenshots.countdownLater,
+    isPhone: true,
     insight:
       "The pull peaks around minute ten and fades. By day five most people stop reaching for the phone in elevators.",
   },
   {
     phase: "Phase 03",
-    duration: "Days 4–13 — Reset",
+    duration: "Days 4 to 13: Reset",
     title: "The world gets quieter.",
     body:
       "Time stretches. Boredom comes back, which is a feature, not a bug. You finish a book. You go for a walk without filming it.",
     image: screenshots.earnedToday,
+    isPhone: true,
     insight:
       "Earn dopamine the hard way. Logged effortful actions stack up, rebuilding a non-screen reward baseline.",
   },
   {
     phase: "Phase 04",
-    duration: "Day 14+ — Re-entry",
-    title: "You set the budget.",
+    duration: "Day 14+: Re-entry",
+    title: "You get 10 minutes.",
     body:
-      "Pick a daily ceiling: 15, 30, or 60 minutes. Apps return — but on your schedule, distributed how you want. You stay in control after.",
+      "After the 14 days, you get 10 minutes shared across all blocked apps. Distribute your time however you want. You stay in control.",
     image: screenshots.focusBlocked,
+    isPhone: true,
     insight:
       "The goal is not zero phone use. It is intentional use. You are in control.",
   },
@@ -81,18 +85,33 @@ export default function HowItWorksPage() {
                     reversed ? "lg:order-2 lg:justify-end" : "lg:justify-start"
                   }`}
                 >
-                  <div className="iphone-frame" style={{ width: 280 }}>
-                    <div className="iphone-screen">
-                      <div className="iphone-notch" />
+                  {p.isPhone ? (
+                    <div className="iphone-frame" style={{ width: 280 }}>
+                      <div className="iphone-screen">
+                        <div className="iphone-notch" />
+                        <Image
+                          src={p.image}
+                          alt={p.title}
+                          fill
+                          sizes="280px"
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      className="relative rounded-2xl overflow-hidden border border-[color:var(--color-line)]"
+                      style={{ width: 280, height: 600 }}
+                    >
                       <Image
                         src={p.image}
                         alt={p.title}
                         fill
                         sizes="280px"
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
-                  </div>
+                  )}
                 </div>
                 <div className={`lg:col-span-7 ${reversed ? "lg:order-1" : ""}`}>
                   <div className="text-[12px] tracking-[0.14em] uppercase text-[color:var(--color-ink-4)] mb-3">

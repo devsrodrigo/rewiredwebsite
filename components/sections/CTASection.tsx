@@ -61,7 +61,7 @@ export function CTASection() {
               <div className="iphone-screen">
                 <div className="iphone-notch" />
                 <Image
-                  src={screenshots.lockoutOverlay}
+                  src={screenshots.lockoutFull}
                   alt="LOCK IN reminder: you already decided this matters"
                   fill
                   sizes="280px"

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "LOCK IN Privacy Policy — how we handle your data.",
+  description: "LOCK IN Privacy Policy: how we handle your data.",
 };
 
 const sections = [

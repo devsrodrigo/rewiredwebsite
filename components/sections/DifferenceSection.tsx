@@ -44,7 +44,7 @@ export function DifferenceSection() {
             </h2>
             <p className="mt-6 text-[18px] md:text-[19px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[58ch]">
               Other apps nudge, remind, or politely ask. LOCK IN closes the door at the operating system.
-              When you reach for the app, the system says no — and gives you back the decision you
+              When you reach for the app, the system says no and hands back the decision you
               already made.
             </p>
 

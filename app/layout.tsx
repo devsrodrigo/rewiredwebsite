@@ -18,11 +18,11 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: {
-    default: "LOCK IN — Stop scrolling. Start living.",
+    default: "LOCK IN: Stop scrolling. Start living.",
     template: "%s · LOCK IN",
   },
   description:
-    "A 14-day social media detox enforced at the OS level. No bypass, no workarounds. After the reset, you decide how much time the apps get — not the algorithm.",
+    "A 14-day social media detox enforced at the OS level. No bypass, no workarounds. After the reset, you get 10 minutes distributed across all blocked apps. Not the algorithm.",
   keywords: [
     "social media addiction",
     "digital detox",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://getrewired.org",
     siteName: "LOCK IN",
-    title: "LOCK IN — Stop scrolling. Start living.",
+    title: "LOCK IN: Stop scrolling. Start living.",
     description:
-      "A 14-day social media detox enforced at the OS level. After the reset, you set the daily budget.",
+      "A 14-day social media detox enforced at the OS level. After the reset, 10 minutes distributed across all blocked apps.",
     images: [
       {
         url: "/og-image.png",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LOCK IN — Stop scrolling. Start living.",
+    title: "LOCK IN: Stop scrolling. Start living.",
     description:
-      "A 14-day social media detox enforced at the OS level. After the reset, you set the daily budget.",
+      "A 14-day social media detox enforced at the OS level. After the reset, 10 minutes distributed across all blocked apps.",
     images: ["/og-image.png"],
     creator: "@getrewired",
   },

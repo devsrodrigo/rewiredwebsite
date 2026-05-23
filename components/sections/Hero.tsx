@@ -53,7 +53,7 @@ export function Hero() {
             >
               LOCK IN is a 14-day social media detox enforced at the OS level.
               No bypass. No &ldquo;just five more minutes.&rdquo; When it ends,
-              <span className="text-white"> you decide</span> how much time the apps get — not the algorithm.
+              <span className="text-white"> you get 10 minutes</span> distributed across all blocked apps. Not the algorithm.
             </motion.p>
 
             <motion.div
@@ -115,7 +115,7 @@ export function Hero() {
                   <div className="iphone-notch" />
                   <Image
                     src={screenshots.countdownGif}
-                    alt="LOCK IN detox countdown — 14 days remaining"
+                    alt="LOCK IN detox countdown: 14 days remaining"
                     fill
                     sizes="320px"
                     className="object-cover"

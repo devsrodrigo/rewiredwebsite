@@ -10,32 +10,36 @@ const steps = [
     title: "Pick what holds you back.",
     body:
       "Choose the apps that own your evenings. LOCK IN binds them at the OS level through Apple Screen Time.",
-    image: screenshots.onboardingShare,
-    alt: "Onboarding: declare you're taking 14 days off social media",
+    image: screenshots.pickHoldsYouBack,
+    alt: "Pick what holds you back: select blocked apps",
+    isPhone: false,
   },
   {
     no: "02",
     title: "Disappear for 14 days.",
     body:
       "Full block, no bypass. A live countdown shows where you are in withdrawal. Echo and the I'm Bored menu carry you through.",
-    image: screenshots.countdownAcute,
-    alt: "Detox countdown — Day 13, Acute Withdrawal",
+    image: screenshots.countdownLater,
+    alt: "Detox countdown: Day 13 of Acute Withdrawal",
+    isPhone: true,
   },
   {
     no: "03",
     title: "Earn your way back.",
     body:
-      "Workouts, walks, reading, real conversations — log effortful actions and rebuild a non-screen reward system.",
+      "Log workouts, walks, reading, and real conversations to rebuild a non-screen reward system.",
     image: screenshots.earnedToday,
-    alt: "Earned Today panel — effortful actions",
+    alt: "Earned Today panel of effortful actions",
+    isPhone: true,
   },
   {
     no: "04",
-    title: "You set the budget.",
+    title: "You get 10 minutes.",
     body:
-      "After the detox, 15, 30, or 60 minutes a day. Controlled access — on your terms, not the algorithm's.",
+      "After the detox, you get 10 minutes shared across all blocked apps. Distribute your time however you want. Controlled access, on your terms.",
     image: screenshots.focusBlocked,
     alt: "Focus tab with blocked apps and Dumb Phone Mode",
+    isPhone: true,
   },
 ];
 
@@ -71,18 +75,33 @@ export function HowItWorksSection() {
                     reversed ? "lg:order-2 lg:justify-end" : "lg:justify-start"
                   } justify-center`}
                 >
-                  <div className="iphone-frame" style={{ width: 280 }}>
-                    <div className="iphone-screen">
-                      <div className="iphone-notch" />
+                  {step.isPhone ? (
+                    <div className="iphone-frame" style={{ width: 280 }}>
+                      <div className="iphone-screen">
+                        <div className="iphone-notch" />
+                        <Image
+                          src={step.image}
+                          alt={step.alt}
+                          fill
+                          sizes="280px"
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      className="relative rounded-2xl overflow-hidden border border-[color:var(--color-line)]"
+                      style={{ width: 280, height: 600 }}
+                    >
                       <Image
                         src={step.image}
                         alt={step.alt}
                         fill
                         sizes="280px"
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
-                  </div>
+                  )}
                 </motion.div>
 
                 <motion.div

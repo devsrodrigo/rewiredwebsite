@@ -24,7 +24,7 @@ const detailedFeatures = [
     icon: Shield,
     title: "OS-level hard block",
     description:
-      "Built on Apple's Screen Time API. The system itself refuses to open the app — not a filter, not an honor system.",
+      "Built on Apple's Screen Time API. The system itself refuses to open the app, not a filter and not an honor system.",
   },
   {
     icon: Brain,
@@ -42,7 +42,7 @@ const detailedFeatures = [
     icon: BookOpen,
     title: "Built-in reading",
     description:
-      "Long-form articles and a course like The Monk Mode Protocol — content that doesn't end every nine seconds.",
+      "Long-form articles and a course like The Monk Mode Protocol, content that doesn't end every nine seconds.",
   },
   {
     icon: Clock,
@@ -72,7 +72,7 @@ const detailedFeatures = [
     icon: RefreshCw,
     title: "Time budgets",
     description:
-      "After detox: 15, 30, or 60 minutes a day. Distributed across the apps you allow.",
+      "After detox, you get 10 minutes shared across all blocked apps. Distribute it however you want.",
   },
   {
     icon: Bell,
@@ -84,7 +84,7 @@ const detailedFeatures = [
     icon: Smartphone,
     title: "Per-app controls",
     description:
-      "Block TikTok entirely. Allow 10 minutes of close friends. Different rules per surface.",
+      "Block certain apps entirely. The shared 10-minute pool applies to apps you partially allow. Different rules per surface.",
   },
   {
     icon: Calendar,
@@ -99,8 +99,8 @@ const screensTour = [
     eyebrow: "01 / Detox countdown",
     title: "A clock you can't argue with.",
     body:
-      "Every second of the 14-day reset is visible. Phases — Acute Withdrawal, Reset, Re-entry — name what your brain is actually going through.",
-    image: screenshots.countdownAcute,
+      "Every second of the 14-day reset is visible. Phases (Acute Withdrawal, Reset, Re-entry) name what your brain is actually going through.",
+    image: screenshots.countdownLater,
   },
   {
     eyebrow: "02 / Focus",

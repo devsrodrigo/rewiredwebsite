@@ -34,7 +34,7 @@ export function ProblemSection() {
           </h2>
           <p className="mt-6 text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-2xl">
             Every feed is engineered by entire teams of behavioral scientists. Variable rewards,
-            infinite scroll, intermittent notifications — all designed to outpace willpower.
+            infinite scroll and intermittent notifications, all designed to outpace willpower.
             You don&apos;t have a discipline problem. You have a hardware problem.
           </p>
         </motion.div>

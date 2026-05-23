@@ -8,7 +8,7 @@ const tiles = [
   {
     title: "A real countdown.",
     body:
-      "Live ticker for the 14-day reset. Phases — Acute Withdrawal, Reset, Re-entry — so you know exactly what your brain is doing.",
+      "Live ticker for the 14-day reset. Phases (Acute Withdrawal, Reset, Re-entry) so you know exactly what your brain is doing.",
     image: screenshots.countdownLater,
     alt: "Detox countdown ring with phases",
     span: "md:col-span-7 md:row-span-2",
@@ -26,7 +26,7 @@ const tiles = [
     body:
       "Workout, walk, read, real conversation. Effortful actions stack up so the reward system stays alive.",
     image: screenshots.earnedToday,
-    alt: "Earned Today — effortful actions",
+    alt: "Earned Today: effortful actions",
     span: "md:col-span-5",
   },
   {
@@ -42,7 +42,7 @@ const tiles = [
     body:
       "15, 25, 45, 60 minutes of focus on tap. The whole device gets quieter on your command.",
     image: screenshots.focusBlocked,
-    alt: "Focus tab — Dumb Phone Mode",
+    alt: "Focus tab: Dumb Phone Mode",
     span: "md:col-span-6",
   },
   {
