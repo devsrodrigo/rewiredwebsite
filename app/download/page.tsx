@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 const benefits = [
   {
-    title: "Free to start.",
-    body: "Core blocking, the 14-day reset, Echo, and effortful actions are free.",
+    title: "Start today.",
+    body: "Core blocking, the 14-day reset, Echo, and effortful actions — everything you need to reset.",
   },
   {
     title: "Premium when you want it.",
@@ -93,7 +93,7 @@ export default function DownloadPage() {
         <div className="container-app">
           <SectionHeading
             eyebrow="What you get"
-            title="Free to start. Honest about pricing."
+            title="What you get. Honest about pricing."
             align="left"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16">

@@ -18,14 +18,14 @@ const faqCategories = [
           "LOCK IN is live now on the App Store for iOS. Download it today and start your first 14-day reset.",
       },
       {
-        question: "Is LOCK IN free?",
+        question: "How is LOCK IN priced?",
         answer:
-          "Yes. The core block, the 14-day reset, Echo, and effortful actions are free. Premium unlocks advanced schedules, deeper analytics, and the full reading library.",
+          "LOCK IN offers a subscription. Premium unlocks advanced schedules, deeper analytics, and the full reading library.",
       },
       {
         question: "What iOS version do I need?",
         answer:
-          "iOS 16 or later. Newer is better, since Apple keeps improving the Screen Time API.",
+          "iOS 17 or later. Newer is better, since Apple keeps improving the Screen Time API.",
       },
       {
         question: "Do I need Screen Time enabled?",
@@ -97,6 +97,14 @@ export default function SupportPage() {
 
       <section className="border-t border-[color:var(--color-line)] py-20 md:py-28 bg-[color:var(--color-bg-1)]">
         <div className="container-app max-w-4xl">
+          <div className="mb-16 p-7 rounded-2xl border border-red-900/60 bg-red-950/30">
+            <p className="text-[13px] font-semibold uppercase tracking-widest text-red-400 mb-3">
+              Emergency? Need to unblock apps?
+            </p>
+            <p className="text-[15px] text-[color:var(--color-ink-3)] leading-relaxed">
+              <strong className="text-white">Only use this as a last resort.</strong> If you need to unblock your apps urgently, deleting LOCK IN from your device will remove all active blocks. We strongly recommend against this — the block exists for a reason — but the option is yours if absolutely necessary.
+            </p>
+          </div>
           <div className="space-y-16">
             {faqCategories.map((category) => (
               <div key={category.title}>

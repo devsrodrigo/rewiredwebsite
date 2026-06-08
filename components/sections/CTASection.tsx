@@ -46,7 +46,7 @@ export function CTASection() {
               </a>
             </div>
             <p className="mt-6 text-[13px] text-[color:var(--color-ink-4)]">
-              Free to start. iPhone only for now. Google Play later in 2026.
+              iPhone only for now. Google Play later in 2026.
             </p>
           </motion.div>
 
