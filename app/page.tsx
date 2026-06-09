@@ -3,8 +3,10 @@ import {
   ProblemSection,
   DifferenceSection,
   HowItWorksSection,
+  OutcomesSection,
   FeaturesSection,
   SocialProofSection,
+  FAQSection,
   CTASection,
 } from "@/components/sections";
 
@@ -15,8 +17,10 @@ export default function Home() {
       <ProblemSection />
       <DifferenceSection />
       <HowItWorksSection />
+      <OutcomesSection />
       <FeaturesSection />
       <SocialProofSection />
+      <FAQSection />
       <CTASection />
     </>
   );

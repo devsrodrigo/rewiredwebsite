@@ -47,9 +47,9 @@ const phases = [
   {
     phase: "Phase 04",
     duration: "Day 14+: Re-entry",
-    title: "You get 10 minutes.",
+    title: "You get 30 minutes a day.",
     body:
-      "After the 14 days, you get 10 minutes shared across all blocked apps. Distribute your time however you want. You stay in control.",
+      "After the 14 days, you get a 30-minute daily budget shared across all blocked apps. Distribute your time however you want. You stay in control.",
     image: screenshots.focusBlocked,
     isPhone: true,
     insight:

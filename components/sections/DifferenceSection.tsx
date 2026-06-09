@@ -43,26 +43,28 @@ export function DifferenceSection() {
               It doesn&apos;t ask. It refuses.
             </h2>
             <p className="mt-6 text-[18px] md:text-[19px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[58ch]">
-              Other apps nudge, remind, or politely ask. LOCK IN closes the door at the operating system.
-              When you reach for the app, the system says no and hands back the decision you
-              already made.
+              Screen Time limits and blocker apps nudge, remind, or politely ask — and you tap
+              &ldquo;Ignore.&rdquo; LOCK IN closes the door at the operating system and keeps it
+              closed for 14 days. And blocking is only half of it: every empty moment gets
+              redirected into something that moves your life forward — books, workouts, focus
+              sessions — so the habit gets replaced, not just removed.
             </p>
 
             <div className="mt-10 grid sm:grid-cols-2 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)] rounded-2xl overflow-hidden">
               <div className="bg-black p-7">
-                <p className="text-[13px] text-[color:var(--color-ink-4)] mb-2 tracking-tight">Other apps</p>
+                <p className="text-[13px] text-[color:var(--color-ink-4)] mb-2 tracking-tight">Screen Time &amp; other blockers</p>
                 <ul className="space-y-2 text-[15px] text-[color:var(--color-ink-3)]">
-                  <li>Easily bypassed timers</li>
-                  <li>Honor-system reminders</li>
-                  <li>&ldquo;Just this once&rdquo; loopholes</li>
+                  <li>Limits you can ignore with one tap</li>
+                  <li>Block one app, binge another</li>
+                  <li>Nothing to fill the empty time</li>
                 </ul>
               </div>
               <div className="bg-black p-7">
                 <p className="text-[13px] text-[color:var(--color-signal)] mb-2 tracking-tight">LOCK IN</p>
                 <ul className="space-y-2 text-[15px] text-white">
-                  <li>OS-level Screen Time enforcement</li>
-                  <li>No exception windows</li>
-                  <li>A 14-day reset that actually holds</li>
+                  <li>OS-level enforcement, zero loopholes</li>
+                  <li>A full 14-day reset that actually holds</li>
+                  <li>Replaces scrolling with productive habits</li>
                 </ul>
               </div>
             </div>

@@ -1,9 +1,33 @@
 import { MetadataRoute } from "next";
 
+const blogSlugs = [
+  "why-you-cant-stop-scrolling",
+  "dopamine-detox-myth",
+  "screen-time-vs-rewired",
+  "21-habits-to-replace-scrolling",
+  "telling-friends-quitting-instagram",
+  "science-of-urge-surfing",
+  "why-you-cant-put-your-phone-down",
+  "hard-dopamine-vs-easy-dopamine",
+  "what-happens-when-you-stop-scrolling",
+  "5-types-of-phone-addiction",
+  "the-willpower-myth",
+  "are-app-blockers-worth-it",
+  "dopamine-detox-for-content-creators",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://getrewired.org";
 
+  const blogEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
+    ...blogEntries,
     {
       url: baseUrl,
       lastModified: new Date(),

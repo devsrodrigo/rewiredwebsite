@@ -27,7 +27,8 @@ export function CTASection() {
             </h2>
             <p className="mt-6 text-[18px] md:text-[20px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[55ch]">
               The next two weeks are going to happen either way. Either with the apps, or without
-              them. Pick once.
+              them. Pick once. A full year costs less than one coffee a month — staying the same
+              costs 1,800+ hours.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-3">
               <a

@@ -51,9 +51,11 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="mt-8 text-[18px] md:text-[20px] leading-relaxed text-[color:var(--color-ink-3)] max-w-[58ch]"
             >
-              LOCK IN is a 14-day social media detox enforced at the OS level.
-              No bypass. No &ldquo;just five more minutes.&rdquo; When it ends,
-              <span className="text-white"> you get 10 minutes</span> distributed across all blocked apps. Not the algorithm.
+              LOCK IN blocks your most addictive apps completely for 14 days —
+              enforced by Apple Screen Time, with no bypass and no &ldquo;just five more
+              minutes.&rdquo; Your dopamine system resets. When it ends,
+              <span className="text-white"> you get a 30-minute daily budget</span> you
+              control. You decide. Not the algorithm.
             </motion.p>
 
             <motion.div
@@ -124,12 +126,13 @@ export function Hero() {
                   />
                 </div>
               </div>
-              {/* Floating caption */}
-              <div className="absolute -left-6 top-10 hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[color:var(--color-bg-2)] border border-[color:var(--color-line-2)] text-[12px] text-[color:var(--color-ink-2)] shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+              {/* Floating captions — kept inboard so they never clip on the viewport edge */}
+              <div className="absolute -left-8 top-12 hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[color:var(--color-bg-2)]/95 backdrop-blur border border-[color:var(--color-line-2)] text-[12px] text-[color:var(--color-ink-2)] shadow-[0_8px_30px_rgba(0,0,0,0.5)] whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-warn)]" />
                 Acute withdrawal
               </div>
-              <div className="absolute -right-4 bottom-16 hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[color:var(--color-bg-2)] border border-[color:var(--color-line-2)] text-[12px] text-[color:var(--color-ink-2)] shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+              <div className="absolute -left-10 bottom-20 hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[color:var(--color-bg-2)]/95 backdrop-blur border border-[color:var(--color-line-2)] text-[12px] text-[color:var(--color-ink-2)] shadow-[0_8px_30px_rgba(0,0,0,0.5)] whitespace-nowrap">
+                <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-signal)]" />
                 Day 13 of 14
               </div>
             </div>

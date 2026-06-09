@@ -4,4 +4,6 @@ export { DifferenceSection } from "./DifferenceSection";
 export { HowItWorksSection } from "./HowItWorksSection";
 export { FeaturesSection } from "./FeaturesSection";
 export { SocialProofSection } from "./SocialProofSection";
+export { OutcomesSection } from "./OutcomesSection";
+export { FAQSection } from "./FAQSection";
 export { CTASection } from "./CTASection";

@@ -33,9 +33,12 @@ export function ProblemSection() {
             Your phone wasn&apos;t built for you. <span className="text-[color:var(--color-ink-3)]">It was built to keep you.</span>
           </h2>
           <p className="mt-6 text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-2xl">
-            Every feed is engineered by entire teams of behavioral scientists. Variable rewards,
-            infinite scroll and intermittent notifications, all designed to outpace willpower.
-            You don&apos;t have a discipline problem. You have a hardware problem.
+            Every feed is engineered by teams of behavioral scientists. Variable rewards,
+            infinite scroll, intermittent notifications — all designed to outpace willpower.
+            That&apos;s why you compare yourself to feeds that aren&apos;t even real, why the
+            motivation to work on your own goals keeps draining, and why you tap
+            &ldquo;Ignore Limit&rdquo; every single time. You don&apos;t have a discipline
+            problem. You have a hardware problem.
           </p>
         </motion.div>
 

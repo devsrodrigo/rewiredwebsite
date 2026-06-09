@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s · LOCK IN",
   },
   description:
-    "A 14-day social media detox enforced at the OS level. No bypass, no workarounds. After the reset, you get 10 minutes distributed across all blocked apps. Not the algorithm.",
+    "A 14-day social media detox enforced at the OS level. No bypass, no workarounds. After the reset, a 30-minute daily budget you distribute across your apps. You decide. Not the algorithm.",
   keywords: [
     "social media addiction",
     "digital detox",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "LOCK IN",
     title: "LOCK IN: Stop scrolling. Start living.",
     description:
-      "A 14-day social media detox enforced at the OS level. After the reset, 10 minutes distributed across all blocked apps.",
+      "A 14-day social media detox enforced at the OS level. After the reset, a 30-minute daily budget on your terms.",
     images: [
       {
         url: "/og-image.png",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LOCK IN: Stop scrolling. Start living.",
     description:
-      "A 14-day social media detox enforced at the OS level. After the reset, 10 minutes distributed across all blocked apps.",
+      "A 14-day social media detox enforced at the OS level. After the reset, a 30-minute daily budget on your terms.",
     images: ["/og-image.png"],
     creator: "@getrewired",
   },

@@ -34,9 +34,9 @@ const steps = [
   },
   {
     no: "04",
-    title: "You get 10 minutes.",
+    title: "Return on your terms.",
     body:
-      "After the detox, you get 10 minutes shared across all blocked apps. Distribute your time however you want. Controlled access, on your terms.",
+      "After the detox, you get a 30-minute daily budget shared across all blocked apps. You decide where every minute goes. Enough to stay connected — not enough to fall back in.",
     image: screenshots.focusBlocked,
     alt: "Focus tab with blocked apps and Dumb Phone Mode",
     isPhone: true,

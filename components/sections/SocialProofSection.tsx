@@ -25,7 +25,7 @@ const quotes = [
 
 const metrics = [
   { value: "14", label: "Days of full block" },
-  { value: "10k+", label: "Users in the door" },
+  { value: "30", label: "Minutes a day after, on your terms" },
   { value: "0", label: "Bypass loopholes" },
   { value: "100%", label: "On-device & private" },
 ];
@@ -45,6 +45,10 @@ export function SocialProofSection() {
           <h2 className="font-display text-[40px] md:text-[60px] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
             People who tried everything else found their way back here.
           </h2>
+          <p className="mt-6 text-[17px] text-[color:var(--color-ink-3)] leading-relaxed max-w-2xl">
+            Beta users reported real changes — and a commitment to staying off social media
+            after the detox ended. Not vibes. Changed behavior.
+          </p>
         </motion.div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-6">

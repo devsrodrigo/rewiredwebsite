@@ -12,6 +12,26 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "are-app-blockers-worth-it",
+    title: "Are app blockers worth paying for?",
+    excerpt:
+      "Free tools exist. Your time has a price. An honest cost-benefit of paid blockers — including when not to buy one.",
+    category: "Product",
+    readTime: "6 min read",
+    date: "2026-06-09",
+    featured: false,
+  },
+  {
+    slug: "dopamine-detox-for-content-creators",
+    title: "The content creator's guide to a 14-day detox.",
+    excerpt:
+      "You can't quit the apps — they're your job. Why a consumption detox is the highest-ROI move a creator can make.",
+    category: "Tips",
+    readTime: "6 min read",
+    date: "2026-06-09",
+    featured: false,
+  },
+  {
     slug: "why-you-cant-stop-scrolling",
     title: "Why you can't stop scrolling (and how to fix it).",
     excerpt:

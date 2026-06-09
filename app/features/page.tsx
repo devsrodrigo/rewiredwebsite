@@ -72,7 +72,7 @@ const detailedFeatures = [
     icon: RefreshCw,
     title: "Time budgets",
     description:
-      "After detox, you get 10 minutes shared across all blocked apps. Distribute it however you want.",
+      "After detox, you get a 30-minute daily budget shared across all blocked apps. Distribute it however you want.",
   },
   {
     icon: Bell,
@@ -84,7 +84,7 @@ const detailedFeatures = [
     icon: Smartphone,
     title: "Per-app controls",
     description:
-      "Block certain apps entirely. The shared 10-minute pool applies to apps you partially allow. Different rules per surface.",
+      "Block certain apps entirely. The shared 30-minute pool applies to apps you partially allow. Different rules per surface.",
   },
   {
     icon: Calendar,
