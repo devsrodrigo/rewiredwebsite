@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const benefits = [
   {
     title: "Start today.",
-    body: "Core blocking, the 14-day reset, Echo, and effortful actions — everything you need to reset.",
+    body: "Core blocking, the 14-day reset, Echo, and effortful actions: everything you need to reset.",
   },
   {
     title: "Premium when you want it.",

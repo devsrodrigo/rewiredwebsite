@@ -35,7 +35,7 @@ const promises = [
 const dataDetails = [
   {
     label: "What we don't collect",
-    sign: "—",
+    sign: "×",
     items: [
       "Specific Screen Time content or app usage",
       "Messages, photos, or files",

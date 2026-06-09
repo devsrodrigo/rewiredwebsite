@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/science", label: "Science" },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Journal" },
+  { href: "/support", label: "FAQ" },
 ];
 
 export function Navbar() {

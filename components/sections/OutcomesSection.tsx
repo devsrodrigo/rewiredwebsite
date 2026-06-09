@@ -14,7 +14,7 @@ const outcomes = [
     icon: Flame,
     title: "Real motivation",
     body:
-      "As your dopamine baseline recovers, drive comes back on its own. Goals you've been avoiding start feeling doable — then exciting.",
+      "As your dopamine baseline recovers, drive comes back on its own. Goals you've been avoiding start feeling doable, then exciting.",
   },
   {
     icon: Clock,
@@ -26,13 +26,13 @@ const outcomes = [
     icon: BrainCircuit,
     title: "A brain that thinks again",
     body:
-      "Boredom returns — and with it, deep focus, ideas, and actual rest. Higher cognitive capacity, not a mind that flinches every 9 seconds.",
+      "Boredom returns, bringing deep focus, ideas, and actual rest. Higher cognitive capacity, not a mind that flinches every 9 seconds.",
   },
   {
     icon: Zap,
     title: "Less need for stimulation",
     body:
-      "When the reward system resets, the pull toward every quick hit weakens — endless scrolling, gambling-style mechanics, all of it.",
+      "When the reward system resets, the pull toward every quick hit weakens: endless scrolling, gambling-style mechanics, all of it.",
   },
 ];
 

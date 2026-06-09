@@ -43,11 +43,11 @@ export function DifferenceSection() {
               It doesn&apos;t ask. It refuses.
             </h2>
             <p className="mt-6 text-[18px] md:text-[19px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[58ch]">
-              Screen Time limits and blocker apps nudge, remind, or politely ask — and you tap
+              Screen Time limits and blocker apps nudge, remind, or politely ask, and you tap
               &ldquo;Ignore.&rdquo; LOCK IN closes the door at the operating system and keeps it
               closed for 14 days. And blocking is only half of it: every empty moment gets
-              redirected into something that moves your life forward — books, workouts, focus
-              sessions — so the habit gets replaced, not just removed.
+              redirected into something that moves your life forward. Books, workouts, focus
+              sessions replace the habit instead of just removing it.
             </p>
 
             <div className="mt-10 grid sm:grid-cols-2 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)] rounded-2xl overflow-hidden">

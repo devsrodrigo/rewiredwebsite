@@ -678,7 +678,7 @@ Restriction without replacement is why most detox attempts collapse by day three
 
 ## What Enforcement Actually Requires
 
-LOCK IN is built on the same Apple framework as Screen Time — FamilyControls, the system-level enforcement layer. The difference is what we did with it:
+LOCK IN is built on the same Apple framework as Screen Time: FamilyControls, the system-level enforcement layer. The difference is what we did with it:
 
 1. No ignore button. During the 14-day detox, the block has no override. The decision you made in a calm state on day zero stays made. The 11pm version of you doesn't get a vote.
 2. A defined arc, not a forever rule. Fourteen days of full block, then a 30-minute daily budget you distribute yourself. A program with a beginning, middle, and end is psychologically sustainable in a way that permanent restriction isn't.
@@ -688,7 +688,7 @@ LOCK IN is built on the same Apple framework as Screen Time — FamilyControls, 
 
 If you've never tried to limit your screen time, start with Screen Time. It's free, and for people with mild habits, friction is sometimes enough.
 
-But if you've already proven to yourself that you'll tap Ignore — and if you're reading this, you have — then more friction isn't the answer. The answer is removing the decision entirely, for long enough that your brain stops asking.
+But if you've already proven to yourself that you'll tap Ignore (and if you're reading this, you have), then more friction isn't the answer. The answer is removing the decision entirely, for long enough that your brain stops asking.
 
 That's the difference. Screen Time asks. LOCK IN refuses.
     `,
@@ -704,7 +704,7 @@ That's the difference. Screen Time asks. LOCK IN refuses.
     content: `
 Here's the rule that determines whether your detox survives: you can't just remove the habit. You have to replace it.
 
-The urge to scroll is really an urge for something underneath — stimulation, escape, connection, or rest. If you don't give that need a new outlet, it will claw its way back to the old one.
+The urge to scroll is really an urge for something underneath: stimulation, escape, connection, or rest. If you don't give that need a new outlet, it will claw its way back to the old one.
 
 The catch is that the right replacement depends on the moment. A two-minute elevator urge needs a different answer than an empty Sunday afternoon. So here are 21 replacements, organized by the time you actually have.
 
@@ -713,7 +713,7 @@ The catch is that the right replacement depends on the moment. A two-minute elev
 These are for the dead moments that used to autopilot you into the feed: waiting in line, the elevator, the toilet, the ad break.
 
 1. The 10-breath reset. Ten slow breaths, counting each one. It occupies exactly the mental space the scroll would have.
-2. Text one real person. Not a story reply — an actual message to someone you like. Same social itch, real connection.
+2. Text one real person. Not a story reply but an actual message to someone you like. Same social itch, real connection.
 3. Write the thought down. The urge to check is often an open mental loop. Capture whatever is nagging you in a note, and the loop closes.
 4. Look at the farthest thing you can see. Screens hold your eyes at one fixed depth. Focusing on the horizon physically relaxes the visual system and breaks the trance.
 5. Do the thing you're avoiding for 60 seconds. The scroll urge often spikes right before an unpleasant task. Agree to one minute of the task. Starting is the whole battle.
@@ -721,11 +721,11 @@ These are for the dead moments that used to autopilot you into the feed: waiting
 ## When you have fifteen minutes (the boredom windows)
 
 6. Walk without headphones. Boring on purpose. This is dopamine-baseline training disguised as a stroll.
-7. Read a chapter. Keep the book physically where your phone used to live — nightstand, couch arm, bag.
+7. Read a chapter. Keep the book physically where your phone used to live: nightstand, couch arm, bag.
 8. Tidy one surface. One desk, one counter. Visible order is a small, real reward your brain registers as progress.
 9. Stretch or do a mobility routine. Withdrawal restlessness is physical. Meet it physically.
 10. Journal the craving. When the urge is strong, describe it on paper: where you feel it, what triggered it. Watching a craving usually kills it in under 20 minutes.
-11. Make something to drink, slowly. Tea, coffee, whatever — done as a deliberate ritual rather than a background task.
+11. Make something to drink, slowly. Tea, coffee, whatever, done as a deliberate ritual rather than a background task.
 
 ## When you have an hour (the lost evenings)
 
@@ -738,16 +738,16 @@ These are for the dead moments that used to autopilot you into the feed: waiting
 
 ## When the urge is emotional (the hard ones)
 
-These are for the moments the phone wasn't entertainment — it was anesthesia.
+These are for the moments the phone wasn't entertainment; it was anesthesia.
 
 18. Name what you're escaping. Anxious, lonely, avoiding something, overwhelmed. Naming the feeling out loud cuts its intensity. You can't fix what you won't identify.
 19. Step outside, whatever the weather. A change of physical environment interrupts rumination more effectively than any app.
 20. Call, don't text. If loneliness is the driver, a five-minute voice call delivers more genuine connection than an hour of feeds.
-21. Let yourself be bored. The advanced move. Sit there, no input, and let the discomfort crest and fall. This is the exact muscle the feed atrophied — and every rep makes the next urge weaker.
+21. Let yourself be bored. The advanced move. Sit there, no input, and let the discomfort crest and fall. This is the exact muscle the feed atrophied, and every rep makes the next urge weaker.
 
 ## How to actually use this list
 
-Don't try to adopt all 21. Pick one from each section — your two-minute move, your fifteen-minute move, your one-hour move, your emotional move — and decide them in advance. The moment of craving is the wrong time to choose; in a hot state, you'll always pick the feed.
+Don't try to adopt all 21. Pick one from each section: your two-minute move, your fifteen-minute move, your one-hour move, your emotional move. Decide them in advance. The moment of craving is the wrong time to choose; in a hot state, you'll always pick the feed.
 
 This is exactly how LOCK IN's "I'm Bored" menu works during the 14-day detox: pre-decided alternatives, surfaced at the moment of the urge, so the empty time has somewhere productive to go before the craving wins. The block holds the door closed. The replacements are what make you stop knocking.
     `,
@@ -763,7 +763,7 @@ This is exactly how LOCK IN's "I'm Bored" menu works during the 14-day detox: pr
     content: `
 The hardest part of a social media detox usually isn't the dopamine. It's the group chat.
 
-"Did you see what she posted?" No, you didn't. "I sent you a reel." You won't watch it. "Why are you being weird?" You're not — you're just not on the app.
+"Did you see what she posted?" No, you didn't. "I sent you a reel." You won't watch it. "Why are you being weird?" You're not; you're just not on the app.
 
 Most detox advice ignores this entirely, as if quitting social media were a purely private decision. It isn't. Feeds are where your social world coordinates, and stepping away has a real cost. Pretending otherwise sets you up to cave the first time you feel left out.
 
@@ -775,7 +775,7 @@ A silent disappearance reads as drama. People assume you blocked them, you're go
 
 A two-line heads-up to the people who actually message you prevents all of it:
 
-"Doing a 14-day phone reset starting Monday — I'll be off Instagram completely. Text me instead, I'll be faster there anyway."
+"Doing a 14-day phone reset starting Monday. I'll be off Instagram completely. Text me instead, I'll be faster there anyway."
 
 That's it. No manifesto, no explanation of dopamine. You've turned a vanishing act into a plan, and you've given people the channel to reach you.
 
@@ -785,7 +785,7 @@ Reaction one: indifference. Most people genuinely don't care. The feed makes you
 
 Reaction two: curiosity. A few people will ask why, sometimes with real interest. Have a one-sentence answer ready: "My screen time was over five hours a day and it was eating my goals." Concrete numbers end the conversation; vague wellness talk invites debate.
 
-Reaction three: defensiveness. Occasionally someone hears your detox as a judgment of their scrolling. They'll make jokes — "okay monk," "enjoy the woods." This isn't about you. Your abstinence is holding up a mirror. Don't preach, don't apologize. "Not judging anyone, just fixing my own habit" defuses nearly everyone.
+Reaction three: defensiveness. Occasionally someone hears your detox as a judgment of their scrolling. They'll make jokes: "okay monk," "enjoy the woods." This isn't about you. Your abstinence is holding up a mirror. Don't preach, don't apologize. "Not judging anyone, just fixing my own habit" defuses nearly everyone.
 
 ## Solve the real logistics
 
@@ -793,15 +793,15 @@ Some social life genuinely runs through these apps. Handle it deliberately:
 
 Event invites: tell your closest group that invites need to come by text for two weeks. The people who want you there will adapt instantly.
 
-The group chat itself: if it lives on Instagram or Snapchat, you have two options — designate one friend as your relay, or accept two weeks of missing memes. The memes survive without you.
+The group chat itself: if it lives on Instagram or Snapchat, you have two options. Designate one friend as your relay, or accept two weeks of missing memes. The memes survive without you.
 
-"But I'll miss something important": you won't. Anything genuinely important — an engagement, an emergency, real news — reaches you within hours through people who have your number. What you'll miss is content, and content is precisely the thing you're detoxing from.
+"But I'll miss something important": you won't. Anything genuinely important (an engagement, an emergency, real news) reaches you within hours through people who have your number. What you'll miss is content, and content is precisely the thing you're detoxing from.
 
 ## The part nobody warns you about
 
 Around day five, you'll be at dinner and everyone else will be on their phones. You'll just be sitting there, present in a room of absent people.
 
-The first time, it feels lonely. The second time, it feels strange. By the third time, it starts to feel like an advantage — you're the only one actually at the dinner.
+The first time, it feels lonely. The second time, it feels strange. By the third time, it starts to feel like an advantage: you're the only one actually at the dinner.
 
 Some friendships will turn out to be feed-dependent: people you only ever interacted with through stories and likes. Two weeks of silence shows you which ones those are. That information is uncomfortable and valuable in equal measure.
 
@@ -819,7 +819,7 @@ Eleven words. Send them, lock in, and let the results make the case for you.
   "science-of-urge-surfing": {
     title: "The Science of Urge Surfing",
     excerpt:
-      "The CBT technique that lets cravings rise, crest, and pass without acting on them — and exactly how to use it on the urge to scroll.",
+      "The CBT technique that lets cravings rise, crest, and pass without acting on them, and exactly how to use it on the urge to scroll.",
     category: "Science",
     readTime: "6 min read",
     date: "2026-01-10",
@@ -827,35 +827,35 @@ Eleven words. Send them, lock in, and let the results make the case for you.
     content: `
 Here's the most useful fact you will ever learn about cravings: they end on their own.
 
-Not if you satisfy them. Not if you fight them. If you simply do nothing, the average urge rises, peaks, and dissolves — usually within 15 to 20 minutes, often much faster. Every craving you've ever had, including the one for your phone, has a built-in expiration.
+Not if you satisfy them. Not if you fight them. If you simply do nothing, the average urge rises, peaks, and dissolves, usually within 15 to 20 minutes, often much faster. Every craving you've ever had, including the one for your phone, has a built-in expiration.
 
 The technique that exploits this is called urge surfing, developed by psychologist Alan Marlatt for addiction treatment and now a standard tool in cognitive behavioral therapy. It works on cigarettes, alcohol, and binge eating. It works just as well on the urge to scroll.
 
 ## Why fighting the urge backfires
 
-The instinctive response to a craving is suppression: clench, resist, think about something else. The problem is well documented — suppression amplifies. Trying not to think about checking your phone keeps "checking your phone" in your working memory, which keeps the craving fed. You're white-knuckling against an opponent you're simultaneously feeding.
+The instinctive response to a craving is suppression: clench, resist, think about something else. The problem is well documented: suppression amplifies. Trying not to think about checking your phone keeps "checking your phone" in your working memory, which keeps the craving fed. You're white-knuckling against an opponent you're simultaneously feeding.
 
 Worse, suppression frames the craving as a battle, and battles are exhausting. Lose enough of them and you conclude you're weak, which makes the next surrender easier.
 
-Urge surfing takes the opposite stance: the craving is not an enemy or a command. It's a wave — a temporary physiological event passing through your body. Waves can't be fought. They can be ridden.
+Urge surfing takes the opposite stance: the craving is not an enemy or a command. It's a wave, a temporary physiological event passing through your body. Waves can't be fought. They can be ridden.
 
 ## The technique, step by step
 
 The next time you feel the pull toward a blocked app, try this instead of resisting:
 
-1. Stop and locate it. Where is the urge, physically? Restless hands? Tightness in the chest? An itch of boredom behind the eyes? Find it in your body. This sounds odd and is the entire mechanism — you're shifting from being inside the craving to observing it.
+1. Stop and locate it. Where is the urge, physically? Restless hands? Tightness in the chest? An itch of boredom behind the eyes? Find it in your body. This sounds odd and is the entire mechanism: you're shifting from being inside the craving to observing it.
 
 2. Describe it like a scientist. Curious, not judgmental. "Tension in my shoulders. My hand actually moved toward my pocket. It spiked when I saw someone else on their phone." Description creates distance; distance dissolves compulsion.
 
-3. Breathe into it and watch. Slow breaths, attention on the sensation. Notice that the intensity isn't constant — it swells, holds, and recedes. You're not waiting for it to end. You're watching it end.
+3. Breathe into it and watch. Slow breaths, attention on the sensation. Notice that the intensity isn't constant: it swells, holds, and recedes. You're not waiting for it to end. You're watching it end.
 
-4. Note the crest. There's a moment where the urge peaks — where it feels like it will only keep growing. It won't. It never does. On the other side of that peak, the wave collapses surprisingly fast.
+4. Note the crest. There's a moment where the urge peaks, where it feels like it will only keep growing. It won't. It never does. On the other side of that peak, the wave collapses surprisingly fast.
 
 That's the whole technique. No willpower in the clenched-teeth sense. Just attention, aimed correctly.
 
 ## What the research says
 
-Studies on smokers found that brief urge-surfing training reduced cigarette consumption compared to suppression strategies. Mindfulness-based relapse prevention, which has urge surfing at its core, shows lower relapse rates for substance use than standard programs. The mechanism appears to be exactly what it feels like: repeatedly observing cravings without acting on them weakens the learned link between trigger and behavior — extinction, in behavioral terms.
+Studies on smokers found that brief urge-surfing training reduced cigarette consumption compared to suppression strategies. Mindfulness-based relapse prevention, which has urge surfing at its core, shows lower relapse rates for substance use than standard programs. The mechanism appears to be exactly what it feels like: repeatedly observing cravings without acting on them weakens the learned link between trigger and behavior (extinction, in behavioral terms).
 
 Each surfed urge is a rep. The association "boredom means phone" fires and goes unrewarded, and unrewarded associations fade. This is why the technique gets dramatically easier with practice: you're not just surviving individual cravings, you're retraining the underlying loop.
 
@@ -863,7 +863,7 @@ Each surfed urge is a rep. The association "boredom means phone" fires and goes 
 
 Urge surfing has one weakness: in the early days, when cravings are strongest and your skill is lowest, losing is one tap away. Surfing a wave is much harder when there's a "give up and scroll" button in your pocket.
 
-This is the logic of pairing the technique with OS-level blocking during LOCK IN's 14-day detox. The block removes the option to cave, which transforms every urge into a guaranteed practice rep. You can't lose the rep — the door is locked — so every craving becomes training. By the time the detox ends and the door reopens with a 30-minute budget, you've surfed dozens of waves and the waves have gotten small.
+This is the logic of pairing the technique with OS-level blocking during LOCK IN's 14-day detox. The block removes the option to cave, which transforms every urge into a guaranteed practice rep. You can't lose the rep. The door is locked, so every craving becomes training. By the time the detox ends and the door reopens with a 30-minute budget, you've surfed dozens of waves and the waves have gotten small.
 
 The block buys you the time. The surfing builds the skill. The skill is what you keep.
     `,
@@ -871,7 +871,7 @@ The block buys you the time. The surfing builds the skill. The skill is what you
   "are-app-blockers-worth-it": {
     title: "Are App Blockers Worth Paying For? An Honest Cost-Benefit",
     excerpt:
-      "Free tools exist. Your time has a price. A straight calculation of when a paid blocker pays for itself — and when it doesn't.",
+      "Free tools exist. Your time has a price. A straight calculation of when a paid blocker pays for itself, and when it doesn't.",
     category: "Product",
     readTime: "6 min read",
     date: "2026-06-09",
@@ -883,9 +883,9 @@ Let's actually run the numbers instead of hand-waving.
 
 ## What you're spending now
 
-The average 18-to-24-year-old spends over five hours a day on social apps. Run that out: 35 hours a week. Over 1,800 hours a year. That is a full-time job — 45 working weeks — performed for free, consuming other people's content, producing nothing you'll remember.
+The average 18-to-24-year-old spends over five hours a day on social apps. Run that out: 35 hours a week. Over 1,800 hours a year. That is a full-time job (45 working weeks) performed for free, consuming other people's content, producing nothing you'll remember.
 
-You don't need to be average for the math to be brutal. Even at two hours a day, you're spending 730 hours a year. Ask yourself what you'd pay to get a fraction of that back, and suddenly the price of an app — less than one coffee a month for a year of LOCK IN — stops being the interesting number. The interesting number is 1,800.
+You don't need to be average for the math to be brutal. Even at two hours a day, you're spending 730 hours a year. Ask yourself what you'd pay to get a fraction of that back, and suddenly the price of an app (less than one coffee a month for a year of LOCK IN) stops being the interesting number. The interesting number is 1,800.
 
 ## Why the free options stay free
 
@@ -895,25 +895,25 @@ Willpower fails at the moment of craving. The plan to scroll less is made in a c
 
 Screen Time fails at the Ignore button. Apple's limits ask, at your weakest moment, whether you'd like to keep going. You would. Everyone would. A limit with a built-in override isn't enforcement, it's decoration.
 
-Deleting apps fails at reinstallation. The App Store is 30 seconds away, and your accounts are exactly where you left them. Most people who delete TikTok are back within a week — you've probably run this experiment yourself.
+Deleting apps fails at reinstallation. The App Store is 30 seconds away, and your accounts are exactly where you left them. Most people who delete TikTok are back within a week; you've probably run this experiment yourself.
 
 Notice the pattern: every free option leaves the decision in your hands at the worst possible moment. What you're actually paying for, with any serious blocker, is the removal of that decision.
 
 ## What paying should get you
 
-Not all paid blockers clear this bar. Before paying for anything — ours included — check three things:
+Not all paid blockers clear this bar. Before paying for anything (ours included), check three things:
 
-1. Can you bypass it in under a minute? If the block can be toggled off in settings when the craving hits, you've bought a more expensive Ignore button. Real enforcement uses the OS — on iPhone, Apple's Screen Time framework — and offers no mid-program override.
+1. Can you bypass it in under a minute? If the block can be toggled off in settings when the craving hits, you've bought a more expensive Ignore button. Real enforcement uses the OS (on iPhone, Apple's Screen Time framework) and offers no mid-program override.
 
 2. Does it replace, or only restrict? A pure wall leaves a void, and the void is what drives relapse. The blocker should fill the empty time with something: reading, focus tools, real-world actions. Blocking is half the product; the other half is what happens during the block.
 
-3. Is there a defined endpoint? "Less phone forever" is a resolution, not a program. A structured arc — LOCK IN uses 14 days of full block, then a 30-minute daily budget you control — gives your brain a finish line, which is the difference between a reset you complete and a restriction you abandon.
+3. Is there a defined endpoint? "Less phone forever" is a resolution, not a program. A structured arc (LOCK IN uses 14 days of full block, then a 30-minute daily budget you control) gives your brain a finish line, which is the difference between a reset you complete and a restriction you abandon.
 
 ## The honest verdict
 
-If your usage is mild — under an hour a day, no compulsive pull — don't pay for anything. Use Screen Time, put your phone in a drawer, and spend the money on coffee.
+If your usage is mild (under an hour a day, no compulsive pull), don't pay for anything. Use Screen Time, put your phone in a drawer, and spend the money on coffee.
 
-But if you've already tried the free options and watched yourself defeat every one of them, then the calculation flips. You're not paying for software features. You're paying to take the decision away from the version of you that keeps making it badly — for long enough that your brain stops asking.
+But if you've already tried the free options and watched yourself defeat every one of them, then the calculation flips. You're not paying for software features. You're paying to take the decision away from the version of you that keeps making it badly, for long enough that your brain stops asking.
 
 Against 1,800 hours a year, that's not an expense. It's the highest-leverage trade available to you.
     `,
@@ -921,7 +921,7 @@ Against 1,800 hours a year, that's not an expense. It's the highest-leverage tra
   "dopamine-detox-for-content-creators": {
     title: "The Content Creator's Guide to a 14-Day Detox",
     excerpt:
-      "You can't quit the apps — they're your job. Here's why a consumption detox is the highest-ROI move a creator can make, and how to run one without losing momentum.",
+      "You can't quit the apps; they're your job. Here's why a consumption detox is the highest-ROI move a creator can make, and how to run one without losing momentum.",
     category: "Tips",
     readTime: "6 min read",
     date: "2026-06-09",
@@ -929,15 +929,15 @@ Against 1,800 hours a year, that's not an expense. It's the highest-leverage tra
     content: `
 "I'd love to do a detox, but I literally can't. I post for a living."
 
-This is the most reasonable-sounding objection to a social media detox, and it deserves a real answer instead of a shrug. So here it is: the detox blocks consumption, not creation — and for creators specifically, two weeks off the feed is less a sacrifice than an unfair advantage.
+This is the most reasonable-sounding objection to a social media detox, and it deserves a real answer instead of a shrug. So here it is: the detox blocks consumption, not creation, and for creators specifically, two weeks off the feed is less a sacrifice than an unfair advantage.
 
 ## The consumption trap
 
 Be honest about your ratio. For every minute you spend creating, how many do you spend consuming? Watching competitors, "researching trends," falling into the feed you were only checking for engagement?
 
-For most creators, the ratio is catastrophic — hours of consumption per hour of production. And it shows up in the work in three specific ways:
+For most creators, the ratio is catastrophic: hours of consumption per hour of production. And it shows up in the work in three specific ways:
 
-Derivative ideas. When your input is the same trending audio and formats as everyone else's, your output converges on theirs. The feed doesn't inspire you; it homogenizes you. Every genuinely original creator you admire is pulling ideas from somewhere off-platform — books, real life, other fields.
+Derivative ideas. When your input is the same trending audio and formats as everyone else's, your output converges on theirs. The feed doesn't inspire you; it homogenizes you. Every genuinely original creator you admire is pulling ideas from somewhere off-platform: books, real life, other fields.
 
 Comparison paralysis. Every scroll session shows you someone bigger, faster-growing, luckier. The motivational cost is real: you finish "researching" feeling behind, and demoralized creators procrastinate.
 
@@ -945,29 +945,29 @@ Fragmented production. Editing requires deep focus. Deep focus is exactly what a
 
 ## What 14 days actually buys you
 
-Run the detox properly — consumption apps blocked, production tools untouched — and the two weeks convert into the most productive stretch of your year:
+Run the detox properly (consumption apps blocked, production tools untouched) and the two weeks convert into the most productive stretch of your year:
 
-A backlog. Fourteen days of planning, filming, and editing without the feed eating your hours produces finished, polished videos ready to post — work of a quality you can't reach while consuming all day. You return to the platform with inventory instead of panic.
+A backlog. Fourteen days of planning, filming, and editing without the feed eating your hours produces finished, polished videos ready to post, work of a quality you can't reach while consuming all day. You return to the platform with inventory instead of panic.
 
 Original ideas. Boredom is where ideas come from; every creator knows this and almost none act on it. Two weeks of walks, books, and real conversations refills the well that the feed had been draining. You come back with concepts that didn't originate in someone else's trending tab.
 
-Recovered taste. Distance restores judgment. After two weeks away you can see your own content the way a viewer does — what's actually good, what was algorithm-chasing. That editorial clarity is worth more than any analytics dashboard.
+Recovered taste. Distance restores judgment. After two weeks away you can see your own content the way a viewer does: what's actually good, what was algorithm-chasing. That editorial clarity is worth more than any analytics dashboard.
 
 ## "But the algorithm will punish me"
 
 Two answers, one tactical and one honest.
 
-Tactical: you don't have to go dark. Batch and schedule posts before you start — every platform has native scheduling now. Your account stays active while you're gone; nobody needs to know the lights are on a timer. If DMs are genuinely business-critical, handle them in a constrained window from a desktop, which has none of the feed's pull.
+Tactical: you don't have to go dark. Batch and schedule posts before you start; every platform has native scheduling now. Your account stays active while you're gone; nobody needs to know the lights are on a timer. If DMs are genuinely business-critical, handle them in a constrained window from a desktop, which has none of the feed's pull.
 
 Honest: a two-week dip in posting cadence, if it happens at all, is recoverable in a month. Burnout, derivative content, and the slow death of your originality are not. Creators don't fail because they missed two weeks. They fail because they ran out of ideas, or quit from exhaustion. The detox attacks both.
 
 ## How to run it
 
-1. Block the consumption apps in LOCK IN — TikTok, Instagram, YouTube, whatever owns your hours. Keep your editing suite, camera, notes, and scheduler. You choose exactly what gets blocked; the detox never touches tools you didn't select.
+1. Block the consumption apps in LOCK IN: TikTok, Instagram, YouTube, whatever owns your hours. Keep your editing suite, camera, notes, and scheduler. You choose exactly what gets blocked; the detox never touches tools you didn't select.
 2. Pre-schedule your posts for the full 14 days before you begin.
-3. Set one production goal for the fortnight — a backlog of finished videos, a channel redesign, the ambitious project you keep postponing.
-4. Carry a capture system. Ideas will arrive at a rate that surprises you. Notes app, voice memos, a pocket notebook — anything that isn't a feed.
-5. On day 15, your 30-minute daily budget comes back. Spend it on engagement — replying, community, posting. You'll find 30 intentional minutes covers what four ambient hours used to, badly.
+3. Set one production goal for the fortnight: a backlog of finished videos, a channel redesign, the ambitious project you keep postponing.
+4. Carry a capture system. Ideas will arrive at a rate that surprises you. Notes app, voice memos, a pocket notebook: anything that isn't a feed.
+5. On day 15, your 30-minute daily budget comes back. Spend it on engagement: replying, community, posting. You'll find 30 intentional minutes covers what four ambient hours used to, badly.
 
 The platforms will still be there in two weeks. Your best ideas might not wait that long.
     `,

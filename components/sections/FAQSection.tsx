@@ -8,32 +8,32 @@ const faqs = [
   {
     question: "What exactly does LOCK IN do?",
     answer:
-      "You pick the apps that eat your time. LOCK IN blocks them completely for 14 days using Apple's Screen Time framework — at the operating system level, so there's no 'Ignore' button. During those 14 days, the app fills the gap: a live countdown of your dopamine reset, an 'I'm Bored' menu, free books, focus sessions, and Echo, a chat that talks you through the hard moments. After day 14, you get a 30-minute daily budget you distribute across your apps however you want.",
+      "You pick the apps that eat your time. LOCK IN blocks them completely for 14 days using Apple's Screen Time framework, enforced at the operating system level, so there's no 'Ignore' button. During those 14 days, the app fills the gap: a live countdown of your dopamine reset, an 'I'm Bored' menu, free books, focus sessions, and Echo, a chat that talks you through the hard moments. After day 14, you get a 30-minute daily budget you distribute across your apps however you want.",
   },
   {
     question: "iPhone Screen Time already does this. Why pay for an app?",
     answer:
-      "It doesn't, and you already know it doesn't — that's why you're here. Screen Time limits come with an 'Ignore Limit' button, and even when you hold the line on one app, you just binge another or switch to Netflix. LOCK IN has no ignore button and no exceptions for 14 days, and it pairs the block with replacements: reading, focus sessions, and real-world actions that rebuild your reward system instead of leaving a void.",
+      "It doesn't, and you already know it doesn't. That's why you're here. Screen Time limits come with an 'Ignore Limit' button, and even when you hold the line on one app, you just binge another or switch to Netflix. LOCK IN has no ignore button and no exceptions for 14 days, and it pairs the block with replacements: reading, focus sessions, and real-world actions that rebuild your reward system instead of leaving a void.",
   },
   {
     question: "Is it worth paying for?",
     answer:
-      "Compare the price of the app to the price of staying the same. A full year of LOCK IN costs less than one coffee a month. The average person your age loses 5+ hours a day to feeds — over 1,800 hours a year. If LOCK IN gives you back even a fraction of that toward your actual goals, it's the cheapest trade you'll ever make.",
+      "Compare the price of the app to the price of staying the same. A full year of LOCK IN costs less than one coffee a month. The average person your age loses 5+ hours a day to feeds: over 1,800 hours a year. If LOCK IN gives you back even a fraction of that toward your actual goals, it's the cheapest trade you'll ever make.",
   },
   {
     question: "I create content. I can't just disappear for 14 days.",
     answer:
-      "Fourteen days off the feed is a competitive advantage, not a setback. You get two weeks of uninterrupted time to plan, film, and edit — and you come back with a backlog of higher-quality work than you could have produced while consuming all day. Creators in our beta came back posting better, not less.",
+      "Fourteen days off the feed is a competitive advantage, not a setback. You get two weeks of uninterrupted time to plan, film, and edit. You come back with a backlog of higher-quality work than you could have produced while consuming all day. Creators in our beta came back posting better, not less.",
   },
   {
     question: "Can I quit early if it's too hard?",
     answer:
-      "Not from inside the app — that's the entire point, and it's what separates LOCK IN from every blocker you've already ignored. The only true escape hatch is deleting the app, which we make deliberately inconvenient to do impulsively. The urge to quit peaks around day 2-3 and fades. The countdown shows you exactly where you are; almost nobody throws away day 10 of 14.",
+      "Not from inside the app. That's the entire point, and it's what separates LOCK IN from every blocker you've already ignored. The only true escape hatch is deleting the app, which we make deliberately inconvenient to do impulsively. The urge to quit peaks around day 2-3 and fades. The countdown shows you exactly where you are; almost nobody throws away day 10 of 14.",
   },
   {
     question: "Does this actually work, or is it another productivity gimmick?",
     answer:
-      "The mechanism is simple and boring: remove the highest-stimulation input, and within days your brain's reward sensitivity starts recalibrating. Beta users reported real changes — including a commitment to staying off social media after the detox ended. No willpower hacks, no streaks to game. Just a door that stays closed long enough for your brain to adjust.",
+      "The mechanism is simple and boring: remove the highest-stimulation input, and within days your brain's reward sensitivity starts recalibrating. Beta users reported real changes, including a commitment to staying off social media after the detox ended. No willpower hacks, no streaks to game. Just a door that stays closed long enough for your brain to adjust.",
   },
 ];
 

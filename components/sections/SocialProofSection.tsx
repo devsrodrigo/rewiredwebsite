@@ -46,7 +46,7 @@ export function SocialProofSection() {
             People who tried everything else found their way back here.
           </h2>
           <p className="mt-6 text-[17px] text-[color:var(--color-ink-3)] leading-relaxed max-w-2xl">
-            Beta users reported real changes — and a commitment to staying off social media
+            Beta users reported real changes and a commitment to staying off social media
             after the detox ended. Not vibes. Changed behavior.
           </p>
         </motion.div>

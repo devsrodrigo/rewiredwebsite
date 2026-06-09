@@ -10,7 +10,7 @@ import { screenshots } from "@/lib/assets";
 export function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden grain">
-      {/* Quiet backdrop — a faint dot grid, no glowing orbs */}
+      {/* Quiet backdrop: a faint dot grid, no glowing orbs */}
       <div
         aria-hidden
         className="absolute inset-0 dot-grid opacity-60 pointer-events-none"
@@ -51,7 +51,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="mt-8 text-[18px] md:text-[20px] leading-relaxed text-[color:var(--color-ink-3)] max-w-[58ch]"
             >
-              LOCK IN blocks your most addictive apps completely for 14 days —
+              LOCK IN blocks your most addictive apps completely for 14 days,
               enforced by Apple Screen Time, with no bypass and no &ldquo;just five more
               minutes.&rdquo; Your dopamine system resets. When it ends,
               <span className="text-white"> you get a 30-minute daily budget</span> you
@@ -101,7 +101,7 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Real product visual — the countdown GIF in an iPhone bezel */}
+          {/* Real product visual: the countdown GIF in an iPhone bezel */}
           <motion.div
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
@@ -126,7 +126,7 @@ export function Hero() {
                   />
                 </div>
               </div>
-              {/* Floating captions — kept inboard so they never clip on the viewport edge */}
+              {/* Floating captions: kept inboard so they never clip on the viewport edge */}
               <div className="absolute -left-8 top-12 hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[color:var(--color-bg-2)]/95 backdrop-blur border border-[color:var(--color-line-2)] text-[12px] text-[color:var(--color-ink-2)] shadow-[0_8px_30px_rgba(0,0,0,0.5)] whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-warn)]" />
                 Acute withdrawal
