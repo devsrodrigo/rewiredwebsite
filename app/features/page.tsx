@@ -1,8 +1,8 @@
 "use client";
 
-import { SectionHeading, FeatureCard } from "@/components/ui";
+import { SectionHeading, FeatureCard, StickyShowcase } from "@/components/ui";
+import type { ShowcaseStep } from "@/components/ui";
 import { CTASection } from "@/components/sections";
-import Image from "next/image";
 import { screenshots } from "@/lib/assets";
 import {
   Shield,
@@ -94,34 +94,46 @@ const detailedFeatures = [
   },
 ];
 
-const screensTour = [
+const screensTour: ShowcaseStep[] = [
   {
     eyebrow: "01 / Detox countdown",
     title: "A clock you can't argue with.",
     body:
       "Every second of the 14-day reset is visible. Phases (Acute Withdrawal, Reset, Re-entry) name what your brain is actually going through.",
-    image: screenshots.countdownLater,
+    image: screenshots.homeCountdown,
+    alt: "Home screen with the 14-day countdown ring",
   },
   {
-    eyebrow: "02 / Focus",
-    title: "Block six apps with two taps.",
+    eyebrow: "02 / Time budget",
+    title: "Thirty minutes, on your terms.",
     body:
-      "Pick what to lock. Schedule focus blocks. Tap into Dumb Phone Mode when you need a quiet hour.",
-    image: screenshots.focusBlocked,
+      "After the reset you get a 30-minute daily budget shared across your blocked apps. Spend it where it matters, then everything locks back down on its own.",
+    image: screenshots.todaysUnlocks,
+    alt: "Today's Unlocks, distributing a daily minute budget",
   },
   {
     eyebrow: "03 / Echo",
     title: "Someone to talk to instead.",
     body:
-      "A coach designed for the late-night moments when the app is closed but the urge isn't. Real CBT, not feel-good fluff.",
-    image: screenshots.echoChat,
+      "A companion designed for the late-night moments when the app is closed but the urge isn't. Grounded in CBT, not feel-good fluff.",
+    image: screenshots.echoScreen,
+    alt: "Echo companion chat screen",
   },
   {
-    eyebrow: "04 / Profile",
+    eyebrow: "04 / Read",
+    title: "Long-form, not feeds.",
+    body:
+      "Books and courses like The Monk Mode Protocol are built in. Replace the loop with content that doesn't end every nine seconds.",
+    image: screenshots.bookReader,
+    alt: "The Monk Mode Protocol reading view",
+  },
+  {
+    eyebrow: "05 / Profile",
     title: "See your brain rewire.",
     body:
       "The Brain Wiring view is the receipt. Day one looks like static. Day fourteen looks like signal.",
-    image: screenshots.profileBrain,
+    image: screenshots.profileWiring,
+    alt: "Profile with the Brain Wiring visualization",
   },
 ];
 
@@ -140,46 +152,8 @@ export default function FeaturesPage() {
       </section>
 
       <section className="border-t border-[color:var(--color-line)]">
-        <div className="container-app py-24 md:py-32 space-y-28 md:space-y-36">
-          {screensTour.map((s, i) => {
-            const reversed = i % 2 === 1;
-            return (
-              <div
-                key={i}
-                className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center"
-              >
-                <div
-                  className={`lg:col-span-5 flex justify-center ${
-                    reversed ? "lg:order-2 lg:justify-end" : "lg:justify-start"
-                  }`}
-                >
-                  <div className="iphone-frame" style={{ width: 280 }}>
-                    <div className="iphone-screen">
-                      <div className="iphone-notch" />
-                      <Image
-                        src={s.image}
-                        alt={s.title}
-                        fill
-                        sizes="280px"
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className={`lg:col-span-7 ${reversed ? "lg:order-1" : ""}`}>
-                  <div className="text-[12px] tracking-[0.14em] uppercase text-[color:var(--color-ink-4)] mb-4">
-                    {s.eyebrow}
-                  </div>
-                  <h3 className="font-display text-[36px] md:text-[52px] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
-                    {s.title}
-                  </h3>
-                  <p className="mt-5 text-[17px] md:text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[56ch]">
-                    {s.body}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+        <div className="container-app py-20 md:py-28">
+          <StickyShowcase steps={screensTour} phoneSide="right" />
         </div>
       </section>
 

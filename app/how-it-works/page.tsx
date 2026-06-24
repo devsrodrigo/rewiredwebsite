@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { SectionHeading } from "@/components/ui";
+import { SectionHeading, Reveal } from "@/components/ui";
 import { CTASection } from "@/components/sections";
 import { screenshots } from "@/lib/assets";
 
@@ -76,8 +76,9 @@ export default function HowItWorksPage() {
           {phases.map((p, i) => {
             const reversed = i % 2 === 1;
             return (
-              <div
+              <Reveal
                 key={i}
+                variant={reversed ? "slideInRight" : "slideInLeft"}
                 className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center"
               >
                 <div
@@ -130,7 +131,7 @@ export default function HowItWorksPage() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             );
           })}
         </div>

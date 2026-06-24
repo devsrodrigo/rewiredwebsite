@@ -6,6 +6,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { APP_STORE_URL } from "@/lib/utils";
+import { EASE } from "@/lib/motion";
 
 const navLinks = [
   { href: "/features", label: "Features" },
@@ -21,75 +22,76 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 8);
+    const handleScroll = () => setIsScrolled(window.scrollY > 12);
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-          isScrolled
-            ? "bg-black/70 backdrop-blur-xl border-b border-[color:var(--color-line)]"
-            : "bg-transparent border-b border-transparent"
-        }`}
+      <motion.header
+        initial={{ y: -24, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: EASE }}
+        className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-3 md:pt-4"
       >
-        <div className="container-app">
-          <div className="flex items-center justify-between h-16 md:h-[68px]">
-            <Link href="/" className="flex items-center gap-2.5 group" aria-label="LOCK IN home">
-              <Image
-                src="/logo.png"
-                alt=""
-                width={28}
-                height={28}
-                className="w-7 h-7 rounded-md"
-              />
-              <span className="text-[15px] font-semibold tracking-tight text-white">
-                LOCK IN
-              </span>
-            </Link>
+        <nav
+          className={`flex items-center gap-2 rounded-full transition-all duration-300 ${
+            isScrolled
+              ? "glass pl-4 pr-2 py-2 w-full max-w-3xl"
+              : "pl-4 pr-2 py-2 w-full max-w-3xl border border-transparent"
+          }`}
+          aria-label="Primary"
+        >
+          <Link
+            href="/"
+            className="flex items-center gap-2 shrink-0 group"
+            aria-label="LOCK IN home"
+          >
+            <Image
+              src="/logo.png"
+              alt=""
+              width={26}
+              height={26}
+              className="w-[26px] h-[26px] rounded-[7px] transition-transform group-hover:scale-105"
+            />
+            <span className="text-[15px] font-semibold tracking-tight text-white">
+              LOCK IN
+            </span>
+          </Link>
 
-            <nav className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-[14px] text-[color:var(--color-ink-3)] hover:text-white transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-
-            <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-1 mx-auto">
+            {navLinks.map((link) => (
               <Link
-                href="/download"
-                className="text-[14px] text-[color:var(--color-ink-3)] hover:text-white transition-colors"
+                key={link.href}
+                href={link.href}
+                className="px-3 py-1.5 rounded-full text-[13.5px] text-[color:var(--color-ink-3)] hover:text-white hover:bg-white/[0.06] transition-colors"
               >
-                Download
+                {link.label}
               </Link>
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-sm"
-              >
-                Get the app
-              </a>
-            </div>
-
-            <button
-              onClick={() => setIsMobileMenuOpen((v) => !v)}
-              className="md:hidden p-2 text-white"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            ))}
           </div>
-        </div>
-      </header>
+
+          <a
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex btn btn-primary btn-sm shrink-0 ml-auto md:ml-0"
+          >
+            Get the app
+          </a>
+
+          <button
+            onClick={() => setIsMobileMenuOpen((v) => !v)}
+            className="md:hidden ml-auto p-2 text-white"
+            aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
+          >
+            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </nav>
+      </motion.header>
 
       <AnimatePresence>
         {isMobileMenuOpen && (
@@ -98,7 +100,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-black md:hidden pt-20"
+            className="fixed inset-0 z-40 bg-black md:hidden pt-24"
           >
             <div className="container-app flex flex-col gap-1 py-6">
               {navLinks.map((link, index) => (

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { SectionHeading, Badge } from "@/components/ui";
 import { WaitlistForm } from "@/components/email/WaitlistForm";
+import { BlogGrid } from "@/components/blog/BlogGrid";
 import { Calendar, Clock, ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -191,63 +192,7 @@ export default function BlogPage() {
         </section>
       )}
 
-      <section className="border-t border-[color:var(--color-line)] sticky top-16 md:top-[68px] z-30 bg-black/80 backdrop-blur-xl">
-        <div className="container-app py-4">
-          <div className="flex items-center gap-2 overflow-x-auto -mx-2 px-2">
-            {categories.map((c, idx) => (
-              <button
-                key={c}
-                className={`px-3.5 py-1.5 rounded-full text-[13px] whitespace-nowrap transition-colors ${
-                  idx === 0
-                    ? "bg-white text-black"
-                    : "border border-[color:var(--color-line)] text-[color:var(--color-ink-3)] hover:text-white hover:border-[color:var(--color-line-2)]"
-                }`}
-              >
-                {c}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-20">
-        <div className="container-app">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {regularPosts.map((p) => (
-              <Link key={p.slug} href={`/blog/${p.slug}`} className="group">
-                <article className="surface p-7 h-full transition-colors hover:border-[color:var(--color-line-2)] flex flex-col">
-                  <div className="flex items-center justify-between mb-5">
-                    <span className="text-[11px] text-[color:var(--color-ink-4)] uppercase tracking-[0.14em]">
-                      {p.category}
-                    </span>
-                    <ArrowUpRight className="w-4 h-4 text-[color:var(--color-ink-4)] opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </div>
-                  <h3 className="font-display text-[22px] font-semibold tracking-tight text-white leading-snug mb-3">
-                    {p.title}
-                  </h3>
-                  <p className="text-[14px] text-[color:var(--color-ink-3)] leading-relaxed line-clamp-2">
-                    {p.excerpt}
-                  </p>
-                  <div className="mt-6 flex items-center gap-3 text-[12px] text-[color:var(--color-ink-4)]">
-                    <span className="flex items-center gap-1.5">
-                      <Calendar className="w-3 h-3" />
-                      {new Date(p.date).toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
-                      })}
-                    </span>
-                    <span className="w-1 h-1 rounded-full bg-[color:var(--color-ink-5)]" />
-                    <span className="flex items-center gap-1.5">
-                      <Clock className="w-3 h-3" />
-                      {p.readTime}
-                    </span>
-                  </div>
-                </article>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <BlogGrid posts={regularPosts} categories={categories} />
 
       <section className="border-t border-[color:var(--color-line)] py-24 bg-[color:var(--color-bg-1)]">
         <div className="container-app max-w-xl text-center">

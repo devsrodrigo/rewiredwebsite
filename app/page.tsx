@@ -3,9 +3,12 @@ import {
   ProblemSection,
   DifferenceSection,
   HowItWorksSection,
+  EchoSection,
+  FocusModesSection,
   OutcomesSection,
   FeaturesSection,
   SocialProofSection,
+  PricingSection,
   FAQSection,
   CTASection,
 } from "@/components/sections";
@@ -17,9 +20,12 @@ export default function Home() {
       <ProblemSection />
       <DifferenceSection />
       <HowItWorksSection />
+      <EchoSection />
+      <FocusModesSection />
       <OutcomesSection />
       <FeaturesSection />
       <SocialProofSection />
+      <PricingSection />
       <FAQSection />
       <CTASection />
     </>

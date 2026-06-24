@@ -6,3 +6,6 @@ export { StatCounter } from "./StatCounter";
 export { FeatureCard } from "./FeatureCard";
 export { SectionHeading } from "./SectionHeading";
 export { Phone, PhoneFloat } from "./Phone";
+export { StickyShowcase } from "./StickyShowcase";
+export type { ShowcaseStep } from "./StickyShowcase";
+export { Reveal } from "./Reveal";

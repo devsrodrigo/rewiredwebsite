@@ -18,20 +18,25 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: {
-    default: "LOCK IN: Stop scrolling. Start living.",
+    default: "LOCK IN: Screen Time & Detox App for iPhone",
     template: "%s · LOCK IN",
   },
   description:
-    "A 14-day social media detox enforced at the OS level. No bypass, no workarounds. After the reset, a 30-minute daily budget you distribute across your apps. You decide. Not the algorithm.",
+    "LOCK IN is the screen time and social media detox app that actually holds. A 14-day block enforced by Apple Screen Time at the OS level, no bypass, no workarounds. After the reset, a 30-minute daily budget you distribute across your apps. You decide. Not the algorithm.",
   keywords: [
+    "lock in app",
+    "lock in screen time app",
+    "screen time app",
+    "detox app",
+    "social media detox app",
+    "dopamine detox app",
+    "app blocker",
+    "stop scrolling",
     "social media addiction",
     "digital detox",
-    "screen time",
-    "dopamine detox",
     "phone addiction",
-    "Gen Z",
-    "digital wellness",
     "focus app",
+    "digital wellness",
   ],
   authors: [{ name: "LOCK IN" }],
   creator: "LOCK IN",
@@ -40,9 +45,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://getrewired.org",
     siteName: "LOCK IN",
-    title: "LOCK IN: Stop scrolling. Start living.",
+    title: "LOCK IN: Screen Time & Detox App for iPhone",
     description:
-      "A 14-day social media detox enforced at the OS level. After the reset, a 30-minute daily budget on your terms.",
+      "The screen time and detox app that actually holds. A 14-day OS-level block, then a 30-minute daily budget on your terms.",
     images: [
       {
         url: "/og-image.png",
@@ -54,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LOCK IN: Stop scrolling. Start living.",
+    title: "LOCK IN: Screen Time & Detox App for iPhone",
     description:
       "A 14-day social media detox enforced at the OS level. After the reset, a 30-minute daily budget on your terms.",
     images: ["/og-image.png"],
@@ -87,11 +92,66 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getrewired.org/#org",
+        name: "LOCK IN",
+        url: "https://getrewired.org",
+        logo: "https://getrewired.org/logo.png",
+        sameAs: [
+          "https://instagram.com/getrewiredapp",
+          "https://tiktok.com/@getrewired",
+        ],
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: "LOCK IN",
+        alternateName: "LOCK IN: Stop Social Media",
+        operatingSystem: "iOS",
+        applicationCategory: "HealthApplication",
+        url: "https://getrewired.org",
+        downloadUrl:
+          "https://apps.apple.com/us/app/lock-in-stop-social-media/id6758021299",
+        description:
+          "LOCK IN is a screen time and social media detox app. It blocks your most addictive apps for 14 days at the OS level through Apple Screen Time, then gives you a 30-minute daily budget you control.",
+        publisher: { "@id": "https://getrewired.org/#org" },
+        offers: {
+          "@type": "AggregateOffer",
+          priceCurrency: "USD",
+          lowPrice: "4.99",
+          highPrice: "29.99",
+          offerCount: "2",
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Yearly",
+              price: "29.99",
+              priceCurrency: "USD",
+            },
+            {
+              "@type": "Offer",
+              name: "Weekly",
+              price: "4.99",
+              priceCurrency: "USD",
+            },
+          ],
+        },
+      },
+    ],
+  };
+
   return (
     <html lang="en">
       <body
         className={`${inter.variable} ${interTight.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />
