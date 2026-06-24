@@ -19,7 +19,7 @@ const scenes: Scene[] = [
   {
     eyebrow: "The reset",
     title: "Lock it. No way back in.",
-    line: "Pick your apps. They vanish for 14 days, enforced at the OS level. No ignore button.",
+    line: "Pick your apps and your length: 7, 14, or 21 days. They vanish, enforced at the OS level. No ignore button. There's a reset for everyone.",
     image: screenshots.detoxDays,
     bloom: "bloom-violet",
     glow: "glow-phone",
@@ -27,12 +27,12 @@ const scenes: Scene[] = [
   },
   {
     eyebrow: "Re-entry",
-    title: "30 minutes. You choose.",
-    line: "After the reset, a daily budget you spend across your apps. Then it locks back down on its own.",
-    image: screenshots.todaysUnlocks,
+    title: "Your minutes. You choose.",
+    line: "After the reset, pick a daily budget: 15, 30, 45, or 60 minutes across your apps. Then it locks back down on its own. Change it anytime.",
+    image: screenshots.minutesSetup,
     bloom: "bloom-cyan",
     glow: "glow-cyan",
-    alt: "Today's Unlocks budget screen",
+    alt: "Choosing the daily minutes budget",
   },
   {
     eyebrow: "The receipt",

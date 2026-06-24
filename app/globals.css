@@ -215,22 +215,24 @@ html, body {
   position: relative;
   border-radius: 58px;
   padding: 11px;
+  /* Vertical-only gradient: the left and right rails are identical and dark at
+     every height, so no light/white strip can ever show on a side edge. The
+     metallic catch lives only at the very top and bottom. */
   background:
-    linear-gradient(150deg, #45454b 0%, #232327 24%, #0b0b0d 50%, #232327 76%, #45454b 100%);
+    linear-gradient(180deg, #34343a 0%, #161619 10%, #0b0b0d 50%, #161619 90%, #34343a 100%);
   box-shadow:
     0 70px 130px -34px rgba(0,0,0,0.88),
     0 28px 56px -20px rgba(0,0,0,0.6);
   transform: translateZ(0);
 }
-/* Faint metallic catch only. Kept very low opacity (no pure-white line) so
-   there is no visible white strip on any edge of the frame. */
+/* Faint metallic catch at top/bottom only. Sides stay fully dark. */
 .iphone-frame::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 58px;
   padding: 1px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0) 16%, rgba(255,255,255,0) 84%, rgba(255,255,255,0.08));
+  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0) 14%, rgba(255,255,255,0) 86%, rgba(255,255,255,0.08));
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

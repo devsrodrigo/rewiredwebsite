@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Star } from "lucide-react";
+import { Star, Apple } from "lucide-react";
 import { APP_STORE_URL } from "@/lib/utils";
 import { screenshots } from "@/lib/assets";
 import { EASE } from "@/lib/motion";
@@ -14,16 +14,6 @@ export function Hero() {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-6 items-center">
           {/* Copy */}
           <div className="lg:col-span-6 text-center lg:text-left">
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: EASE }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 grad-border text-[12.5px] text-white/80 mb-7"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-[var(--c-teal)] animate-pulse" />
-              Now on the App Store
-            </motion.div>
-
             <h1 className="font-display font-semibold tracking-[-0.05em] leading-[0.92] text-[15vw] sm:text-[84px] lg:text-[96px]">
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
@@ -43,16 +33,6 @@ export function Hero() {
               </motion.span>
             </h1>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.25 }}
-              className="mt-6 text-[18px] md:text-[20px] text-white/65 max-w-[44ch] mx-auto lg:mx-0"
-            >
-              Block the apps that own you for 14 days. No bypass. Then 30 minutes
-              a day, on your terms.
-            </motion.p>
-
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
@@ -63,8 +43,9 @@ export function Hero() {
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary btn-lg"
+                className="btn btn-primary btn-lg inline-flex items-center gap-2.5"
               >
+                <Apple className="w-5 h-5 fill-current" strokeWidth={0} />
                 Download on the App Store
               </a>
               <div className="flex items-center gap-2 text-[13px] text-white/70">
@@ -85,12 +66,12 @@ export function Hero() {
             transition={{ duration: 1.1, delay: 0.15, ease: EASE }}
             className="lg:col-span-6 flex justify-center relative"
           >
-            <div className="relative animate-tilt-float">
+            <div className="relative">
               <Image
                 src={screenshots.heroShot}
                 alt="LOCK IN home: the 14-day detox countdown"
-                sizes="(max-width: 768px) 80vw, 460px"
-                className="w-[300px] sm:w-[380px] lg:w-[440px] h-auto drop-shadow-[0_40px_90px_rgba(0,0,0,0.6)]"
+                sizes="(max-width: 768px) 80vw, 520px"
+                className="w-[320px] sm:w-[420px] lg:w-[500px] h-auto drop-shadow-[0_40px_90px_rgba(0,0,0,0.6)]"
                 priority
               />
             </div>

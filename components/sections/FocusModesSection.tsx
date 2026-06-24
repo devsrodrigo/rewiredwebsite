@@ -43,13 +43,13 @@ export function FocusModesSection() {
           </motion.p>
         </motion.div>
 
-        {/* Clean, equal-size card row */}
+        {/* All sessions + routines in one compact row */}
         <motion.div
-          variants={staggerContainer(0.1)}
+          variants={staggerContainer(0.08)}
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-16 flex flex-wrap items-center justify-center gap-5 md:gap-7"
+          className="mt-14 flex flex-wrap items-center justify-center gap-5 md:gap-6"
         >
           {cards.map((c) => (
             <motion.div
@@ -63,39 +63,25 @@ export function FocusModesSection() {
                 src={c.src}
                 alt={`${c.label} focus session`}
                 quality={95}
-                sizes="(max-width: 768px) 140px, 200px"
-                className="w-[140px] md:w-[200px] h-auto drop-shadow-[0_18px_36px_rgba(0,0,0,0.55)]"
+                sizes="(max-width: 768px) 130px, 180px"
+                className="w-[130px] md:w-[180px] h-auto drop-shadow-[0_18px_36px_rgba(0,0,0,0.55)]"
               />
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Routine cards */}
-        <motion.div
-          variants={rise}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-          className="mt-16 md:mt-20 flex flex-col items-center gap-5"
-        >
-          <p className="text-[14px] text-white/45">
-            Or set it once and let it run on schedule.
-          </p>
-          <div className="flex flex-wrap justify-center gap-5">
-            {[
-              { src: floatingCards.morning, alt: "Morning routine, 9 AM to 6 PM" },
-              { src: floatingCards.night, alt: "Night routine, 8 PM to 6 AM" },
-            ].map((r) => (
+          {[
+            { src: floatingCards.morning, alt: "Morning routine, 9 AM to 6 PM" },
+            { src: floatingCards.night, alt: "Night routine, 8 PM to 6 AM" },
+          ].map((r) => (
+            <motion.div key={r.alt} variants={cardVariant}>
               <Image
-                key={r.alt}
                 src={r.src}
                 alt={r.alt}
                 quality={95}
-                sizes="300px"
-                className="w-[260px] md:w-[300px] h-auto drop-shadow-[0_18px_36px_rgba(0,0,0,0.5)]"
+                sizes="220px"
+                className="w-[200px] md:w-[220px] h-auto drop-shadow-[0_18px_36px_rgba(0,0,0,0.5)]"
               />
-            ))}
-          </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

@@ -39,7 +39,7 @@ import timer60t from "../ScreenshotsandVideos/TransparentNewElements/4.png";
 import routineMorningT from "../ScreenshotsandVideos/TransparentNewElements/5.png";
 import routineNightT from "../ScreenshotsandVideos/TransparentNewElements/6.png";
 import echoMascotT from "../ScreenshotsandVideos/TransparentNewElements/15.png";
-import heroShot from "../ScreenshotsandVideos/TransparentNewElements/HeadlineImage.png";
+import heroShot from "../ScreenshotsandVideos/TransparentNewElements/NEWHeadlineImage.png";
 
 export const screenshots = {
   // legacy

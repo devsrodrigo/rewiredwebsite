@@ -2,13 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import {
-  slideInLeft,
-  staggerContainer,
-  staggerItem,
-  reveal,
-  viewportOnce,
-} from "@/lib/motion";
+import { slideInLeft, reveal, viewportOnce } from "@/lib/motion";
 
 /* ------------------------------------------------------------------ *
  * SOCIAL PROOF
@@ -31,13 +25,6 @@ const reviews = [
     body:
       "This app helped me reset and regulate my dopamine levels. After multiple tries with other subscriptions, this was the one that gave me the best results. It's your time to LOCK IN! Fully recommend!",
   },
-];
-
-const metrics = [
-  { value: "14", label: "Days of full block" },
-  { value: "30", label: "Minutes a day after, on your terms" },
-  { value: "0", label: "Bypass loopholes" },
-  { value: "100%", label: "On-device & private" },
 ];
 
 function Stars() {
@@ -98,7 +85,7 @@ export function SocialProofSection() {
             <span className="text-[14px] text-white/70">5.0 on the App Store</span>
           </span>
           <h2 className="font-display text-[40px] md:text-[64px] font-semibold tracking-[-0.045em] text-white leading-[0.98]">
-            Real resets. Real reviews.
+            Our users love it.
           </h2>
         </motion.div>
 
@@ -110,30 +97,6 @@ export function SocialProofSection() {
             </motion.div>
           ))}
         </div>
-
-        {/* Outcome metrics */}
-        <motion.div
-          variants={staggerContainer(0.06)}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-          className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)] rounded-2xl overflow-hidden"
-        >
-          {metrics.map((m) => (
-            <motion.div
-              key={m.label}
-              variants={staggerItem}
-              className="bg-black p-8 text-center"
-            >
-              <div className="font-display text-[40px] md:text-[52px] font-semibold tracking-[-0.04em] text-white leading-none">
-                {m.value}
-              </div>
-              <div className="mt-2 text-[13px] text-[color:var(--color-ink-3)]">
-                {m.label}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
