@@ -14,7 +14,6 @@ import countdownGif from "../ScreenshotsandVideos/download.gif";
 // New, high-resolution product captures (ImagesforWebsite)
 import homeCountdown from "../ScreenshotsandVideos/ImagesforWebsite/12.png";
 import echoScreen from "../ScreenshotsandVideos/ImagesforWebsite/14.png";
-import echoMascot from "../ScreenshotsandVideos/ImagesforWebsite/15.png";
 import detoxDays from "../ScreenshotsandVideos/ImagesforWebsite/7.png";
 import minutesSetup from "../ScreenshotsandVideos/ImagesforWebsite/8.png";
 import appSelect from "../ScreenshotsandVideos/ImagesforWebsite/9.png";
@@ -55,7 +54,6 @@ export const screenshots = {
   // new product captures
   homeCountdown,
   echoScreen,
-  echoMascot,
   detoxDays,
   minutesSetup,
   appSelect,
