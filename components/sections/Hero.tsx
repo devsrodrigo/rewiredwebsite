@@ -86,37 +86,14 @@ export function Hero() {
             className="lg:col-span-6 flex justify-center relative"
           >
             <div className="relative animate-tilt-float">
-              <div className="iphone-frame glow-phone" style={{ width: 320 }}>
-                <div className="iphone-screen">
-                  <div className="iphone-notch" />
-                  <Image
-                    src={screenshots.countdownGif}
-                    alt="LOCK IN home: the 14-day detox countdown"
-                    fill
-                    sizes="340px"
-                    className="object-cover"
-                    priority
-                    unoptimized
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Echo mascot peeking from behind the phone */}
-            <motion.div
-              initial={{ opacity: 0, x: 30, y: 20 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.7, ease: EASE }}
-              className="absolute -right-2 sm:right-4 bottom-0 w-[120px] sm:w-[150px] animate-float-soft pointer-events-none"
-              style={{ animationDuration: "6s" }}
-            >
               <Image
-                src={screenshots.echoMascot}
-                alt=""
-                sizes="150px"
-                className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
+                src={screenshots.heroShot}
+                alt="LOCK IN home: the 14-day detox countdown"
+                sizes="(max-width: 768px) 80vw, 460px"
+                className="w-[300px] sm:w-[380px] lg:w-[440px] h-auto drop-shadow-[0_40px_90px_rgba(0,0,0,0.6)]"
+                priority
               />
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

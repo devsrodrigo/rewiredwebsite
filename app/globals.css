@@ -216,21 +216,21 @@ html, body {
   border-radius: 58px;
   padding: 11px;
   background:
-    linear-gradient(135deg, #74747c 0%, #2a2a2e 14%, #0b0b0d 50%, #2a2a2e 86%, #74747c 100%);
+    linear-gradient(150deg, #45454b 0%, #232327 24%, #0b0b0d 50%, #232327 76%, #45454b 100%);
   box-shadow:
     0 70px 130px -34px rgba(0,0,0,0.88),
     0 28px 56px -20px rgba(0,0,0,0.6);
   transform: translateZ(0);
 }
-/* Top/bottom edge sheen only (1px) so the straight left/right sides stay
-   dark, killing the white vertical strip while keeping a metallic catch. */
+/* Faint metallic catch only. Kept very low opacity (no pure-white line) so
+   there is no visible white strip on any edge of the frame. */
 .iphone-frame::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 58px;
-  padding: 1.5px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0) 18%, rgba(255,255,255,0) 82%, rgba(255,255,255,0.28));
+  padding: 1px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0) 16%, rgba(255,255,255,0) 84%, rgba(255,255,255,0.08));
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

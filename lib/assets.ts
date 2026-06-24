@@ -39,6 +39,7 @@ import timer60t from "../ScreenshotsandVideos/TransparentNewElements/4.png";
 import routineMorningT from "../ScreenshotsandVideos/TransparentNewElements/5.png";
 import routineNightT from "../ScreenshotsandVideos/TransparentNewElements/6.png";
 import echoMascotT from "../ScreenshotsandVideos/TransparentNewElements/15.png";
+import heroShot from "../ScreenshotsandVideos/TransparentNewElements/HeadlineImage.png";
 
 export const screenshots = {
   // legacy
@@ -61,6 +62,7 @@ export const screenshots = {
   profileWiring,
   bookReader,
   echoMascot: echoMascotT,
+  heroShot,
 };
 
 export const timerCards = {
