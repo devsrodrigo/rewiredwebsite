@@ -20,8 +20,7 @@ export function CTASection() {
           <Image
             src={screenshots.echoMascot}
             alt=""
-            width={160}
-            height={320}
+            sizes="130px"
             className="w-[130px] h-auto mb-6 animate-float-soft drop-shadow-[0_24px_50px_rgba(0,0,0,0.55)]"
             style={{ animationDuration: "6s" }}
           />

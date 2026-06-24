@@ -49,8 +49,7 @@ export function EchoSection() {
                 <Image
                   src={screenshots.echoMascot}
                   alt=""
-                  width={150}
-                  height={300}
+                  sizes="120px"
                   className="w-[120px] h-auto"
                 />
               </div>

@@ -113,8 +113,7 @@ export function Hero() {
               <Image
                 src={screenshots.echoMascot}
                 alt=""
-                width={150}
-                height={300}
+                sizes="150px"
                 className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
               />
             </motion.div>
