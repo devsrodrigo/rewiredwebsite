@@ -1,4 +1,5 @@
 export { Hero } from "./Hero";
+export { ProductScenes } from "./ProductScenes";
 export { ProblemSection } from "./ProblemSection";
 export { DifferenceSection } from "./DifferenceSection";
 export { HowItWorksSection } from "./HowItWorksSection";

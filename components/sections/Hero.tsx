@@ -2,78 +2,62 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { APP_STORE_URL } from "@/lib/utils";
 import { screenshots } from "@/lib/assets";
-import { EASE, settle, blurIn } from "@/lib/motion";
+import { EASE } from "@/lib/motion";
 
 export function Hero() {
   return (
-    <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden grain">
-      {/* Quiet backdrop: faint dot grid + a soft top glow */}
-      <div
-        aria-hidden
-        className="absolute inset-0 dot-grid opacity-50 pointer-events-none"
-      />
-      <div
-        aria-hidden
-        className="absolute inset-x-0 top-0 h-[680px] bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.07),_transparent_62%)] pointer-events-none"
-      />
-
-      <div className="container-app relative">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+    <section className="aurora relative min-h-[100svh] flex items-center overflow-hidden pt-28 pb-16">
+      <div className="container-app relative w-full">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-6 items-center">
           {/* Copy */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-6 text-center lg:text-left">
             <motion.div
-              variants={settle}
-              initial="hidden"
-              animate="show"
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass text-[12px] text-[color:var(--color-ink-2)] mb-7"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: EASE }}
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 grad-border text-[12.5px] text-white/80 mb-7"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-signal)] animate-pulse" />
-              Now on the App Store · iPhone, iPad &amp; Mac
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--c-teal)] animate-pulse" />
+              Now on the App Store
             </motion.div>
 
-            <h1 className="font-display text-[44px] sm:text-[66px] lg:text-[92px] font-semibold tracking-[-0.045em] leading-[0.98]">
+            <h1 className="font-display font-semibold tracking-[-0.05em] leading-[0.92] text-[15vw] sm:text-[84px] lg:text-[96px]">
               <motion.span
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: EASE }}
-                className="block text-[color:var(--color-ink-3)] font-medium"
+                className="block text-white"
               >
-                The fast way to
+                The fast way
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.85, delay: 0.08, ease: EASE }}
-                className="block text-white"
+                className="block text-grad"
               >
-                stop scrolling.
+                to stop scrolling.
               </motion.span>
             </h1>
 
             <motion.p
-              variants={blurIn}
-              initial="hidden"
-              animate="show"
-              transition={{ delay: 0.18 }}
-              className="mt-7 text-[18px] md:text-[20px] leading-relaxed text-[color:var(--color-ink-3)] max-w-[56ch]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.25 }}
+              className="mt-6 text-[18px] md:text-[20px] text-white/65 max-w-[44ch] mx-auto lg:mx-0"
             >
-              LOCK IN blocks your most addictive apps completely for 14 days,
-              enforced by Apple Screen Time, with no bypass and no
-              &ldquo;just five more minutes.&rdquo; Your dopamine system resets.
-              When it ends,
-              <span className="text-white"> you get a 30-minute daily budget</span>{" "}
-              you control. You decide. Not the algorithm.
+              Block the apps that own you for 14 days. No bypass. Then 30 minutes
+              a day, on your terms.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: EASE }}
-              className="mt-9 flex flex-col sm:flex-row gap-3"
+              transition={{ duration: 0.8, delay: 0.35, ease: EASE }}
+              className="mt-9 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start"
             >
               <a
                 href={APP_STORE_URL}
@@ -83,85 +67,65 @@ export function Hero() {
               >
                 Download on the App Store
               </a>
-              <Link href="/how-it-works" className="btn btn-secondary btn-lg group">
-                See how it works
-                <ArrowRight className="w-4 h-4 ml-0.5 transition-transform group-hover:translate-x-0.5" />
-              </Link>
-            </motion.div>
-
-            {/* Accolade row */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.9, delay: 0.5 }}
-              className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-[13px] text-[color:var(--color-ink-3)]"
-            >
-              <span className="flex items-center gap-2">
-                <span className="flex items-center gap-0.5 text-[color:var(--color-signal)]">
+              <div className="flex items-center gap-2 text-[13px] text-white/70">
+                <span className="flex items-center gap-0.5 text-[var(--c-amber)]">
                   {[0, 1, 2, 3, 4].map((i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-current" strokeWidth={0} />
+                    <Star key={i} className="w-4 h-4 fill-current" strokeWidth={0} />
                   ))}
                 </span>
-                <span className="text-[color:var(--color-ink-2)]">
-                  Loved by early users
-                </span>
-              </span>
-              <span className="hidden sm:flex items-center gap-2">
-                <span className="w-1 h-1 rounded-full bg-[color:var(--color-ink-5)]" />
-                100% on-device &amp; private
-              </span>
-              <span className="hidden md:flex items-center gap-2">
-                <span className="w-1 h-1 rounded-full bg-[color:var(--color-ink-5)]" />
-                No bypass, no loopholes
-              </span>
+                Loved on the App Store
+              </div>
             </motion.div>
           </div>
 
-          {/* Real product visual: the home countdown in an iPhone bezel */}
+          {/* Floating product */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.92, y: 30 }}
+            initial={{ opacity: 0, scale: 0.9, y: 40 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: EASE }}
-            className="lg:col-span-5 flex justify-center lg:justify-end"
+            transition={{ duration: 1.1, delay: 0.15, ease: EASE }}
+            className="lg:col-span-6 flex justify-center relative"
           >
-            <div className="relative animate-float-soft">
-              <div className="iphone-frame" style={{ width: 300 }}>
+            <div className="relative animate-tilt-float">
+              <div className="iphone-frame glow-phone" style={{ width: 320 }}>
                 <div className="iphone-screen">
                   <div className="iphone-notch" />
                   <Image
                     src={screenshots.countdownGif}
-                    alt="LOCK IN home screen: the 14-day detox countdown ticking down"
+                    alt="LOCK IN home: the 14-day detox countdown"
                     fill
-                    sizes="320px"
+                    sizes="340px"
                     className="object-cover"
                     priority
                     unoptimized
                   />
                 </div>
               </div>
-
-              {/* Floating captions, kept inboard so they never clip */}
-              <motion.div
-                initial={{ opacity: 0, x: 24 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7, delay: 0.7, ease: EASE }}
-                className="absolute -left-6 top-16 hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full glass text-[12px] text-[color:var(--color-ink-2)] whitespace-nowrap"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-warn)]" />
-                Acute withdrawal
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 24 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7, delay: 0.85, ease: EASE }}
-                className="absolute -left-10 bottom-24 hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full glass text-[12px] text-[color:var(--color-ink-2)] whitespace-nowrap"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-signal)]" />
-                Day 13 of 14
-              </motion.div>
             </div>
+
+            {/* Echo mascot peeking from behind the phone */}
+            <motion.div
+              initial={{ opacity: 0, x: 30, y: 20 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.7, ease: EASE }}
+              className="absolute -right-2 sm:right-4 bottom-0 w-[120px] sm:w-[150px] animate-float-soft pointer-events-none"
+              style={{ animationDuration: "6s" }}
+            >
+              <Image
+                src={screenshots.echoMascot}
+                alt=""
+                width={150}
+                height={300}
+                className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
+              />
+            </motion.div>
           </motion.div>
         </div>
+      </div>
+
+      {/* Scroll cue */}
+      <div className="absolute bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40 text-[11px] tracking-[0.2em] uppercase">
+        Scroll
+        <span className="w-px h-8 bg-gradient-to-b from-white/40 to-transparent" />
       </div>
     </section>
   );

@@ -16,11 +16,8 @@ const fan = [
 
 export function FocusModesSection() {
   return (
-    <section className="relative py-24 md:py-32 border-t border-[color:var(--color-line)] bg-[color:var(--color-bg-1)] overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute left-1/2 top-1/3 -translate-x-1/2 w-[680px] h-[680px] rounded-full bg-[radial-gradient(circle,_rgba(52,211,153,0.08),_transparent_62%)] pointer-events-none"
-      />
+    <section className="relative py-24 md:py-36 border-t border-white/5 bg-[#050506] overflow-hidden">
+      <div className="bloom bloom-teal w-[620px] h-[620px] left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 opacity-40" />
 
       <div className="container-app relative">
         <motion.div
@@ -36,10 +33,9 @@ export function FocusModesSection() {
           </h2>
           <motion.p
             variants={blurIn}
-            className="mt-6 text-[18px] text-[color:var(--color-ink-3)] leading-relaxed max-w-xl mx-auto"
+            className="mt-6 text-[18px] text-white/60 leading-relaxed max-w-lg mx-auto"
           >
-            Tap a length. The whole phone goes quiet until the timer runs out.
-            No setup, no negotiation. Just the version of you that gets things done.
+            Tap a length. The whole phone goes quiet until it ends.
           </motion.p>
         </motion.div>
 

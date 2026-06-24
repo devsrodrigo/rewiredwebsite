@@ -35,11 +35,8 @@ export function PricingSection() {
   const plan = plans[billing];
 
   return (
-    <section className="relative py-24 md:py-32 border-t border-[color:var(--color-line)] bg-[color:var(--color-bg-1)] overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,_rgba(52,211,153,0.07),_transparent_60%)] pointer-events-none"
-      />
+    <section className="relative py-24 md:py-36 border-t border-white/5 bg-[#050506] overflow-hidden">
+      <div className="bloom bloom-violet w-[560px] h-[420px] left-1/2 top-0 -translate-x-1/2 opacity-40" />
       <div className="container-app relative">
         <motion.div
           variants={rise}

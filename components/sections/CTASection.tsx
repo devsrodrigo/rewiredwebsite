@@ -4,74 +4,48 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { APP_STORE_URL } from "@/lib/utils";
 import { screenshots } from "@/lib/assets";
+import { EASE, viewportOnce } from "@/lib/motion";
 
 export function CTASection() {
   return (
-    <section className="py-24 md:py-32 border-t border-[color:var(--color-line)] bg-black relative overflow-hidden grain">
-      <div
-        aria-hidden
-        className="absolute inset-0 dot-grid opacity-40 pointer-events-none"
-      />
+    <section className="aurora relative overflow-hidden py-28 md:py-40 border-t border-white/5">
       <div className="container-app relative">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-7"
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={viewportOnce}
+          transition={{ duration: 0.9, ease: EASE }}
+          className="max-w-4xl mx-auto text-center flex flex-col items-center"
+        >
+          <Image
+            src={screenshots.echoMascot}
+            alt=""
+            width={160}
+            height={320}
+            className="w-[130px] h-auto mb-6 animate-float-soft drop-shadow-[0_24px_50px_rgba(0,0,0,0.55)]"
+            style={{ animationDuration: "6s" }}
+          />
+          <h2 className="font-display text-[48px] sm:text-[72px] lg:text-[92px] font-semibold tracking-[-0.05em] leading-[0.94] text-white">
+            Stop scrolling.
+            <br />
+            <span className="text-grad">Start living.</span>
+          </h2>
+          <p className="mt-6 text-[18px] md:text-[20px] text-white/65 max-w-[42ch]">
+            The next 14 days happen either way. Spend them building the life you
+            keep thinking about.
+          </p>
+          <a
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary btn-lg mt-9"
           >
-            <p className="eyebrow mb-4">The decision</p>
-            <h2 className="font-display text-[44px] md:text-[80px] font-semibold tracking-[-0.045em] text-white leading-[1.02]">
-              You already decided this matters.
-            </h2>
-            <p className="mt-6 text-[18px] md:text-[20px] text-[color:var(--color-ink-3)] leading-relaxed max-w-[55ch]">
-              The next two weeks are going to happen either way. Either with the apps, or without
-              them. Pick once. A full year costs less than one coffee a month. Staying the same
-              costs 1,800+ hours.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-3">
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-lg"
-              >
-                Download on the App Store
-              </a>
-              <a
-                href="/how-it-works"
-                className="btn btn-secondary btn-lg"
-              >
-                Read how it works
-              </a>
-            </div>
-            <p className="mt-6 text-[13px] text-[color:var(--color-ink-4)]">
-              iPhone only for now. Google Play later in 2026.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5 flex justify-center lg:justify-end"
-          >
-            <div className="iphone-frame" style={{ width: 280 }}>
-              <div className="iphone-screen">
-                <div className="iphone-notch" />
-                <Image
-                  src={screenshots.lockoutFull}
-                  alt="LOCK IN reminder: you already decided this matters"
-                  fill
-                  sizes="280px"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </motion.div>
-        </div>
+            Download on the App Store
+          </a>
+          <p className="mt-5 text-[13px] text-white/40">
+            iPhone, iPad &amp; Mac · $29.99/year or $4.99/week
+          </p>
+        </motion.div>
       </div>
     </section>
   );

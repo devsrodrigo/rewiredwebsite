@@ -14,11 +14,8 @@ const moments = [
 
 export function EchoSection() {
   return (
-    <section className="relative py-24 md:py-32 border-t border-[color:var(--color-line)] overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute right-[8%] top-1/4 w-[460px] h-[460px] rounded-full bg-[radial-gradient(circle,_rgba(59,130,246,0.12),_transparent_64%)] pointer-events-none"
-      />
+    <section className="relative py-24 md:py-36 border-t border-white/5 overflow-hidden bg-[#050506]">
+      <div className="bloom bloom-cyan w-[460px] h-[460px] right-[6%] top-1/4 -translate-y-1/2" />
 
       <div className="container-app relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">

@@ -357,3 +357,117 @@ html, body {
 .animate-float-delayed { animation: float-soft 6s ease-in-out infinite; animation-delay: 2s; }
 .animate-pulse-glow { animation: fade 3s ease-in-out infinite alternate; }
 .glow { box-shadow: var(--shadow-card); }
+
+/* ============================================================
+   VIBRANT CINEMATIC LAYER (v3)
+   Near-black base + saturated color blooms + gradient accents.
+   Immersive, colorful, high-drama. Inspired by Opal.
+   ============================================================ */
+
+:root {
+  --c-violet: #7C5CFF;
+  --c-indigo: #4F46E5;
+  --c-cyan: #22D3EE;
+  --c-teal: #34D399;
+  --c-coral: #FB7185;
+  --c-amber: #F59E0B;
+}
+
+/* Animated aurora: slow-drifting color blooms over near-black. */
+.aurora {
+  position: relative;
+  isolation: isolate;
+  background: #050506;
+}
+.aurora::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -2;
+  background:
+    radial-gradient(38% 44% at 18% 22%, rgba(124, 92, 255, 0.45), transparent 60%),
+    radial-gradient(34% 40% at 82% 16%, rgba(34, 211, 238, 0.34), transparent 62%),
+    radial-gradient(46% 50% at 70% 82%, rgba(52, 211, 153, 0.30), transparent 60%),
+    radial-gradient(40% 44% at 26% 88%, rgba(251, 113, 133, 0.26), transparent 62%);
+  filter: blur(40px) saturate(135%);
+  animation: aurora-drift 22s ease-in-out infinite alternate;
+}
+.aurora::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(120% 90% at 50% 0%, transparent 40%, rgba(5,5,6,0.5) 78%, #050506 100%);
+  pointer-events: none;
+}
+@keyframes aurora-drift {
+  0%   { transform: translate3d(0,0,0) scale(1); }
+  50%  { transform: translate3d(2%, -2%, 0) scale(1.08); }
+  100% { transform: translate3d(-2%, 1%, 0) scale(1.04); }
+}
+
+/* Standalone color bloom (place absolutely behind content) */
+.bloom {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+.bloom-violet { background: radial-gradient(circle, var(--c-violet), transparent 68%); }
+.bloom-cyan   { background: radial-gradient(circle, var(--c-cyan), transparent 68%); }
+.bloom-teal   { background: radial-gradient(circle, var(--c-teal), transparent 68%); }
+.bloom-coral  { background: radial-gradient(circle, var(--c-coral), transparent 68%); }
+.bloom-amber  { background: radial-gradient(circle, var(--c-amber), transparent 68%); }
+
+/* Gradient-clipped text */
+.text-grad {
+  background: linear-gradient(100deg, #FFFFFF 0%, #C9C2FF 38%, #7FE7E0 72%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: grad-pan 8s ease infinite;
+}
+@keyframes grad-pan {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* Phone / media glow: a soft colored halo behind floating product shots */
+.glow-phone {
+  filter:
+    drop-shadow(0 40px 80px rgba(0,0,0,0.6))
+    drop-shadow(0 0 60px rgba(124, 92, 255, 0.28));
+}
+.glow-cyan { filter: drop-shadow(0 40px 80px rgba(0,0,0,0.6)) drop-shadow(0 0 56px rgba(34,211,238,0.3)); }
+.glow-teal { filter: drop-shadow(0 40px 80px rgba(0,0,0,0.6)) drop-shadow(0 0 56px rgba(52,211,153,0.3)); }
+.glow-coral { filter: drop-shadow(0 40px 80px rgba(0,0,0,0.6)) drop-shadow(0 0 56px rgba(251,113,133,0.3)); }
+
+/* Gradient hairline / chip border */
+.grad-border {
+  position: relative;
+  background: rgba(255,255,255,0.03);
+  border-radius: 999px;
+}
+.grad-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(120deg, rgba(124,92,255,0.7), rgba(34,211,238,0.5), rgba(52,211,153,0.6));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Slow tilt-float for hero product */
+@keyframes tilt-float {
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  50% { transform: translateY(-14px) rotate(1.5deg); }
+}
+.animate-tilt-float { animation: tilt-float 9s ease-in-out infinite; }

@@ -1,15 +1,10 @@
 import {
   Hero,
-  ProblemSection,
-  DifferenceSection,
-  HowItWorksSection,
+  ProductScenes,
   EchoSection,
   FocusModesSection,
-  OutcomesSection,
-  FeaturesSection,
   SocialProofSection,
   PricingSection,
-  FAQSection,
   CTASection,
 } from "@/components/sections";
 
@@ -17,16 +12,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ProblemSection />
-      <DifferenceSection />
-      <HowItWorksSection />
+      <ProductScenes />
       <EchoSection />
       <FocusModesSection />
-      <OutcomesSection />
-      <FeaturesSection />
       <SocialProofSection />
       <PricingSection />
-      <FAQSection />
       <CTASection />
     </>
   );

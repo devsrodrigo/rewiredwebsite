@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import {
   slideInLeft,
-  settle,
   staggerContainer,
   staggerItem,
   reveal,
@@ -39,13 +38,6 @@ const metrics = [
   { value: "30", label: "Minutes a day after, on your terms" },
   { value: "0", label: "Bypass loopholes" },
   { value: "100%", label: "On-device & private" },
-];
-
-const badges = [
-  { top: "5.0", bottom: "App Store rating", stars: true },
-  { top: "iPhone · iPad · Mac", bottom: "Built natively for Apple" },
-  { top: "Apple Screen Time", bottom: "OS-level enforcement" },
-  { top: "Private by design", bottom: "Nothing leaves your device" },
 ];
 
 function Stars() {
@@ -89,65 +81,35 @@ function ReviewCard({
 
 export function SocialProofSection() {
   return (
-    <section className="py-24 md:py-32 border-t border-[color:var(--color-line)]">
-      <div className="container-app">
+    <section className="relative py-24 md:py-36 border-t border-white/5 bg-[#050506] overflow-hidden">
+      <div className="bloom bloom-coral w-[500px] h-[420px] right-[-100px] top-10 opacity-35" />
+      <div className="container-app relative">
         <motion.div
           variants={slideInLeft}
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="max-w-3xl"
+          className="max-w-3xl text-center mx-auto flex flex-col items-center"
         >
-          <p className="eyebrow mb-4">Already working</p>
-          <h2 className="font-display text-[40px] md:text-[60px] font-semibold tracking-[-0.04em] text-white leading-[1.05]">
-            People who tried everything else found their way back here.
+          <span className="flex items-center gap-2 mb-5">
+            <span className="flex items-center gap-0.5 text-[var(--c-amber)]">
+              <Stars />
+            </span>
+            <span className="text-[14px] text-white/70">5.0 on the App Store</span>
+          </span>
+          <h2 className="font-display text-[40px] md:text-[64px] font-semibold tracking-[-0.045em] text-white leading-[0.98]">
+            Real resets. Real reviews.
           </h2>
-          <p className="mt-6 text-[17px] text-[color:var(--color-ink-3)] leading-relaxed max-w-2xl">
-            Straight from the App Store. Real resets, real behavior change, not vibes.
-          </p>
         </motion.div>
 
         {/* Featured real reviews */}
-        <div className="mt-14 grid md:grid-cols-2 gap-6">
+        <div className="mt-12 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {reviews.map((r, i) => (
             <motion.div key={r.title} {...reveal(i * 0.08)}>
               <ReviewCard {...r} />
             </motion.div>
           ))}
         </div>
-
-        {/* Awards / trust strip */}
-        <motion.div
-          variants={staggerContainer(0.08)}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-          className="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)] rounded-2xl overflow-hidden"
-        >
-          {badges.map((b) => (
-            <motion.div
-              key={b.bottom}
-              variants={settle}
-              className="bg-black px-6 py-7 flex flex-col items-center text-center gap-1.5"
-            >
-              {b.stars ? (
-                <span className="flex items-center gap-2">
-                  <Stars />
-                  <span className="font-display text-[20px] font-semibold text-white">
-                    {b.top}
-                  </span>
-                </span>
-              ) : (
-                <span className="font-display text-[18px] font-semibold tracking-tight text-white">
-                  {b.top}
-                </span>
-              )}
-              <span className="text-[12.5px] text-[color:var(--color-ink-4)]">
-                {b.bottom}
-              </span>
-            </motion.div>
-          ))}
-        </motion.div>
 
         {/* Outcome metrics */}
         <motion.div
